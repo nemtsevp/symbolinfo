@@ -666,40 +666,6 @@
             ]
           },
           {
-            "group": "chix_europe_istanbul",
-            "prefix_for_search": "CHXEUR_IST",
-            "prefix_alias": [
-              "CHXEUR_IST"
-            ],
-            "group_alias": [
-              "istanbul"
-            ]
-          },
-          {
-            "group": "chix_europe_lse_in",
-            "prefix_for_search": "CHXEUR_LSIN",
-            "prefix_alias": [
-              "CHXEUR_LSIN"
-            ]
-          },
-          {
-            "group": "chix_europe_lse_uk",
-            "prefix_for_search": "CHXEUR_LSE",
-            "prefix_alias": [
-              "CHXEUR_LSE"
-            ]
-          },
-          {
-            "group": "chix_europe_madrid",
-            "prefix_for_search": "CHXEUR_BME",
-            "prefix_alias": [
-              "CHXEUR_BME"
-            ],
-            "group_alias": [
-              "dublin"
-            ]
-          },
-          {
             "group": "chix_europe_milan",
             "prefix_for_search": "CHXEUR_MIL",
             "prefix_alias": [
@@ -747,6 +713,34 @@
             ],
             "group_alias": [
               "vienna"
+            ]
+          },
+          {
+            "group": "chix_europe_lse_in",
+            "prefix_for_search": "CHXEUR_LSIN",
+            "prefix_alias": [
+              "CHXEUR_LSIN"
+            ]
+          },
+          {
+            "group": "chix_europe_lse_uk",
+            "prefix_for_search": "CHXEUR_LSE",
+            "prefix_alias": [
+              "CHXEUR_LSE"
+            ]
+          },
+          {
+            "group": "chix_europe_madrid",
+            "prefix_for_search": "CHXEUR_BME",
+            "prefix_alias": [
+              "CHXEUR_BME"
+            ]
+          },
+          {
+            "group": "chix_europe_istanbul",
+            "prefix_for_search": "CHXEUR_IST",
+            "prefix_alias": [
+              "CHXEUR_IST"
             ]
           }
         ]
@@ -800,7 +794,7 @@
       },
       {
         "prefix": "BME_DLY",
-        "perm": "sf_dly",
+        "perm": "bme_dly",
         "groups": [
           {
             "group": "bme_stocks_delayed"
@@ -816,6 +810,24 @@
         "groups": [
           {
             "group": "nagoya_stocks"
+          }
+        ]
+      },
+      {
+        "prefix": "BIST",
+        "perm": "bist",
+        "prefix_no_perm": [
+          "BIST_DLY"
+        ],
+        "prefix_alias": [
+          "IST"
+        ],
+        "groups": [
+          {
+            "group": "istanbul_indices"
+          },
+          {
+            "group": "istanbul_stocks"
           }
         ]
       },
@@ -924,19 +936,6 @@
         ]
       },
       {
-        "prefix": "IST",
-        "perm": "permission_denied",
-        "prefix_no_perm": [
-          "CHXEUR"
-        ],
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "istanbul"
-          }
-        ]
-      },
-      {
         "prefix": "BCBA_DLY",
         "perm": "sf_dly",
         "groups": [
@@ -969,6 +968,17 @@
         "groups": [
           {
             "group": "sapporo_stocks"
+          }
+        ]
+      },
+      {
+        "prefix": "BIST_DLY",
+        "groups": [
+          {
+            "group": "istanbul_indices_delayed"
+          },
+          {
+            "group": "istanbul_stocks_delayed"
           }
         ]
       },
