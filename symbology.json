@@ -177,13 +177,21 @@
       },
       {
         "prefix": "NASDAQ",
-        "perm": "nasdaq",
-        "prefix_no_perm": [
-          "BATS"
-        ],
         "groups": [
           {
-            "group": "nasdaq_idc"
+            "group": "nasdaq_idc",
+            "perm": "nasdaq",
+            "prefix_no_perm": [
+              "BATS"
+            ]
+          },
+          {
+            "group": "nasdaq_indices",
+            "perm": "",
+            "prefix_no_perm": [
+
+            ],
+            "skip_in_search": true
           }
         ]
       },
@@ -193,6 +201,7 @@
         "prefix_no_perm": [
           "BATS"
         ],
+        "prefix_for_search": "NYSE ARCA & MKT",
         "groups": [
           {
             "group": "amex_idc"
@@ -201,13 +210,21 @@
       },
       {
         "prefix": "NYSE",
-        "perm": "nyse",
-        "prefix_no_perm": [
-          "BATS"
-        ],
         "groups": [
           {
-            "group": "nyse_idc"
+            "group": "nyse_idc",
+            "perm": "nyse",
+            "prefix_no_perm": [
+              "BATS"
+            ]
+          },
+          {
+            "group": "nyse_indices",
+            "perm": "",
+            "prefix_no_perm": [
+
+            ],
+            "skip_in_search": true
           }
         ]
       },
@@ -257,6 +274,24 @@
             "prefix_alias": [
               "BME_DLY"
             ]
+          }
+        ]
+      },
+      {
+        "prefix": "SIX",
+        "perm": "six",
+        "prefix_no_perm": [
+          "SIX_DLY"
+        ],
+        "prefix_alias": [
+          "SWX"
+        ],
+        "groups": [
+          {
+            "group": "swiss_indices"
+          },
+          {
+            "group": "swiss_stocks"
           }
         ]
       },
@@ -566,6 +601,36 @@
         ]
       },
       {
+        "prefix": "SIX_DLY",
+        "perm": "sf_dly",
+        "groups": [
+          {
+            "group": "swiss_indices_delayed"
+          },
+          {
+            "group": "swiss_stocks_delayed"
+          }
+        ]
+      },
+      {
+        "prefix": "TSE",
+        "perm": "tse",
+        "prefix_no_perm": [
+          "TSE_DLY"
+        ],
+        "groups": [
+          {
+            "group": "tokyo_indices"
+          },
+          {
+            "group": "topix_indices"
+          },
+          {
+            "group": "tokyo_stocks"
+          }
+        ]
+      },
+      {
         "prefix": "BATS",
         "perm": "bats",
         "prefix_no_perm": [
@@ -578,22 +643,25 @@
         ]
       },
       {
-        "prefix": "BATS_DLY",
+        "prefix": "TSE_DLY",
+        "perm": "sf_dly",
         "groups": [
           {
-            "group": "bats_delayed"
+            "group": "tokyo_indices_delayed"
+          },
+          {
+            "group": "topix_indices_delayed"
+          },
+          {
+            "group": "tokyo_stocks_delayed"
           }
         ]
       },
       {
-        "prefix": "TSE",
-        "perm": "tse",
-        "prefix_no_perm": [
-          "TSE_DLY"
-        ],
+        "prefix": "BATS_DLY",
         "groups": [
           {
-            "group": "tokyo_stocks"
+            "group": "bats_delayed"
           }
         ]
       },
@@ -629,6 +697,23 @@
           },
           {
             "group": "nysei"
+          }
+        ]
+      },
+      {
+        "prefix": "CRAINS",
+        "groups": [
+          {
+            "group": "crains_indices"
+          }
+        ]
+      },
+      {
+        "prefix": "CRAINS_INTERNAL",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "crains_indices_internal"
           }
         ]
       },
@@ -696,16 +781,6 @@
             ]
           },
           {
-            "group": "chix_europe_swiss",
-            "prefix_for_search": "CHXEUR_SWX",
-            "prefix_alias": [
-              "CHXEUR_SWX"
-            ],
-            "group_alias": [
-              "swiss"
-            ]
-          },
-          {
             "group": "chix_europe_vienna",
             "prefix_for_search": "CHXEUR_VIE",
             "prefix_alias": [
@@ -742,27 +817,12 @@
             "prefix_alias": [
               "CHXEUR_IST"
             ]
-          }
-        ]
-      },
-      {
-        "prefix": "BCBA",
-        "groups": [
-          {
-            "group": "buenosaires_indices",
-            "perm": "bcba_dly",
-            "prefix_alias": [
-              "BCBA_DLY"
-            ]
           },
           {
-            "group": "buenosaires_stocks",
-            "perm": "bcba",
-            "prefix_no_perm": [
-              "BCBA_DLY"
-            ],
+            "group": "chix_europe_swiss",
+            "prefix_for_search": "CHXEUR_SWX",
             "prefix_alias": [
-
+              "CHXEUR_SWX"
             ]
           }
         ]
@@ -919,28 +979,6 @@
         "groups": [
           {
             "group": "vienna"
-          }
-        ]
-      },
-      {
-        "prefix": "SWX",
-        "perm": "permission_denied",
-        "prefix_no_perm": [
-          "CHXEUR"
-        ],
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "swiss"
-          }
-        ]
-      },
-      {
-        "prefix": "BCBA_DLY",
-        "perm": "sf_dly",
-        "groups": [
-          {
-            "group": "buenosaires_stocks_delayed"
           }
         ]
       },
@@ -1121,6 +1159,28 @@
         ]
       },
       {
+        "prefix": "BCBA",
+        "groups": [
+          {
+            "group": "buenosaires_indices",
+            "perm": "bcba_dly",
+            "prefix_alias": [
+              "BCBA_DLY"
+            ]
+          },
+          {
+            "group": "buenosaires_stocks",
+            "perm": "bcba",
+            "prefix_no_perm": [
+              "BCBA_DLY"
+            ],
+            "prefix_alias": [
+
+            ]
+          }
+        ]
+      },
+      {
         "prefix": "BSE_DLY",
         "perm": "bse_free",
         "prefix_no_perm": [
@@ -1138,6 +1198,15 @@
           },
           {
             "group": "bse_continuous_delayed"
+          }
+        ]
+      },
+      {
+        "prefix": "BCBA_DLY",
+        "perm": "sf_dly",
+        "groups": [
+          {
+            "group": "buenosaires_stocks_delayed"
           }
         ]
       },
@@ -1161,15 +1230,6 @@
               "INDEX",
               "ASX_DLY"
             ]
-          }
-        ]
-      },
-      {
-        "prefix": "TSE_DLY",
-        "perm": "sf_dly",
-        "groups": [
-          {
-            "group": "tokyo_stocks_delayed"
           }
         ]
       },
@@ -1225,6 +1285,27 @@
         ]
       },
       {
+        "prefix": "TOCOM",
+        "perm": "tocom",
+        "prefix_no_perm": [
+          "TOCOM_DLY"
+        ],
+        "groups": [
+          {
+            "group": "tocom_futures"
+          },
+          {
+            "group": "tocom_grain_futures"
+          },
+          {
+            "group": "tocom_continuous"
+          },
+          {
+            "group": "tocom_grain_continuous"
+          }
+        ]
+      },
+      {
         "prefix": "TSX",
         "groups": [
           {
@@ -1241,6 +1322,24 @@
           },
           {
             "group": "tfin_continuous_delayed"
+          }
+        ]
+      },
+      {
+        "prefix": "TOCOM_DLY",
+        "perm": "sf_dly",
+        "groups": [
+          {
+            "group": "tocom_futures_delayed"
+          },
+          {
+            "group": "tocom_grain_futures_delayed"
+          },
+          {
+            "group": "tocom_continuous_delayed"
+          },
+          {
+            "group": "tocom_grain_continuous_delayed"
           }
         ]
       },
@@ -1299,7 +1398,13 @@
         ],
         "groups": [
           {
-            "group": "otc_idc"
+            "group": "otc_qb"
+          },
+          {
+            "group": "otc_qx"
+          },
+          {
+            "group": "otc_pink"
           }
         ]
       },
@@ -1310,7 +1415,13 @@
         ],
         "groups": [
           {
-            "group": "otc_delayed"
+            "group": "otc_qb_delayed"
+          },
+          {
+            "group": "otc_qx_delayed"
+          },
+          {
+            "group": "otc_pink_delayed"
           }
         ]
       },
@@ -1533,14 +1644,6 @@
         ]
       },
       {
-        "prefix": "MEXBT",
-        "groups": [
-          {
-            "group": "MEXBT"
-          }
-        ]
-      },
-      {
         "prefix": "796",
         "groups": [
           {
@@ -1577,14 +1680,6 @@
         "groups": [
           {
             "group": "BITVC"
-          }
-        ]
-      },
-      {
-        "prefix": "BITYES",
-        "groups": [
-          {
-            "group": "BITYES"
           }
         ]
       },
