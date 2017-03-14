@@ -1973,5 +1973,43 @@
         ]
       }
     ]
+  },
+  {
+    "id": "bovespa",
+    "mapping": [
+      {
+        "prefix": "BMFBOVESPA",
+        "perm": "permission_denied",
+        "prefix_no_perm": [
+          "BMFBOVESPA_DLY"
+        ],
+        "groups": [
+          {
+            "group": "bovespa"
+          },
+          {
+            "group": "bovespa_futures"
+          },
+          {
+            "group": "bovespa_indices",
+            "perm": "",
+            "prefix_no_perm": [
+
+            ]
+          }
+        ]
+      },
+      {
+        "prefix": "BMFBOVESPA_DLY",
+        "groups": [
+          {
+            "group": "bovespa_futures_delayed"
+          },
+          {
+            "group": "bovespa_delayed"
+          }
+        ]
+      }
+    ]
   }
 ]
