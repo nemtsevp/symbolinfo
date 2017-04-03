@@ -176,6 +176,15 @@
         ]
       },
       {
+        "prefix": "FOREXCOM",
+        "prefix_for_search": "FOREX.com",
+        "groups": [
+          {
+            "group": "gain"
+          }
+        ]
+      },
+      {
         "prefix": "NASDAQ",
         "groups": [
           {
@@ -229,6 +238,30 @@
         ]
       },
       {
+        "prefix": "EURONEXT",
+        "prefix_no_perm": [
+          "EURONEXT_DLY"
+        ],
+        "groups": [
+          {
+            "group": "euronext_indices",
+            "perm": "euronext_indices"
+          },
+          {
+            "group": "euronext_stocks",
+            "perm": "euronext_stocks"
+          },
+          {
+            "group": "euronext_futures",
+            "perm": "euronext_futures"
+          },
+          {
+            "group": "euronext_continuous",
+            "perm": "euronext_futures"
+          }
+        ]
+      },
+      {
         "prefix": "LSE",
         "perm": "lse",
         "prefix_no_perm": [
@@ -274,6 +307,24 @@
             "prefix_alias": [
               "BME_DLY"
             ]
+          }
+        ]
+      },
+      {
+        "prefix": "EURONEXT_DLY",
+        "perm": "sf_dly",
+        "groups": [
+          {
+            "group": "euronext_indices_delayed"
+          },
+          {
+            "group": "euronext_stocks_delayed"
+          },
+          {
+            "group": "euronext_futures_delayed"
+          },
+          {
+            "group": "euronext_continuous_delayed"
           }
         ]
       },
@@ -731,16 +782,6 @@
             ]
           },
           {
-            "group": "chix_europe_euronext",
-            "prefix_for_search": "CHXEUR_EURONEXT",
-            "prefix_alias": [
-              "CHXEUR_EURONEXT"
-            ],
-            "group_alias": [
-              "euronext"
-            ]
-          },
-          {
             "group": "chix_europe_frankfurt",
             "prefix_for_search": "CHXEUR_FRA",
             "prefix_alias": [
@@ -824,6 +865,13 @@
             "prefix_alias": [
               "CHXEUR_SWX"
             ]
+          },
+          {
+            "group": "chix_europe_euronext",
+            "prefix_for_search": "CHXEUR_EURONEXT",
+            "prefix_alias": [
+              "CHXEUR_EURONEXT"
+            ]
           }
         ]
       },
@@ -854,7 +902,7 @@
       },
       {
         "prefix": "BME_DLY",
-        "perm": "bme_dly",
+        "perm": "sf_dly",
         "groups": [
           {
             "group": "bme_stocks_delayed"
@@ -888,19 +936,6 @@
           },
           {
             "group": "istanbul_stocks"
-          }
-        ]
-      },
-      {
-        "prefix": "EURONEXT",
-        "perm": "permission_denied",
-        "prefix_no_perm": [
-          "CHXEUR"
-        ],
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "euronext"
           }
         ]
       },
@@ -979,6 +1014,21 @@
         "groups": [
           {
             "group": "vienna"
+          }
+        ]
+      },
+      {
+        "prefix": "BMV",
+        "perm": "bmv",
+        "prefix_no_perm": [
+          "BMV_DLY"
+        ],
+        "groups": [
+          {
+            "group": "mexico_indices"
+          },
+          {
+            "group": "mexico_stocks"
           }
         ]
       },
@@ -1107,6 +1157,17 @@
           },
           {
             "group": "bovespa_continuous_delayed"
+          }
+        ]
+      },
+      {
+        "prefix": "BMV_DLY",
+        "groups": [
+          {
+            "group": "mexico_indices_delayed"
+          },
+          {
+            "group": "mexico_stocks_delayed"
           }
         ]
       },
