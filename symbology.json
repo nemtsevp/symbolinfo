@@ -4,6 +4,7 @@
     "mapping": [
       {
         "prefix": "QUANDL",
+        "resolve_mask": "QUANDL:*",
         "groups": [
           {
             "group": "quandl"
@@ -12,6 +13,7 @@
       },
       {
         "prefix": "EDGR",
+        "resolve_mask": "EDGR:*",
         "groups": [
           {
             "group": "edgar_fundamentals"
