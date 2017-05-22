@@ -801,6 +801,7 @@
         "prefix_no_perm": [
           "BATS_DLY"
         ],
+        "skip_in_search": true,
         "groups": [
           {
             "group": "bats_idc"
@@ -844,6 +845,7 @@
       {
         "priority": 46,
         "prefix": "BATS_DLY",
+        "skip_in_search": true,
         "groups": [
           {
             "group": "bats_delayed"
