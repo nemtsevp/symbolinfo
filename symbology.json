@@ -918,6 +918,9 @@
             "exchange_for_display": "CHXEUR_DUB",
             "prefix_alias": [
               "CHXEUR_DUB"
+            ],
+            "exchange_aliases": [
+              "DUB"
             ]
           },
           {
@@ -925,6 +928,9 @@
             "exchange_for_display": "CHXEUR_FRA",
             "prefix_alias": [
               "CHXEUR_FRA"
+            ],
+            "exchange_aliases": [
+              "FRA"
             ],
             "group_alias": [
               "frankfurt"
@@ -936,6 +942,9 @@
             "prefix_alias": [
               "CHXEUR_MIL"
             ],
+            "exchange_aliases": [
+              "MIL"
+            ],
             "group_alias": [
               "milan"
             ]
@@ -945,6 +954,9 @@
             "exchange_for_display": "CHXEUR_OMX",
             "prefix_alias": [
               "CHXEUR_OMX"
+            ],
+            "exchange_aliases": [
+              "OMX"
             ],
             "group_alias": [
               "omx"
@@ -956,6 +968,9 @@
             "prefix_alias": [
               "CHXEUR_OSL"
             ],
+            "exchange_aliases": [
+              "OSL"
+            ],
             "group_alias": [
               "oslo"
             ]
@@ -965,6 +980,9 @@
             "exchange_for_display": "CHXEUR_VIE",
             "prefix_alias": [
               "CHXEUR_VIE"
+            ],
+            "exchange_aliases": [
+              "VIE"
             ],
             "group_alias": [
               "vienna"
