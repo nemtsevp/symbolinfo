@@ -103,6 +103,16 @@
         ]
       },
       {
+        "priority": 10,
+        "prefix": "SP",
+        "exchange_for_display": "S&P",
+        "groups": [
+          {
+            "group": "sp_indices"
+          }
+        ]
+      },
+      {
         "priority": 11,
         "prefix": "BITSTAMP",
         "groups": [
