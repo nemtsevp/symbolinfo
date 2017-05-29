@@ -2333,9 +2333,6 @@
         "groups": [
           {
             "group": "cme_globex_delayed"
-          },
-          {
-            "group": "cme_globex_continuous_delayed"
           }
         ]
       },
@@ -2346,9 +2343,6 @@
         "groups": [
           {
             "group": "cme_pit_delayed"
-          },
-          {
-            "group": "cme_pit_continuous_delayed"
           }
         ]
       },
@@ -2363,9 +2357,6 @@
         "groups": [
           {
             "group": "cbot_delayed"
-          },
-          {
-            "group": "cbot_continuous_delayed"
           }
         ]
       },
@@ -2383,9 +2374,6 @@
         "groups": [
           {
             "group": "cbot_mini_delayed"
-          },
-          {
-            "group": "cbot_mini_continuous_delayed"
           }
         ]
       },
@@ -2400,9 +2388,6 @@
         "groups": [
           {
             "group": "cme_delayed"
-          },
-          {
-            "group": "cme_continuous_delayed"
           }
         ]
       },
@@ -2420,9 +2405,6 @@
         "groups": [
           {
             "group": "cme_mini_delayed"
-          },
-          {
-            "group": "cme_mini_continuous_delayed"
           }
         ]
       },
@@ -2437,9 +2419,6 @@
         "groups": [
           {
             "group": "comex_delayed"
-          },
-          {
-            "group": "comex_continuous_delayed"
           }
         ]
       },
@@ -2457,9 +2436,6 @@
         "groups": [
           {
             "group": "comex_mini_delayed"
-          },
-          {
-            "group": "comex_mini_continuous_delayed"
           }
         ]
       },
@@ -2474,9 +2450,6 @@
         "groups": [
           {
             "group": "nymex_delayed"
-          },
-          {
-            "group": "nymex_continuous_delayed"
           }
         ]
       },
@@ -2494,9 +2467,6 @@
         "groups": [
           {
             "group": "nymex_mini_delayed"
-          },
-          {
-            "group": "nymex_mini_continuous_delayed"
           }
         ]
       },
@@ -2510,9 +2480,6 @@
         "groups": [
           {
             "group": "cme_europe_delayed"
-          },
-          {
-            "group": "cme_europe_continuous_delayed"
           }
         ]
       }
