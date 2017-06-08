@@ -79,15 +79,6 @@
         ]
       },
       {
-        "priority": 10,
-        "prefix": "USI",
-        "groups": [
-          {
-            "group": "usi"
-          }
-        ]
-      },
-      {
         "prefix": "FX",
         "exchange_for_display": "FXCM",
         "groups": [
@@ -103,12 +94,17 @@
         ]
       },
       {
-        "priority": 10,
         "prefix": "SP",
-        "exchange_for_display": "S&P",
         "groups": [
           {
-            "group": "sp_indices"
+            "group": "sp_indices",
+            "priority": 10,
+            "exchange_for_display": "S&P"
+          },
+          {
+            "group": "sp_indices_eod",
+            "priority": 100,
+            "skip_in_search": true
           }
         ]
       },
@@ -228,6 +224,15 @@
         ]
       },
       {
+        "priority": 15,
+        "prefix": "USI",
+        "groups": [
+          {
+            "group": "usi"
+          }
+        ]
+      },
+      {
         "prefix": "NASDAQ",
         "groups": [
           {
@@ -240,7 +245,7 @@
             ]
           },
           {
-            "group": "nasdaq_indices",
+            "group": "nasdaq_indices_eod",
             "priority": 100,
             "skip_in_search": true
           }
@@ -274,7 +279,12 @@
             ]
           },
           {
-            "group": "nyse_indices",
+            "group": "nyse_gif_indices_eod",
+            "priority": 100,
+            "skip_in_search": true
+          },
+          {
+            "group": "nyse_indices_eod",
             "priority": 100,
             "skip_in_search": true
           }
@@ -785,6 +795,23 @@
         ]
       },
       {
+        "prefix": "XETR",
+        "perm": "dbg",
+        "prefix_no_perm": [
+          "XETR_DLY"
+        ],
+        "groups": [
+          {
+            "group": "xetra_indices",
+            "priority": 45
+          },
+          {
+            "group": "xetra_stocks",
+            "priority": 47
+          }
+        ]
+      },
+      {
         "priority": 45,
         "prefix": "TSE",
         "perm": "tse",
@@ -863,6 +890,19 @@
         ]
       },
       {
+        "prefix": "XETR_DLY",
+        "groups": [
+          {
+            "group": "xetra_indices_delayed",
+            "priority": 47
+          },
+          {
+            "group": "xetra_stocks_delayed",
+            "priority": 49
+          }
+        ]
+      },
+      {
         "priority": 47,
         "prefix": "INDEX",
         "groups": [
@@ -931,19 +971,6 @@
             ],
             "exchange_aliases": [
               "DUB"
-            ]
-          },
-          {
-            "group": "chix_europe_frankfurt",
-            "exchange_for_display": "CHXEUR_FRA",
-            "prefix_alias": [
-              "CHXEUR_FRA"
-            ],
-            "exchange_aliases": [
-              "FRA"
-            ],
-            "group_alias": [
-              "frankfurt"
             ]
           },
           {
@@ -1038,6 +1065,13 @@
             "exchange_for_display": "CHXEUR_EURONEXT",
             "prefix_alias": [
               "CHXEUR_EURONEXT"
+            ]
+          },
+          {
+            "group": "chix_europe_frankfurt",
+            "exchange_for_display": "CHXEUR_FRA",
+            "prefix_alias": [
+              "CHXEUR_FRA"
             ]
           }
         ]
@@ -1223,20 +1257,6 @@
         "groups": [
           {
             "group": "dublin"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "FRA",
-        "perm": "permission_denied",
-        "prefix_no_perm": [
-          "CHXEUR"
-        ],
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "frankfurt"
           }
         ]
       },
@@ -1607,6 +1627,34 @@
         ]
       },
       {
+        "priority": 55,
+        "prefix": "FWB",
+        "perm": "dbg",
+        "prefix_no_perm": [
+          "FWB_DLY"
+        ],
+        "prefix_alias": [
+          "FRA"
+        ],
+        "groups": [
+          {
+            "group": "frankfurt_stocks"
+          }
+        ]
+      },
+      {
+        "priority": 55,
+        "prefix": "FWB_DLY",
+        "prefix_alias": [
+          "FRA_DLY"
+        ],
+        "groups": [
+          {
+            "group": "frankfurt_stocks_delayed"
+          }
+        ]
+      },
+      {
         "prefix": "ASX",
         "perm": "asx",
         "prefix_no_perm": [
@@ -1926,6 +1974,48 @@
         ]
       },
       {
+        "prefix": "CBOE",
+        "groups": [
+          {
+            "group": "cboe_indices_eod",
+            "priority": 100,
+            "skip_in_search": true
+          },
+          {
+            "group": "cfe",
+            "priority": 130
+          },
+          {
+            "group": "cfe_continuous_2",
+            "priority": 131
+          },
+          {
+            "group": "cfe_continuous",
+            "priority": 131
+          }
+        ]
+      },
+      {
+        "priority": 100,
+        "prefix": "DJ",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "dj_indices_eod"
+          }
+        ]
+      },
+      {
+        "priority": 100,
+        "prefix": "RUSSEL",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "russel_indices_eod"
+          }
+        ]
+      },
+      {
         "priority": 100,
         "prefix": "OKCOIN",
         "skip_in_search": false,
@@ -2216,23 +2306,6 @@
         "groups": [
           {
             "group": "MTGOX"
-          }
-        ]
-      },
-      {
-        "prefix": "CBOE",
-        "groups": [
-          {
-            "group": "cfe",
-            "priority": 130
-          },
-          {
-            "group": "cfe_continuous_2",
-            "priority": 131
-          },
-          {
-            "group": "cfe_continuous",
-            "priority": 131
           }
         ]
       },
