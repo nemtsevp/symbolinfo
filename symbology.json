@@ -1090,6 +1090,9 @@
         "prefix_no_perm": [
           "XETR_DLY"
         ],
+        "prefix_alias": [
+          "FRA"
+        ],
         "groups": [
           {
             "group": "xetra_indices",
@@ -1439,23 +1442,14 @@
             "prefix_alias": [
               "CHXEUR_FRA"
             ]
-          },
-          {
-            "group": "chix_europe_frankfurt_test",
-            "priority": 48,
-            "exchange_for_display": "CHXEUR_FRA",
-            "skip_in_search": false,
-            "prefix_alias": [
-              "CHXEUR_FRA"
-            ],
-            "group_alias": [
-              "frankfurt"
-            ]
           }
         ]
       },
       {
         "prefix": "XETR_DLY",
+        "prefix_alias": [
+          "FRA_DLY"
+        ],
         "groups": [
           {
             "group": "xetra_indices_delayed",
@@ -1521,6 +1515,22 @@
         ]
       },
       {
+        "prefix": "SZSE",
+        "prefix_no_perm": [
+          "SZSE_DLY"
+        ],
+        "groups": [
+          {
+            "group": "shenzhen_indices",
+            "priority": 48
+          },
+          {
+            "group": "shenzhen_stocks",
+            "priority": 50
+          }
+        ]
+      },
+      {
         "prefix": "BCBA",
         "perm": "bcba",
         "groups": [
@@ -1551,6 +1561,19 @@
           {
             "group": "bme_stocks_delayed",
             "priority": 50
+          }
+        ]
+      },
+      {
+        "prefix": "SZSE_DLY",
+        "groups": [
+          {
+            "group": "shenzhen_indices_delayed",
+            "priority": 49
+          },
+          {
+            "group": "shenzhen_stocks_delayed",
+            "priority": 51
           }
         ]
       },
@@ -1738,20 +1761,6 @@
         "groups": [
           {
             "group": "vienna"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "FRA",
-        "perm": "permission_denied",
-        "prefix_no_perm": [
-          "CHXEUR"
-        ],
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "frankfurt"
           }
         ]
       },
@@ -2266,6 +2275,27 @@
           },
           {
             "group": "nzx_continuous"
+          }
+        ]
+      },
+      {
+        "priority": 65,
+        "prefix": "SWB",
+        "prefix_no_perm": [
+          "SWB_DLY"
+        ],
+        "groups": [
+          {
+            "group": "stuttgart_stocks"
+          }
+        ]
+      },
+      {
+        "priority": 66,
+        "prefix": "SWB_DLY",
+        "groups": [
+          {
+            "group": "stuttgart_stocks_delayed"
           }
         ]
       },
