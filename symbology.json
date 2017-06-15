@@ -140,6 +140,35 @@
         ]
       },
       {
+        "prefix": "CBOE",
+        "skip_in_search": false,
+        "groups": [
+          {
+            "group": "cboe_indices_delayed",
+            "priority": 10,
+            "prefix_alias": [
+              "CBOE_DLY"
+            ]
+          },
+          {
+            "group": "cboe_indices_eod",
+            "priority": 100
+          },
+          {
+            "group": "cfe",
+            "priority": 130
+          },
+          {
+            "group": "cfe_continuous_2",
+            "priority": 131
+          },
+          {
+            "group": "cfe_continuous",
+            "priority": 131
+          }
+        ]
+      },
+      {
         "priority": 11,
         "prefix": "BITSTAMP",
         "groups": [
@@ -1410,6 +1439,18 @@
             "prefix_alias": [
               "CHXEUR_FRA"
             ]
+          },
+          {
+            "group": "chix_europe_frankfurt_test",
+            "priority": 48,
+            "exchange_for_display": "CHXEUR_FRA",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CHXEUR_FRA"
+            ],
+            "group_alias": [
+              "frankfurt"
+            ]
           }
         ]
       },
@@ -1697,6 +1738,20 @@
         "groups": [
           {
             "group": "vienna"
+          }
+        ]
+      },
+      {
+        "priority": 50,
+        "prefix": "FRA",
+        "perm": "permission_denied",
+        "prefix_no_perm": [
+          "CHXEUR"
+        ],
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "frankfurt"
           }
         ]
       },
@@ -2215,27 +2270,6 @@
         ]
       },
       {
-        "priority": 65,
-        "prefix": "SWB",
-        "prefix_no_perm": [
-          "SWB_DLY"
-        ],
-        "groups": [
-          {
-            "group": "stuttgart_stocks"
-          }
-        ]
-      },
-      {
-        "priority": 66,
-        "prefix": "SWB_DLY",
-        "groups": [
-          {
-            "group": "stuttgart_stocks_delayed"
-          }
-        ]
-      },
-      {
         "priority": 70,
         "prefix": "NZX_DLY",
         "groups": [
@@ -2464,28 +2498,6 @@
           {
             "group": "toronto_stocks_eod",
             "priority": 105
-          }
-        ]
-      },
-      {
-        "prefix": "CBOE",
-        "groups": [
-          {
-            "group": "cboe_indices_eod",
-            "priority": 100,
-            "skip_in_search": false
-          },
-          {
-            "group": "cfe",
-            "priority": 130
-          },
-          {
-            "group": "cfe_continuous_2",
-            "priority": 131
-          },
-          {
-            "group": "cfe_continuous",
-            "priority": 131
           }
         ]
       },
