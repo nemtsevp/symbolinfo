@@ -94,21 +94,6 @@
         ]
       },
       {
-        "prefix": "SP",
-        "groups": [
-          {
-            "group": "sp_indices",
-            "priority": 10,
-            "exchange_for_display": "S&P"
-          },
-          {
-            "group": "sp_indices_eod",
-            "priority": 100,
-            "skip_in_search": true
-          }
-        ]
-      },
-      {
         "priority": 11,
         "prefix": "BITSTAMP",
         "groups": [
@@ -2012,6 +1997,16 @@
         "groups": [
           {
             "group": "russel_indices_eod"
+          }
+        ]
+      },
+      {
+        "priority": 100,
+        "prefix": "SP",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "sp_indices_eod"
           }
         ]
       },
