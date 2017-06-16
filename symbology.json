@@ -1565,6 +1565,19 @@
         ]
       },
       {
+        "prefix": "BCS",
+        "groups": [
+          {
+            "group": "santiago_indices",
+            "priority": 49
+          },
+          {
+            "group": "santiago_stocks",
+            "priority": 50
+          }
+        ]
+      },
+      {
         "prefix": "SZSE_DLY",
         "groups": [
           {
@@ -1876,6 +1889,18 @@
           {
             "group": "moex_forwards_delayed",
             "priority": 52
+          }
+        ]
+      },
+      {
+        "priority": 51,
+        "prefix": "BSC_DLY",
+        "groups": [
+          {
+            "group": "santiago_stocks_delayed"
+          },
+          {
+            "group": "santiago_indices_delayed"
           }
         ]
       },
