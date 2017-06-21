@@ -1842,6 +1842,31 @@
         ]
       },
       {
+        "prefix": "GPW",
+        "perm": "gpw",
+        "prefix_no_perm": [
+          "GPW_DLY"
+        ],
+        "groups": [
+          {
+            "group": "warsaw_indices",
+            "priority": 70
+          },
+          {
+            "group": "warsaw_stocks",
+            "priority": 75
+          },
+          {
+            "group": "warsaw_futures",
+            "priority": 75
+          },
+          {
+            "group": "warsaw_continuous",
+            "priority": 75
+          }
+        ]
+      },
+      {
         "priority": 70,
         "prefix": "NZX_DLY",
         "groups": [
@@ -1852,6 +1877,28 @@
           {
             "group": "nzx_indices_delayed",
             "perm": "nzx_dly"
+          }
+        ]
+      },
+      {
+        "prefix": "GPW_DLY",
+        "perm": "sf_dly",
+        "groups": [
+          {
+            "group": "warsaw_indices_delayed",
+            "priority": 71
+          },
+          {
+            "group": "warsaw_stocks_delayed",
+            "priority": 76
+          },
+          {
+            "group": "warsaw_futures_delayed",
+            "priority": 76
+          },
+          {
+            "group": "warsaw_continuous_delayed",
+            "priority": 76
           }
         ]
       },
