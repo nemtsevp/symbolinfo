@@ -440,7 +440,7 @@
           },
           {
             "group": "euronext_primary_indices",
-            "perm": "sf_rt"
+            "perm": "euronext"
           },
           {
             "group": "euronext_stocks",
@@ -509,25 +509,28 @@
       {
         "priority": 40,
         "prefix": "EURONEXT_DLY",
-        "perm": "sf_dly",
         "groups": [
           {
-            "group": "euronext_indices_delayed"
+            "group": "euronext_indices_delayed",
+            "perm": "sf_dly"
           },
           {
             "group": "euronext_non_primary_indices_delayed"
           },
           {
             "group": "euronext_stocks_delayed",
-            "priority": 56
+            "priority": 56,
+            "perm": "sf_dly"
           },
           {
             "group": "euronext_futures_delayed",
-            "priority": 60
+            "priority": 60,
+            "perm": "sf_dly"
           },
           {
             "group": "euronext_continuous_delayed",
-            "priority": 60
+            "priority": 60,
+            "perm": "sf_dly"
           },
           {
             "group": "euronext_forwards_delayed",
@@ -1045,6 +1048,31 @@
         ]
       },
       {
+        "prefix": "MIL",
+        "prefix_no_perm": [
+          "MIL_DLY"
+        ],
+        "groups": [
+          {
+            "group": "milan_indices",
+            "priority": 40
+          },
+          {
+            "group": "milan_stocks",
+            "priority": 42
+          },
+          {
+            "group": "milan",
+            "priority": 50,
+            "perm": "permission_denied",
+            "prefix_no_perm": [
+              "CHXEUR"
+            ],
+            "skip_in_search": true
+          }
+        ]
+      },
+      {
         "prefix": "SIX_DLY",
         "perm": "sf_dly",
         "groups": [
@@ -1068,6 +1096,19 @@
           {
             "group": "istanbul_stocks_delayed",
             "priority": 46
+          }
+        ]
+      },
+      {
+        "prefix": "MIL_DLY",
+        "groups": [
+          {
+            "group": "milan_indices_delayed",
+            "priority": 41
+          },
+          {
+            "group": "milan_stocks_delayed",
+            "priority": 43
           }
         ]
       },
@@ -1737,20 +1778,6 @@
       },
       {
         "priority": 50,
-        "prefix": "MIL",
-        "perm": "permission_denied",
-        "prefix_no_perm": [
-          "CHXEUR"
-        ],
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "milan"
-          }
-        ]
-      },
-      {
-        "priority": 50,
         "prefix": "OSL",
         "perm": "permission_denied",
         "prefix_no_perm": [
@@ -2325,6 +2352,35 @@
         ]
       },
       {
+        "prefix": "GPW",
+        "perm": "gpw",
+        "prefix_no_perm": [
+          "GPW_DLY"
+        ],
+        "groups": [
+          {
+            "group": "warsaw_indices",
+            "priority": 70
+          },
+          {
+            "group": "warsaw_stocks",
+            "priority": 75
+          },
+          {
+            "group": "warsaw_futures",
+            "priority": 75
+          },
+          {
+            "group": "warsaw_continuous",
+            "priority": 75
+          },
+          {
+            "group": "warsaw_forwards",
+            "priority": 75
+          }
+        ]
+      },
+      {
         "priority": 70,
         "prefix": "NZX_DLY",
         "groups": [
@@ -2344,34 +2400,6 @@
           },
           {
             "group": "nzx_continuous_delayed"
-          }
-        ]
-      },
-      {
-        "prefix": "GPW",
-        "prefix_no_perm": [
-          "GPW_DLY"
-        ],
-        "groups": [
-          {
-            "group": "warsaw_indices",
-            "priority": 70
-          },
-          {
-            "group": "warsaw_stocks",
-            "priority": 75
-          },
-          {
-            "group": "warsaw_futures",
-            "priority": 75
-          },
-          {
-            "group": "warsaw_forwards",
-            "priority": 75
-          },
-          {
-            "group": "warsaw_continuous",
-            "priority": 75
           }
         ]
       },
@@ -2405,6 +2433,7 @@
       },
       {
         "prefix": "GPW_DLY",
+        "perm": "sf_dly",
         "groups": [
           {
             "group": "warsaw_indices_delayed",
@@ -2419,11 +2448,11 @@
             "priority": 76
           },
           {
-            "group": "warsaw_forwards_delayed",
+            "group": "warsaw_continuous_delayed",
             "priority": 76
           },
           {
-            "group": "warsaw_continuous_delayed",
+            "group": "warsaw_forwards_delayed",
             "priority": 76
           }
         ]
