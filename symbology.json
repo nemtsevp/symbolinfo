@@ -108,7 +108,7 @@
           {
             "group": "sp_indices_eod",
             "priority": 100,
-            "skip_in_search": false
+            "skip_in_search": true
           }
         ]
       },
@@ -133,18 +133,19 @@
       },
       {
         "prefix": "CBOE",
-        "skip_in_search": false,
         "groups": [
           {
             "group": "cboe_indices_delayed",
             "priority": 10,
+            "skip_in_search": false,
             "prefix_alias": [
               "CBOE_DLY"
             ]
           },
           {
             "group": "cboe_indices_eod",
-            "priority": 100
+            "priority": 100,
+            "skip_in_search": true
           },
           {
             "group": "cfe",
@@ -299,7 +300,7 @@
           {
             "group": "nasdaq_indices_eod",
             "priority": 100,
-            "skip_in_search": false
+            "skip_in_search": true
           }
         ]
       },
@@ -336,12 +337,12 @@
           {
             "group": "nyse_gif_indices_eod",
             "priority": 100,
-            "skip_in_search": false
+            "skip_in_search": true
           },
           {
             "group": "nyse_indices_eod",
             "priority": 100,
-            "skip_in_search": false
+            "skip_in_search": true
           }
         ]
       },
@@ -2186,7 +2187,7 @@
       {
         "priority": 100,
         "prefix": "RUSSEL",
-        "skip_in_search": false,
+        "skip_in_search": true,
         "groups": [
           {
             "group": "russel_indices_eod"
