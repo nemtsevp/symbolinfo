@@ -1792,16 +1792,36 @@
         ]
       },
       {
-        "priority": 50,
         "prefix": "VIE",
-        "perm": "permission_denied",
-        "prefix_no_perm": [
-          "CHXEUR"
-        ],
-        "skip_in_search": true,
         "groups": [
           {
-            "group": "vienna"
+            "group": "vienna",
+            "priority": 50,
+            "perm": "permission_denied",
+            "prefix_no_perm": [
+              "CHXEUR"
+            ],
+            "skip_in_search": true
+          },
+          {
+            "group": "vienna_stocks",
+            "priority": 75,
+            "prefix_no_perm": [
+              "VIE_DLY"
+            ],
+            "prefix_alias": [
+              "WB"
+            ]
+          },
+          {
+            "group": "vienna_indices",
+            "priority": 75,
+            "prefix_no_perm": [
+              "VIE_DLY"
+            ],
+            "prefix_alias": [
+              "WB"
+            ]
           }
         ]
       },
@@ -2493,6 +2513,21 @@
         "groups": [
           {
             "group": "chix_japan_delayed"
+          }
+        ]
+      },
+      {
+        "priority": 76,
+        "prefix": "VIE_DLY",
+        "prefix_alias": [
+          "WB_DLY"
+        ],
+        "groups": [
+          {
+            "group": "vienna_stocks_delayed"
+          },
+          {
+            "group": "vienna_indices_delayed"
           }
         ]
       },
