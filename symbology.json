@@ -2141,15 +2141,6 @@
       },
       {
         "priority": 100,
-        "prefix": "YAHOO",
-        "groups": [
-          {
-            "group": "yahoo"
-          }
-        ]
-      },
-      {
-        "priority": 100,
         "prefix": "ECRI",
         "groups": [
           {
@@ -4575,15 +4566,6 @@
         "groups": [
           {
             "group": "frkc"
-          }
-        ]
-      },
-      {
-        "priority": 100,
-        "prefix": "YAHOO",
-        "groups": [
-          {
-            "group": "yahoo"
           }
         ]
       },
