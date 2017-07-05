@@ -351,6 +351,23 @@
         ]
       },
       {
+        "prefix": "MIL",
+        "perm": "mil",
+        "prefix_no_perm": [
+          "MIL_DLY"
+        ],
+        "groups": [
+          {
+            "group": "milan_indices",
+            "priority": 40
+          },
+          {
+            "group": "milan_stocks",
+            "priority": 42
+          }
+        ]
+      },
+      {
         "prefix": "EURONEXT_DLY",
         "perm": "sf_dly",
         "groups": [
@@ -943,6 +960,10 @@
       {
         "priority": 48,
         "prefix": "CHXEUR",
+        "perm": "chxeur",
+        "prefix_no_perm": [
+          "CHXEUR_EOD"
+        ],
         "skip_in_search": false,
         "groups": [
           {
@@ -956,19 +977,6 @@
             ],
             "exchange_aliases": [
               "DUB"
-            ]
-          },
-          {
-            "group": "chix_europe_milan",
-            "exchange_for_display": "CHXEUR_MIL",
-            "prefix_alias": [
-              "CHXEUR_MIL"
-            ],
-            "exchange_aliases": [
-              "MIL"
-            ],
-            "group_alias": [
-              "milan"
             ]
           },
           {
@@ -1022,6 +1030,13 @@
             "exchange_for_display": "CHXEUR_LSE",
             "prefix_alias": [
               "CHXEUR_LSE"
+            ]
+          },
+          {
+            "group": "chix_europe_milan",
+            "exchange_for_display": "CHXEUR_MIL",
+            "prefix_alias": [
+              "CHXEUR_MIL"
             ]
           },
           {
@@ -1247,20 +1262,6 @@
       },
       {
         "priority": 50,
-        "prefix": "MIL",
-        "perm": "permission_denied",
-        "prefix_no_perm": [
-          "CHXEUR"
-        ],
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "milan"
-          }
-        ]
-      },
-      {
-        "priority": 50,
         "prefix": "OSL",
         "perm": "permission_denied",
         "prefix_no_perm": [
@@ -1300,6 +1301,19 @@
           },
           {
             "group": "mexico_stocks",
+            "priority": 53
+          }
+        ]
+      },
+      {
+        "prefix": "MIL_DLY",
+        "groups": [
+          {
+            "group": "milan_indices_delayed",
+            "priority": 51
+          },
+          {
+            "group": "milan_stocks_delayed",
             "priority": 53
           }
         ]
@@ -1811,6 +1825,19 @@
       },
       {
         "priority": 65,
+        "prefix": "SWB",
+        "perm": "swb",
+        "prefix_no_perm": [
+          "SWB_DLY"
+        ],
+        "groups": [
+          {
+            "group": "stuttgart_stocks"
+          }
+        ]
+      },
+      {
+        "priority": 65,
         "prefix": "NZX",
         "perm": "nzx",
         "prefix_no_perm": [
@@ -1822,6 +1849,16 @@
           },
           {
             "group": "nzx_indices"
+          }
+        ]
+      },
+      {
+        "priority": 66,
+        "prefix": "SWB_DLY",
+        "perm": "sf_dly",
+        "groups": [
+          {
+            "group": "stuttgart_stocks_delayed"
           }
         ]
       },
@@ -2054,6 +2091,49 @@
         "groups": [
           {
             "group": "sp_indices_eod"
+          }
+        ]
+      },
+      {
+        "priority": 100,
+        "prefix": "CHXEUR_EOD",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "chix_europe_dublin_eod"
+          },
+          {
+            "group": "chix_europe_omx_eod"
+          },
+          {
+            "group": "chix_europe_oslo_eod"
+          },
+          {
+            "group": "chix_europe_vienna_eod"
+          },
+          {
+            "group": "chix_europe_lse_in_eod"
+          },
+          {
+            "group": "chix_europe_lse_uk_eod"
+          },
+          {
+            "group": "chix_europe_milan_eod"
+          },
+          {
+            "group": "chix_europe_madrid_eod"
+          },
+          {
+            "group": "chix_europe_istanbul_eod"
+          },
+          {
+            "group": "chix_europe_swiss_eod"
+          },
+          {
+            "group": "chix_europe_euronext_eod"
+          },
+          {
+            "group": "chix_europe_frankfurt_eod"
           }
         ]
       },
@@ -2862,6 +2942,23 @@
         ]
       },
       {
+        "prefix": "MIL",
+        "perm": "mil",
+        "prefix_no_perm": [
+          "MIL_DLY"
+        ],
+        "groups": [
+          {
+            "group": "milan_indices",
+            "priority": 40
+          },
+          {
+            "group": "milan_stocks",
+            "priority": 42
+          }
+        ]
+      },
+      {
         "priority": 40,
         "prefix": "EURONEXT_DLY",
         "perm": "sf_dly",
@@ -3260,28 +3357,15 @@
         ]
       },
       {
-        "prefix": "MIL",
-        "perm": "mil",
-        "prefix_no_perm": [
-          "MIL_DLY"
-        ],
+        "prefix": "MIL_DLY",
         "groups": [
           {
-            "group": "milan_indices",
-            "priority": 40
+            "group": "milan_indices_delayed",
+            "priority": 41
           },
           {
-            "group": "milan_stocks",
-            "priority": 42
-          },
-          {
-            "group": "milan",
-            "priority": 50,
-            "perm": "permission_denied",
-            "prefix_no_perm": [
-              "CHXEUR"
-            ],
-            "skip_in_search": true
+            "group": "milan_stocks_delayed",
+            "priority": 43
           }
         ]
       },
@@ -3296,19 +3380,6 @@
           {
             "group": "swiss_stocks_delayed",
             "priority": 57
-          }
-        ]
-      },
-      {
-        "prefix": "MIL_DLY",
-        "groups": [
-          {
-            "group": "milan_indices_delayed",
-            "priority": 41
-          },
-          {
-            "group": "milan_stocks_delayed",
-            "priority": 43
           }
         ]
       },
@@ -3471,25 +3542,6 @@
             ]
           },
           {
-            "group": "chix_europe_milan",
-            "priority": 48,
-            "perm": "chxeur",
-            "prefix_no_perm": [
-              "CHXEUR_EOD"
-            ],
-            "exchange_for_display": "CHXEUR_MIL",
-            "skip_in_search": false,
-            "prefix_alias": [
-              "CHXEUR_MIL"
-            ],
-            "exchange_aliases": [
-              "MIL"
-            ],
-            "group_alias": [
-              "milan"
-            ]
-          },
-          {
             "group": "chix_europe_omx",
             "priority": 48,
             "perm": "chxeur",
@@ -3570,6 +3622,19 @@
             "skip_in_search": false,
             "prefix_alias": [
               "CHXEUR_LSE"
+            ]
+          },
+          {
+            "group": "chix_europe_milan",
+            "priority": 48,
+            "perm": "chxeur",
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "exchange_for_display": "CHXEUR_MIL",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CHXEUR_MIL"
             ]
           },
           {
@@ -4445,6 +4510,19 @@
       },
       {
         "priority": 65,
+        "prefix": "SWB",
+        "perm": "swb",
+        "prefix_no_perm": [
+          "SWB_DLY"
+        ],
+        "groups": [
+          {
+            "group": "stuttgart_stocks"
+          }
+        ]
+      },
+      {
+        "priority": 65,
         "prefix": "NZX",
         "perm": "nzx",
         "prefix_no_perm": [
@@ -4460,15 +4538,12 @@
         ]
       },
       {
-        "priority": 65,
-        "prefix": "SWB",
-        "perm": "swb",
-        "prefix_no_perm": [
-          "SWB_DLY"
-        ],
+        "priority": 66,
+        "prefix": "SWB_DLY",
+        "perm": "sf_dly",
         "groups": [
           {
-            "group": "stuttgart_stocks"
+            "group": "stuttgart_stocks_delayed"
           }
         ]
       },
@@ -4485,16 +4560,6 @@
           },
           {
             "group": "singapore_continuous_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 66,
-        "prefix": "SWB_DLY",
-        "perm": "sf_dly",
-        "groups": [
-          {
-            "group": "stuttgart_stocks_delayed"
           }
         ]
       },
@@ -4674,6 +4739,49 @@
       },
       {
         "priority": 100,
+        "prefix": "CHXEUR_EOD",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "chix_europe_dublin_eod"
+          },
+          {
+            "group": "chix_europe_omx_eod"
+          },
+          {
+            "group": "chix_europe_oslo_eod"
+          },
+          {
+            "group": "chix_europe_vienna_eod"
+          },
+          {
+            "group": "chix_europe_lse_in_eod"
+          },
+          {
+            "group": "chix_europe_lse_uk_eod"
+          },
+          {
+            "group": "chix_europe_milan_eod"
+          },
+          {
+            "group": "chix_europe_madrid_eod"
+          },
+          {
+            "group": "chix_europe_istanbul_eod"
+          },
+          {
+            "group": "chix_europe_swiss_eod"
+          },
+          {
+            "group": "chix_europe_euronext_eod"
+          },
+          {
+            "group": "chix_europe_frankfurt_eod"
+          }
+        ]
+      },
+      {
+        "priority": 100,
         "prefix": "OKCOIN",
         "skip_in_search": false,
         "groups": [
@@ -4760,49 +4868,6 @@
         "groups": [
           {
             "group": "ecri"
-          }
-        ]
-      },
-      {
-        "priority": 100,
-        "prefix": "CHXEUR_EOD",
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "chix_europe_dublin_eod"
-          },
-          {
-            "group": "chix_europe_omx_eod"
-          },
-          {
-            "group": "chix_europe_oslo_eod"
-          },
-          {
-            "group": "chix_europe_vienna_eod"
-          },
-          {
-            "group": "chix_europe_lse_in_eod"
-          },
-          {
-            "group": "chix_europe_lse_uk_eod"
-          },
-          {
-            "group": "chix_europe_milan_eod"
-          },
-          {
-            "group": "chix_europe_madrid_eod"
-          },
-          {
-            "group": "chix_europe_istanbul_eod"
-          },
-          {
-            "group": "chix_europe_swiss_eod"
-          },
-          {
-            "group": "chix_europe_euronext_eod"
-          },
-          {
-            "group": "chix_europe_frankfurt_eod"
           }
         ]
       },
