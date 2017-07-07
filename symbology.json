@@ -2925,6 +2925,12 @@
         "groups": [
           {
             "group": "lse_uk"
+          },
+          {
+            "group": "lse_uk_test"
+          },
+          {
+            "group": "lse_uk_aim"
           }
         ]
       },
@@ -3821,6 +3827,12 @@
         "groups": [
           {
             "group": "lse_uk_delayed"
+          },
+          {
+            "group": "lse_uk_test_delayed"
+          },
+          {
+            "group": "lse_uk_aim_delayed"
           }
         ]
       },
