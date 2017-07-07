@@ -2826,19 +2826,16 @@
         ]
       },
       {
-        "priority": 20,
         "prefix": "NASDAQ",
-        "prefix_no_perm": [
-          "BATS"
-        ],
         "groups": [
           {
             "group": "nasdaq_idc",
+            "priority": 20,
             "search_boost": 1.8,
-            "perm": "nasdaq"
-          },
-          {
-            "group": "nasdaq_idc_test"
+            "perm": "nasdaq",
+            "prefix_no_perm": [
+              "BATS"
+            ]
           },
           {
             "group": "nasdaq_indices_eod",
@@ -2849,36 +2846,30 @@
       },
       {
         "priority": 21,
+        "search_boost": 1.8,
         "prefix": "AMEX",
+        "perm": "amex",
         "prefix_no_perm": [
           "BATS"
         ],
         "exchange_for_display": "NYSE ARCA & MKT",
         "groups": [
           {
-            "group": "amex_idc",
-            "search_boost": 1.8,
-            "perm": "amex"
-          },
-          {
-            "group": "amex_idc_test"
+            "group": "amex_idc"
           }
         ]
       },
       {
-        "priority": 22,
         "prefix": "NYSE",
-        "prefix_no_perm": [
-          "BATS"
-        ],
         "groups": [
           {
             "group": "nyse_idc",
+            "priority": 22,
             "search_boost": 1.8,
-            "perm": "nyse"
-          },
-          {
-            "group": "nyse_idc_test"
+            "perm": "nyse",
+            "prefix_no_perm": [
+              "BATS"
+            ]
           },
           {
             "group": "nyse_gif_indices_eod",
@@ -3003,7 +2994,6 @@
       {
         "priority": 40,
         "prefix": "LSE",
-        "perm": "lse",
         "prefix_no_perm": [
           "LSE_DLY"
         ],
@@ -3012,7 +3002,14 @@
         ],
         "groups": [
           {
-            "group": "lse_uk"
+            "group": "lse_uk",
+            "perm": "lse"
+          },
+          {
+            "group": "lse_uk_test"
+          },
+          {
+            "group": "lse_uk_aim"
           }
         ]
       },
@@ -3030,18 +3027,26 @@
         ]
       },
       {
+        "priority": 40,
         "prefix": "MIL",
-        "perm": "mil",
         "prefix_no_perm": [
           "MIL_DLY"
         ],
         "groups": [
           {
             "group": "milan_indices",
-            "priority": 40
+            "perm": "mil"
+          },
+          {
+            "group": "milan_indices_test"
           },
           {
             "group": "milan_stocks",
+            "priority": 42,
+            "perm": "mil"
+          },
+          {
+            "group": "milan_stocks_test",
             "priority": 42
           }
         ]
@@ -4208,6 +4213,12 @@
         "groups": [
           {
             "group": "lse_uk_delayed"
+          },
+          {
+            "group": "lse_uk_test_delayed"
+          },
+          {
+            "group": "lse_uk_aim_delayed"
           }
         ]
       },
