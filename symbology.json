@@ -334,6 +334,9 @@
         "groups": [
           {
             "group": "lse_uk"
+          },
+          {
+            "group": "lse_uk_aim"
           }
         ]
       },
@@ -1107,6 +1110,9 @@
         "groups": [
           {
             "group": "lse_uk_delayed"
+          },
+          {
+            "group": "lse_uk_aim_delayed"
           }
         ]
       },
@@ -2994,6 +3000,7 @@
       {
         "priority": 40,
         "prefix": "LSE",
+        "perm": "lse",
         "prefix_no_perm": [
           "LSE_DLY"
         ],
@@ -3002,14 +3009,13 @@
         ],
         "groups": [
           {
-            "group": "lse_uk",
-            "perm": "lse"
-          },
-          {
-            "group": "lse_uk_test"
+            "group": "lse_uk"
           },
           {
             "group": "lse_uk_aim"
+          },
+          {
+            "group": "lse_uk_test"
           }
         ]
       },
@@ -4215,10 +4221,10 @@
             "group": "lse_uk_delayed"
           },
           {
-            "group": "lse_uk_test_delayed"
+            "group": "lse_uk_aim_delayed"
           },
           {
-            "group": "lse_uk_aim_delayed"
+            "group": "lse_uk_test_delayed"
           }
         ]
       },
