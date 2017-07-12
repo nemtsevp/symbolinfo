@@ -1812,6 +1812,7 @@
       {
         "priority": 60,
         "prefix": "LSE_EOD",
+        "skip_in_search": true,
         "groups": [
           {
             "group": "lse_uk_eod"
@@ -1824,6 +1825,7 @@
       {
         "priority": 60,
         "prefix": "LSIN_EOD",
+        "skip_in_search": true,
         "groups": [
           {
             "group": "lse_in_eod"
@@ -1864,6 +1866,7 @@
       },
       {
         "prefix": "MIL_EOD",
+        "skip_in_search": true,
         "groups": [
           {
             "group": "milan_indices_eod",
@@ -4919,6 +4922,7 @@
       {
         "priority": 60,
         "prefix": "LSE_EOD",
+        "skip_in_search": true,
         "groups": [
           {
             "group": "lse_uk_eod"
@@ -4931,6 +4935,7 @@
       {
         "priority": 60,
         "prefix": "LSIN_EOD",
+        "skip_in_search": true,
         "groups": [
           {
             "group": "lse_in_eod"
@@ -4980,6 +4985,7 @@
       },
       {
         "prefix": "MIL_EOD",
+        "skip_in_search": true,
         "groups": [
           {
             "group": "milan_indices_eod",
