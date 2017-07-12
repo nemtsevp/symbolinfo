@@ -1107,6 +1107,10 @@
       {
         "priority": 50,
         "prefix": "LSE_DLY",
+        "perm": "lse_dly",
+        "prefix_no_perm": [
+          "LSE_EOD"
+        ],
         "groups": [
           {
             "group": "lse_uk_delayed"
@@ -1119,6 +1123,10 @@
       {
         "priority": 50,
         "prefix": "LSIN_DLY",
+        "perm": "lsin_dly",
+        "prefix_no_perm": [
+          "LSIN_EOD"
+        ],
         "groups": [
           {
             "group": "lse_in_delayed"
@@ -1313,6 +1321,10 @@
       },
       {
         "prefix": "MIL_DLY",
+        "perm": "mil_dly",
+        "prefix_no_perm": [
+          "MIL_EOD"
+        ],
         "groups": [
           {
             "group": "milan_indices_delayed",
@@ -1798,6 +1810,27 @@
         ]
       },
       {
+        "priority": 60,
+        "prefix": "LSE_EOD",
+        "groups": [
+          {
+            "group": "lse_uk_eod"
+          },
+          {
+            "group": "lse_uk_aim_eod"
+          }
+        ]
+      },
+      {
+        "priority": 60,
+        "prefix": "LSIN_EOD",
+        "groups": [
+          {
+            "group": "lse_in_eod"
+          }
+        ]
+      },
+      {
         "priority": 61,
         "prefix": "TFX_DLY",
         "perm": "sf_dly",
@@ -1826,6 +1859,19 @@
           },
           {
             "group": "tocom_grain_continuous_delayed"
+          }
+        ]
+      },
+      {
+        "prefix": "MIL_EOD",
+        "groups": [
+          {
+            "group": "milan_indices_eod",
+            "priority": 61
+          },
+          {
+            "group": "milan_stocks_eod",
+            "priority": 63
           }
         ]
       },
@@ -3369,19 +3415,6 @@
         ]
       },
       {
-        "prefix": "MIL_DLY",
-        "groups": [
-          {
-            "group": "milan_indices_delayed",
-            "priority": 41
-          },
-          {
-            "group": "milan_stocks_delayed",
-            "priority": 43
-          }
-        ]
-      },
-      {
         "prefix": "SIX_DLY",
         "perm": "sf_dly",
         "groups": [
@@ -3830,6 +3863,10 @@
       {
         "priority": 50,
         "prefix": "LSE_DLY",
+        "perm": "lse_dly",
+        "prefix_no_perm": [
+          "LSE_EOD"
+        ],
         "groups": [
           {
             "group": "lse_uk_delayed"
@@ -3845,6 +3882,10 @@
       {
         "priority": 50,
         "prefix": "LSIN_DLY",
+        "perm": "lsin_dly",
+        "prefix_no_perm": [
+          "LSIN_EOD"
+        ],
         "groups": [
           {
             "group": "lse_in_delayed"
@@ -4006,6 +4047,23 @@
           },
           {
             "group": "mexico_stocks",
+            "priority": 53
+          }
+        ]
+      },
+      {
+        "prefix": "MIL_DLY",
+        "perm": "mil_dly",
+        "prefix_no_perm": [
+          "MIL_EOD"
+        ],
+        "groups": [
+          {
+            "group": "milan_indices_delayed",
+            "priority": 51
+          },
+          {
+            "group": "milan_stocks_delayed",
             "priority": 53
           }
         ]
@@ -4495,6 +4553,27 @@
         ]
       },
       {
+        "priority": 60,
+        "prefix": "LSE_EOD",
+        "groups": [
+          {
+            "group": "lse_uk_eod"
+          },
+          {
+            "group": "lse_uk_aim_eod"
+          }
+        ]
+      },
+      {
+        "priority": 60,
+        "prefix": "LSIN_EOD",
+        "groups": [
+          {
+            "group": "lse_in_eod"
+          }
+        ]
+      },
+      {
         "priority": 61,
         "prefix": "TFX_DLY",
         "perm": "sf_dly",
@@ -4523,6 +4602,19 @@
           },
           {
             "group": "tocom_grain_continuous_delayed"
+          }
+        ]
+      },
+      {
+        "prefix": "MIL_EOD",
+        "groups": [
+          {
+            "group": "milan_indices_eod",
+            "priority": 61
+          },
+          {
+            "group": "milan_stocks_eod",
+            "priority": 63
           }
         ]
       },
