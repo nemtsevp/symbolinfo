@@ -328,9 +328,6 @@
         "prefix_no_perm": [
           "LSE_DLY"
         ],
-        "prefix_alias": [
-          "LSE_EOD"
-        ],
         "groups": [
           {
             "group": "lse_uk"
@@ -3053,31 +3050,40 @@
         "prefix_no_perm": [
           "LSE_DLY"
         ],
-        "prefix_alias": [
-          "LSE_EOD"
-        ],
         "groups": [
           {
             "group": "lse_uk"
           },
           {
-            "group": "lse_uk_aim"
+            "group": "lse_uk_aim",
+            "prefix_alias": [
+              "LSE_EOD"
+            ]
           },
           {
-            "group": "lse_uk_test"
+            "group": "lse_uk_test",
+            "prefix_alias": [
+              "LSE_EOD"
+            ]
           }
         ]
       },
       {
         "priority": 40,
         "prefix": "LSIN",
-        "perm": "lsin",
         "prefix_no_perm": [
           "LSIN_DLY"
         ],
         "groups": [
           {
-            "group": "lse_in"
+            "group": "lse_in",
+            "perm": "lsin"
+          },
+          {
+            "group": "lse_in_test"
+          },
+          {
+            "group": "lse_in_eur"
           }
         ]
       },
@@ -4288,13 +4294,16 @@
       {
         "priority": 50,
         "prefix": "LSIN_DLY",
-        "perm": "lsin_dly",
-        "prefix_no_perm": [
-          "LSIN_EOD"
-        ],
         "groups": [
           {
-            "group": "lse_in_delayed"
+            "group": "lse_in_delayed",
+            "perm": "lsin_dly",
+            "prefix_no_perm": [
+              "LSIN_EOD"
+            ]
+          },
+          {
+            "group": "lse_in_test_delayed"
           }
         ]
       },
