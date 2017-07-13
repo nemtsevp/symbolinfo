@@ -328,9 +328,6 @@
         "prefix_no_perm": [
           "LSE_DLY"
         ],
-        "prefix_alias": [
-          "LSE_EOD"
-        ],
         "groups": [
           {
             "group": "lse_uk"
@@ -2974,18 +2971,21 @@
         "prefix_no_perm": [
           "LSE_DLY"
         ],
-        "prefix_alias": [
-          "LSE_EOD"
-        ],
         "groups": [
           {
             "group": "lse_uk"
           },
           {
-            "group": "lse_uk_aim"
+            "group": "lse_uk_aim",
+            "prefix_alias": [
+              "LSE_EOD"
+            ]
           },
           {
-            "group": "lse_uk_test"
+            "group": "lse_uk_test",
+            "prefix_alias": [
+              "LSE_EOD"
+            ]
           }
         ]
       },
