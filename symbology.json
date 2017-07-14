@@ -347,6 +347,9 @@
         "groups": [
           {
             "group": "lse_in"
+          },
+          {
+            "group": "lse_in_eur"
           }
         ]
       },
@@ -1127,6 +1130,9 @@
         "groups": [
           {
             "group": "lse_in_delayed"
+          },
+          {
+            "group": "lse_in_eur_delayed"
           }
         ]
       },
@@ -1826,6 +1832,9 @@
         "groups": [
           {
             "group": "lse_in_eod"
+          },
+          {
+            "group": "lse_in_eur_eod"
           }
         ]
       },
@@ -3071,19 +3080,19 @@
       {
         "priority": 40,
         "prefix": "LSIN",
+        "perm": "lsin",
         "prefix_no_perm": [
           "LSIN_DLY"
         ],
         "groups": [
           {
-            "group": "lse_in",
-            "perm": "lsin"
-          },
-          {
-            "group": "lse_in_test"
+            "group": "lse_in"
           },
           {
             "group": "lse_in_eur"
+          },
+          {
+            "group": "lse_in_test"
           }
         ]
       },
@@ -4294,19 +4303,19 @@
       {
         "priority": 50,
         "prefix": "LSIN_DLY",
+        "perm": "lsin_dly",
+        "prefix_no_perm": [
+          "LSIN_EOD"
+        ],
         "groups": [
           {
-            "group": "lse_in_delayed",
-            "perm": "lsin_dly",
-            "prefix_no_perm": [
-              "LSIN_EOD"
-            ]
-          },
-          {
-            "group": "lse_in_test_delayed"
+            "group": "lse_in_delayed"
           },
           {
             "group": "lse_in_eur_delayed"
+          },
+          {
+            "group": "lse_in_test_delayed"
           }
         ]
       },
@@ -4951,6 +4960,9 @@
         "groups": [
           {
             "group": "lse_in_eod"
+          },
+          {
+            "group": "lse_in_eur_eod"
           }
         ]
       },
