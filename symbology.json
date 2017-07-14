@@ -347,6 +347,9 @@
         "groups": [
           {
             "group": "lse_in"
+          },
+          {
+            "group": "lse_in_eur"
           }
         ]
       },
@@ -1127,6 +1130,9 @@
         "groups": [
           {
             "group": "lse_in_delayed"
+          },
+          {
+            "group": "lse_in_eur_delayed"
           }
         ]
       },
@@ -1826,6 +1832,9 @@
         "groups": [
           {
             "group": "lse_in_eod"
+          },
+          {
+            "group": "lse_in_eur_eod"
           }
         ]
       },
@@ -2909,6 +2918,9 @@
         "groups": [
           {
             "group": "lse_in"
+          },
+          {
+            "group": "lse_in_eur"
           }
         ]
       },
@@ -3689,6 +3701,9 @@
         "groups": [
           {
             "group": "lse_in_delayed"
+          },
+          {
+            "group": "lse_in_eur_delayed"
           }
         ]
       },
@@ -4388,6 +4403,9 @@
         "groups": [
           {
             "group": "lse_in_eod"
+          },
+          {
+            "group": "lse_in_eur_eod"
           }
         ]
       },
