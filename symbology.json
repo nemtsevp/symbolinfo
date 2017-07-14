@@ -2866,6 +2866,16 @@
         ]
       },
       {
+        "priority": 12,
+        "prefix": "BITTREX",
+        "skip_in_search": false,
+        "groups": [
+          {
+            "group": "bittrex"
+          }
+        ]
+      },
+      {
         "priority": 13,
         "prefix": "FOREXCOM",
         "exchange_for_display": "FOREX.com",
