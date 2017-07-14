@@ -4304,6 +4304,9 @@
           },
           {
             "group": "lse_in_test_delayed"
+          },
+          {
+            "group": "lse_in_eur_delayed"
           }
         ]
       },
