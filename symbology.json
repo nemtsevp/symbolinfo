@@ -3103,6 +3103,9 @@
           },
           {
             "group": "lse_in_test"
+          },
+          {
+            "group": "lse_in_eur_test"
           }
         ]
       },
@@ -4326,6 +4329,9 @@
           },
           {
             "group": "lse_in_test_delayed"
+          },
+          {
+            "group": "lse_in_eur_test_delayed"
           }
         ]
       },
