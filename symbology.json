@@ -2866,16 +2866,6 @@
         ]
       },
       {
-        "priority": 12,
-        "prefix": "BITTREX",
-        "skip_in_search": false,
-        "groups": [
-          {
-            "group": "bittrex"
-          }
-        ]
-      },
-      {
         "priority": 13,
         "prefix": "FOREXCOM",
         "exchange_for_display": "FOREX.com",
@@ -2883,6 +2873,25 @@
         "groups": [
           {
             "group": "gain"
+          }
+        ]
+      },
+      {
+        "priority": 14,
+        "prefix": "IG",
+        "groups": [
+          {
+            "group": "ig"
+          }
+        ]
+      },
+      {
+        "priority": 14,
+        "prefix": "BITTREX",
+        "skip_in_search": false,
+        "groups": [
+          {
+            "group": "bittrex"
           }
         ]
       },
