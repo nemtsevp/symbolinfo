@@ -2405,15 +2405,6 @@
       },
       {
         "priority": 112,
-        "prefix": "GOCIO",
-        "groups": [
-          {
-            "group": "GOCIO"
-          }
-        ]
-      },
-      {
-        "priority": 112,
         "prefix": "796",
         "groups": [
           {
@@ -2490,6 +2481,15 @@
         "groups": [
           {
             "group": "MTGOX"
+          }
+        ]
+      },
+      {
+        "priority": 120,
+        "prefix": "GOCIO",
+        "groups": [
+          {
+            "group": "GOCIO"
           }
         ]
       },
@@ -4740,6 +4740,12 @@
             "perm": "bovespa_futures"
           },
           {
+            "group": "bovespa_stocks"
+          },
+          {
+            "group": "bovespa_soma_stocks"
+          },
+          {
             "group": "bovespa_forwards"
           }
         ]
@@ -4760,6 +4766,12 @@
           },
           {
             "group": "bovespa_continuous_delayed"
+          },
+          {
+            "group": "bovespa_stocks_delayed"
+          },
+          {
+            "group": "bovespa_soma_stocks_delayed"
           },
           {
             "group": "bovespa_forwards_delayed"
@@ -5795,15 +5807,6 @@
       },
       {
         "priority": 112,
-        "prefix": "GOCIO",
-        "groups": [
-          {
-            "group": "GOCIO"
-          }
-        ]
-      },
-      {
-        "priority": 112,
         "prefix": "796",
         "groups": [
           {
@@ -5880,6 +5883,15 @@
         "groups": [
           {
             "group": "MTGOX"
+          }
+        ]
+      },
+      {
+        "priority": 120,
+        "prefix": "GOCIO",
+        "groups": [
+          {
+            "group": "GOCIO"
           }
         ]
       },
