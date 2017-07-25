@@ -4757,6 +4757,27 @@
         ]
       },
       {
+        "prefix": "TASE",
+        "perm": "tase",
+        "prefix_no_perm": [
+          "TASE_DLY"
+        ],
+        "groups": [
+          {
+            "group": "telaviv_indices",
+            "priority": 70
+          },
+          {
+            "group": "telaviv_stocks",
+            "priority": 72
+          },
+          {
+            "group": "telaviv_futures",
+            "priority": 75
+          }
+        ]
+      },
+      {
         "prefix": "GPW_DLY",
         "perm": "sf_dly",
         "groups": [
@@ -4774,6 +4795,24 @@
           },
           {
             "group": "warsaw_continuous_delayed",
+            "priority": 76
+          }
+        ]
+      },
+      {
+        "prefix": "TASE_DLY",
+        "perm": "sf_dly",
+        "groups": [
+          {
+            "group": "telaviv_indices_delayed",
+            "priority": 71
+          },
+          {
+            "group": "telaviv_stocks_delayed",
+            "priority": 74
+          },
+          {
+            "group": "telaviv_futures_delayed",
             "priority": 76
           }
         ]
