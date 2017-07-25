@@ -4340,15 +4340,12 @@
       },
       {
         "priority": 50,
+        "search_boost": 2.0,
         "prefix": "FX_IDC",
         "exchange_for_display": "IDC",
         "groups": [
           {
-            "group": "forex",
-            "search_boost": 2.0
-          },
-          {
-            "group": "forex_forwards"
+            "group": "forex"
           }
         ]
       },
