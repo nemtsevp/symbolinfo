@@ -4287,19 +4287,6 @@
         ]
       },
       {
-        "prefix": "BVL",
-        "groups": [
-          {
-            "group": "lima_indices",
-            "priority": 49
-          },
-          {
-            "group": "lima_stocks",
-            "priority": 50
-          }
-        ]
-      },
-      {
         "prefix": "SZSE_DLY",
         "groups": [
           {
@@ -4552,6 +4539,15 @@
         ]
       },
       {
+        "priority": 50,
+        "prefix": "BVL",
+        "groups": [
+          {
+            "group": "lima_stocks"
+          }
+        ]
+      },
+      {
         "priority": 51,
         "prefix": "BCBA_DLY",
         "groups": [
@@ -4684,9 +4680,6 @@
         "groups": [
           {
             "group": "lima_stocks_delayed"
-          },
-          {
-            "group": "lima_indices_delayed"
           }
         ]
       },
