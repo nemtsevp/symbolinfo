@@ -4326,6 +4326,32 @@
         ]
       },
       {
+        "prefix": "BVC",
+        "groups": [
+          {
+            "group": "colombia_indices",
+            "priority": 49
+          },
+          {
+            "group": "colombia_stocks",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "prefix": "EGX",
+        "groups": [
+          {
+            "group": "egyptian_indices",
+            "priority": 49
+          },
+          {
+            "group": "egyptian_stocks",
+            "priority": 50
+          }
+        ]
+      },
+      {
         "priority": 50,
         "search_boost": 2.0,
         "prefix": "FX_IDC",
@@ -4704,6 +4730,30 @@
           },
           {
             "group": "luxembourg_indices_delayed"
+          }
+        ]
+      },
+      {
+        "priority": 51,
+        "prefix": "BVC_DLY",
+        "groups": [
+          {
+            "group": "colombia_stocks_delayed"
+          },
+          {
+            "group": "colombia_indices_delayed"
+          }
+        ]
+      },
+      {
+        "priority": 51,
+        "prefix": "EGX_DLY",
+        "groups": [
+          {
+            "group": "egyptian_stocks_delayed"
+          },
+          {
+            "group": "egyptian_indices_delayed"
           }
         ]
       },
