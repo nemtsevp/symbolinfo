@@ -3088,21 +3088,15 @@
         "prefix_no_perm": [
           "LSE_DLY"
         ],
+        "prefix_alias": [
+          "LSE_EOD"
+        ],
         "groups": [
           {
             "group": "lse_uk"
           },
           {
-            "group": "lse_uk_aim",
-            "prefix_alias": [
-              "LSE_EOD"
-            ]
-          },
-          {
-            "group": "lse_uk_test",
-            "prefix_alias": [
-              "LSE_EOD"
-            ]
+            "group": "lse_uk_aim"
           }
         ]
       },
@@ -3119,36 +3113,22 @@
           },
           {
             "group": "lse_in_eur"
-          },
-          {
-            "group": "lse_in_test"
-          },
-          {
-            "group": "lse_in_eur_test"
           }
         ]
       },
       {
-        "priority": 40,
         "prefix": "MIL",
+        "perm": "mil",
         "prefix_no_perm": [
           "MIL_DLY"
         ],
         "groups": [
           {
             "group": "milan_indices",
-            "perm": "mil"
-          },
-          {
-            "group": "milan_indices_test"
+            "priority": 40
           },
           {
             "group": "milan_stocks",
-            "priority": 42,
-            "perm": "mil"
-          },
-          {
-            "group": "milan_stocks_test",
             "priority": 42
           }
         ]
@@ -3788,10 +3768,6 @@
           {
             "group": "tokyo_stocks",
             "priority": 47
-          },
-          {
-            "group": "tokyo_stocks_test",
-            "priority": 47
           }
         ]
       },
@@ -4375,9 +4351,6 @@
           },
           {
             "group": "lse_uk_aim_delayed"
-          },
-          {
-            "group": "lse_uk_test_delayed"
           }
         ]
       },
@@ -4394,12 +4367,6 @@
           },
           {
             "group": "lse_in_eur_delayed"
-          },
-          {
-            "group": "lse_in_test_delayed"
-          },
-          {
-            "group": "lse_in_eur_test_delayed"
           }
         ]
       },
@@ -4647,10 +4614,6 @@
             "group": "moex_currency",
             "priority": 52,
             "perm": "moex_currency"
-          },
-          {
-            "group": "moex_test",
-            "priority": 52
           },
           {
             "group": "moex_forwards",
