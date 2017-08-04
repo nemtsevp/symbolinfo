@@ -211,7 +211,7 @@
       {
         "priority": 14,
         "prefix": "BITTREX",
-        "skip_in_search": true,
+        "skip_in_search": false,
         "groups": [
           {
             "group": "bittrex"
@@ -1482,7 +1482,10 @@
         ],
         "groups": [
           {
-            "group": "bovespa"
+            "group": "bovespa_stocks"
+          },
+          {
+            "group": "bovespa_soma_stocks"
           },
           {
             "group": "bovespa_indices"
@@ -1503,7 +1506,10 @@
         "perm": "bovespa",
         "groups": [
           {
-            "group": "bovespa_delayed"
+            "group": "bovespa_stocks_delayed"
+          },
+          {
+            "group": "bovespa_soma_stocks_delayed"
           },
           {
             "group": "bovespa_indices_delayed"
@@ -3031,40 +3037,38 @@
       {
         "priority": 39,
         "prefix": "EURONEXT",
-        "perm": "euronext_indices",
         "prefix_no_perm": [
           "EURONEXT_DLY"
         ],
         "groups": [
           {
-            "group": "euronext_indices"
+            "group": "euronext_indices",
+            "perm": "euronext_indices"
           },
           {
             "group": "euronext_non_primary_indices"
           },
           {
-            "group": "euronext_primary_indices",
-            "perm": "euronext"
+            "group": "euronext_primary_indices"
           },
           {
             "group": "euronext_stocks",
             "priority": 55,
-            "perm": "euronext"
+            "perm": "euronext_stocks"
           },
           {
             "group": "euronext_futures",
             "priority": 59,
-            "perm": "euronext"
+            "perm": "euronext_futures"
           },
           {
             "group": "euronext_continuous",
             "priority": 59,
-            "perm": "euronext"
+            "perm": "euronext_futures"
           },
           {
             "group": "euronext_forwards",
-            "priority": 59,
-            "perm": "euronext"
+            "priority": 59
           }
         ]
       },
@@ -4402,14 +4406,14 @@
       },
       {
         "prefix": "SGX",
-        "prefix_alias": [
-          "SGX_DLY"
-        ],
         "groups": [
           {
             "group": "singapore_indices",
             "priority": 50,
-            "perm": "sf_rt"
+            "perm": "sf_rt",
+            "prefix_alias": [
+              "SGX_DLY"
+            ]
           },
           {
             "group": "singapore_stocks",
@@ -4430,7 +4434,10 @@
           {
             "group": "singapore_fx_futures",
             "priority": 60,
-            "perm": "sf_rt"
+            "perm": "sf_rt",
+            "prefix_alias": [
+              "SGX_DLY"
+            ]
           },
           {
             "group": "singapore_continuous",
@@ -4443,7 +4450,10 @@
           {
             "group": "singapore_fx_continuous",
             "priority": 60,
-            "perm": "sf_rt"
+            "perm": "sf_rt",
+            "prefix_alias": [
+              "SGX_DLY"
+            ]
           },
           {
             "group": "singapore_forwards",
@@ -4729,7 +4739,10 @@
         ],
         "groups": [
           {
-            "group": "bovespa"
+            "group": "bovespa_stocks"
+          },
+          {
+            "group": "bovespa_soma_stocks"
           },
           {
             "group": "bovespa_indices"
@@ -4743,12 +4756,6 @@
             "perm": "bovespa_futures"
           },
           {
-            "group": "bovespa_stocks"
-          },
-          {
-            "group": "bovespa_soma_stocks"
-          },
-          {
             "group": "bovespa_forwards"
           }
         ]
@@ -4759,7 +4766,10 @@
         "perm": "bovespa",
         "groups": [
           {
-            "group": "bovespa_delayed"
+            "group": "bovespa_stocks_delayed"
+          },
+          {
+            "group": "bovespa_soma_stocks_delayed"
           },
           {
             "group": "bovespa_indices_delayed"
@@ -4769,12 +4779,6 @@
           },
           {
             "group": "bovespa_continuous_delayed"
-          },
-          {
-            "group": "bovespa_stocks_delayed"
-          },
-          {
-            "group": "bovespa_soma_stocks_delayed"
           },
           {
             "group": "bovespa_forwards_delayed"
@@ -4902,16 +4906,6 @@
           },
           {
             "group": "mexico_indices"
-          },
-          {
-            "group": "mexico_stocks_delayed",
-            "priority": 54,
-            "perm": "sf_dly"
-          },
-          {
-            "group": "mexico_indices_delayed",
-            "priority": 54,
-            "perm": "sf_dly"
           }
         ]
       },
@@ -4937,6 +4931,22 @@
           },
           {
             "group": "bse_forwards_delayed"
+          }
+        ]
+      },
+      {
+        "priority": 54,
+        "prefix": "BMV_DLY",
+        "perm": "sf_dly",
+        "prefix_no_perm": [
+          "BMV_DLY"
+        ],
+        "groups": [
+          {
+            "group": "mexico_stocks_delayed"
+          },
+          {
+            "group": "mexico_indices_delayed"
           }
         ]
       },
@@ -5281,9 +5291,6 @@
             "group": "nzx_futures"
           },
           {
-            "group": "nzx_forwards"
-          },
-          {
             "group": "nzx_continuous"
           }
         ]
@@ -5341,9 +5348,6 @@
           },
           {
             "group": "nzx_futures_delayed"
-          },
-          {
-            "group": "nzx_forwards_delayed"
           },
           {
             "group": "nzx_continuous_delayed"
@@ -6159,7 +6163,10 @@
         ],
         "groups": [
           {
-            "group": "bovespa"
+            "group": "bovespa_stocks"
+          },
+          {
+            "group": "bovespa_soma_stocks"
           },
           {
             "group": "bovespa_futures"
@@ -6177,7 +6184,10 @@
             "group": "bovespa_futures_delayed"
           },
           {
-            "group": "bovespa_delayed"
+            "group": "bovespa_stocks_delayed"
+          },
+          {
+            "group": "bovespa_soma_stocks_delayed"
           }
         ]
       }
