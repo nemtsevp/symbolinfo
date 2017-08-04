@@ -211,7 +211,7 @@
       {
         "priority": 14,
         "prefix": "BITTREX",
-        "skip_in_search": true,
+        "skip_in_search": false,
         "groups": [
           {
             "group": "bittrex"
@@ -1482,7 +1482,10 @@
         ],
         "groups": [
           {
-            "group": "bovespa"
+            "group": "bovespa_stocks"
+          },
+          {
+            "group": "bovespa_soma_stocks"
           },
           {
             "group": "bovespa_indices"
@@ -1503,7 +1506,10 @@
         "perm": "bovespa",
         "groups": [
           {
-            "group": "bovespa_delayed"
+            "group": "bovespa_stocks_delayed"
+          },
+          {
+            "group": "bovespa_soma_stocks_delayed"
           },
           {
             "group": "bovespa_indices_delayed"
@@ -2792,7 +2798,7 @@
       {
         "priority": 14,
         "prefix": "BITTREX",
-        "skip_in_search": true,
+        "skip_in_search": false,
         "groups": [
           {
             "group": "bittrex"
@@ -4063,7 +4069,10 @@
         ],
         "groups": [
           {
-            "group": "bovespa"
+            "group": "bovespa_stocks"
+          },
+          {
+            "group": "bovespa_soma_stocks"
           },
           {
             "group": "bovespa_indices"
@@ -4084,7 +4093,10 @@
         "perm": "bovespa",
         "groups": [
           {
-            "group": "bovespa_delayed"
+            "group": "bovespa_stocks_delayed"
+          },
+          {
+            "group": "bovespa_soma_stocks_delayed"
           },
           {
             "group": "bovespa_indices_delayed"
@@ -5335,7 +5347,10 @@
         ],
         "groups": [
           {
-            "group": "bovespa"
+            "group": "bovespa_stocks"
+          },
+          {
+            "group": "bovespa_soma_stocks"
           },
           {
             "group": "bovespa_futures"
@@ -5353,7 +5368,10 @@
             "group": "bovespa_futures_delayed"
           },
           {
-            "group": "bovespa_delayed"
+            "group": "bovespa_stocks_delayed"
+          },
+          {
+            "group": "bovespa_soma_stocks_delayed"
           }
         ]
       }
