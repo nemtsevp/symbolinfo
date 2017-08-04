@@ -211,7 +211,7 @@
       {
         "priority": 14,
         "prefix": "BITTREX",
-        "skip_in_search": true,
+        "skip_in_search": false,
         "groups": [
           {
             "group": "bittrex"
@@ -2875,7 +2875,7 @@
       {
         "priority": 14,
         "prefix": "BITTREX",
-        "skip_in_search": true,
+        "skip_in_search": false,
         "groups": [
           {
             "group": "bittrex"
