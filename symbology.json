@@ -2882,6 +2882,16 @@
         ]
       },
       {
+        "priority": 12,
+        "prefix": "BITMEX2",
+        "skip_in_search": false,
+        "groups": [
+          {
+            "group": "bitmex"
+          }
+        ]
+      },
+      {
         "priority": 13,
         "prefix": "FOREXCOM",
         "exchange_for_display": "FOREX.com",
@@ -4222,6 +4232,9 @@
       {
         "prefix": "BCBA",
         "perm": "bcba",
+        "prefix_no_perm": [
+          "BCBA_DLY"
+        ],
         "groups": [
           {
             "group": "buenosaires_indices",
@@ -4232,10 +4245,7 @@
           },
           {
             "group": "buenosaires_stocks",
-            "priority": 50,
-            "prefix_no_perm": [
-              "BCBA_DLY"
-            ]
+            "priority": 50
           }
         ]
       },
@@ -4255,6 +4265,9 @@
       },
       {
         "prefix": "BCS",
+        "prefix_no_perm": [
+          "BCS_DLY"
+        ],
         "groups": [
           {
             "group": "santiago_indices",
@@ -4281,6 +4294,9 @@
       },
       {
         "prefix": "BELEX",
+        "prefix_no_perm": [
+          "BELEX_DLY"
+        ],
         "groups": [
           {
             "group": "belgrade_indices",
@@ -4294,6 +4310,9 @@
       },
       {
         "prefix": "LUXSE",
+        "prefix_no_perm": [
+          "LUXSE_DLY"
+        ],
         "groups": [
           {
             "group": "luxembourg_indices",
@@ -4307,6 +4326,9 @@
       },
       {
         "prefix": "BVC",
+        "prefix_no_perm": [
+          "BVC_DLY"
+        ],
         "groups": [
           {
             "group": "colombia_indices",
@@ -4320,6 +4342,9 @@
       },
       {
         "prefix": "EGX",
+        "prefix_no_perm": [
+          "EGX_DLY"
+        ],
         "groups": [
           {
             "group": "egyptian_indices",
@@ -4544,6 +4569,9 @@
       {
         "priority": 50,
         "prefix": "BVL",
+        "prefix_no_perm": [
+          "BVL_DLY"
+        ],
         "groups": [
           {
             "group": "lima_stocks"
@@ -4938,9 +4966,6 @@
         "priority": 54,
         "prefix": "BMV_DLY",
         "perm": "sf_dly",
-        "prefix_no_perm": [
-          "BMV_DLY"
-        ],
         "groups": [
           {
             "group": "mexico_stocks_delayed"
