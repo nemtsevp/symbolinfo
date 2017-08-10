@@ -2882,12 +2882,16 @@
         ]
       },
       {
-        "priority": 12,
-        "prefix": "BITMEX2",
-        "skip_in_search": false,
+        "prefix": "BITMEX",
         "groups": [
           {
-            "group": "bitmex"
+            "group": "bitmex",
+            "priority": 12,
+            "skip_in_search": false
+          },
+          {
+            "group": "BITMEX",
+            "priority": 112
           }
         ]
       },
@@ -5816,15 +5820,6 @@
         "groups": [
           {
             "group": "THEROCKTRADING"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "BITMEX",
-        "groups": [
-          {
-            "group": "BITMEX"
           }
         ]
       },
