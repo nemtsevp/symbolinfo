@@ -3006,21 +3006,15 @@
         "prefix_no_perm": [
           "LSE_DLY"
         ],
+        "prefix_alias": [
+          "LSE_EOD"
+        ],
         "groups": [
           {
             "group": "lse_uk"
           },
           {
-            "group": "lse_uk_aim",
-            "prefix_alias": [
-              "LSE_EOD"
-            ]
-          },
-          {
-            "group": "lse_uk_test",
-            "prefix_alias": [
-              "LSE_EOD"
-            ]
+            "group": "lse_uk_aim"
           }
         ]
       },
@@ -3914,9 +3908,6 @@
           },
           {
             "group": "lse_uk_aim_delayed"
-          },
-          {
-            "group": "lse_uk_test_delayed"
           }
         ]
       },
@@ -4706,6 +4697,12 @@
           },
           {
             "group": "nzx_indices"
+          },
+          {
+            "group": "nzx_futures"
+          },
+          {
+            "group": "nzx_continuous"
           }
         ]
       },
@@ -4771,6 +4768,14 @@
           {
             "group": "nzx_indices_delayed",
             "perm": "nzx_dly"
+          },
+          {
+            "group": "nzx_futures_delayed",
+            "perm": "sf_dly"
+          },
+          {
+            "group": "nzx_continuous_delayed",
+            "perm": "sf_dly"
           }
         ]
       },
