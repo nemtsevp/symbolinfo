@@ -2681,40 +2681,30 @@
         ]
       },
       {
+        "priority": 10,
         "prefix": "SP",
+        "perm": "spindices",
+        "exchange_for_display": "S&P",
+        "prefix_alias": [
+          "SP_DLY"
+        ],
         "groups": [
           {
-            "group": "sp_indices",
-            "priority": 10,
-            "perm": "spindices",
-            "exchange_for_display": "S&P",
-            "prefix_alias": [
-              "SP_DLY"
-            ]
-          },
-          {
-            "group": "sp_indices_eod",
-            "priority": 100,
-            "skip_in_search": true
+            "group": "sp_indices"
           }
         ]
       },
       {
+        "priority": 10,
         "prefix": "DJ",
+        "exchange_for_display": "Dow Jones",
+        "skip_in_search": false,
+        "prefix_alias": [
+          "DJ_DLY"
+        ],
         "groups": [
           {
-            "group": "dj_indices_delayed",
-            "priority": 10,
-            "exchange_for_display": "Dow Jones",
-            "skip_in_search": false,
-            "prefix_alias": [
-              "DJ_DLY"
-            ]
-          },
-          {
-            "group": "dj_indices_eod",
-            "priority": 100,
-            "skip_in_search": true
+            "group": "dj_indices_delayed"
           }
         ]
       },
@@ -2724,15 +2714,11 @@
           {
             "group": "cboe_indices_delayed",
             "priority": 10,
+            "perm": "cboe_dly",
             "skip_in_search": false,
             "prefix_alias": [
               "CBOE_DLY"
             ]
-          },
-          {
-            "group": "cboe_indices_eod",
-            "priority": 100,
-            "skip_in_search": true
           },
           {
             "group": "cfe",
@@ -4699,10 +4685,12 @@
             "group": "nzx_indices"
           },
           {
-            "group": "nzx_futures"
+            "group": "nzx_futures",
+            "perm": "nzx_futures"
           },
           {
-            "group": "nzx_continuous"
+            "group": "nzx_continuous",
+            "perm": "nzx_futures"
           }
         ]
       },
@@ -4945,11 +4933,41 @@
       },
       {
         "priority": 100,
+        "prefix": "CBOE_EOD",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "cboe_indices_eod"
+          }
+        ]
+      },
+      {
+        "priority": 100,
+        "prefix": "DJ_EOD",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "dj_indices_eod"
+          }
+        ]
+      },
+      {
+        "priority": 100,
         "prefix": "RUSSEL",
         "skip_in_search": true,
         "groups": [
           {
             "group": "russel_indices_eod"
+          }
+        ]
+      },
+      {
+        "priority": 100,
+        "prefix": "SP_EOD",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "sp_indices_eod"
           }
         ]
       },
