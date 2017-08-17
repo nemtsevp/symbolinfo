@@ -2709,7 +2709,8 @@
             "priority": 10,
             "exchange_for_display": "S&P",
             "prefix_alias": [
-              "SP_DLY"
+              "SP_DLY",
+              "INDEX"
             ]
           },
           {
@@ -2728,7 +2729,8 @@
             "exchange_for_display": "DowJones",
             "skip_in_search": false,
             "prefix_alias": [
-              "DJ_DLY"
+              "DJ_DLY",
+              "INDEX"
             ]
           },
           {
@@ -2929,6 +2931,9 @@
         "priority": 15,
         "prefix": "SP_DLY",
         "exchange_for_display": "S&P",
+        "prefix_alias": [
+          "INDEX"
+        ],
         "groups": [
           {
             "group": "sp_indices_delayed"
