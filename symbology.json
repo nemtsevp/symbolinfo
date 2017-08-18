@@ -2707,9 +2707,11 @@
           {
             "group": "sp_indices",
             "priority": 10,
+            "prefix_no_perm": [
+              "SP_DLY"
+            ],
             "exchange_for_display": "S&P",
             "prefix_alias": [
-              "SP_DLY",
               "INDEX"
             ]
           },
