@@ -2271,15 +2271,6 @@
       },
       {
         "priority": 100,
-        "prefix": "SANDP",
-        "groups": [
-          {
-            "group": "sandp"
-          }
-        ]
-      },
-      {
-        "priority": 100,
         "prefix": "FRBP",
         "groups": [
           {
@@ -4853,15 +4844,6 @@
         "groups": [
           {
             "group": "worldbank"
-          }
-        ]
-      },
-      {
-        "priority": 100,
-        "prefix": "SANDP",
-        "groups": [
-          {
-            "group": "sandp"
           }
         ]
       },
