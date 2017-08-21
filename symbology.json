@@ -2908,6 +2908,9 @@
         "groups": [
           {
             "group": "bittrex"
+          },
+          {
+            "group": "bittrex_spreads"
           }
         ]
       },
