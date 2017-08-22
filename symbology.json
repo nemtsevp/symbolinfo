@@ -2854,6 +2854,9 @@
         "groups": [
           {
             "group": "poloniex"
+          },
+          {
+            "group": "poloniex_spreads"
           }
         ]
       },
@@ -2864,6 +2867,9 @@
         "groups": [
           {
             "group": "bitflyer"
+          },
+          {
+            "group": "bitflyer_spreads"
           }
         ]
       },
@@ -5790,6 +5796,10 @@
         "groups": [
           {
             "group": "CEXIO"
+          },
+          {
+            "group": "cexio_spreads",
+            "skip_in_search": false
           }
         ]
       },
@@ -5808,6 +5818,10 @@
         "groups": [
           {
             "group": "THEROCKTRADING"
+          },
+          {
+            "group": "therocktrading_spreads",
+            "skip_in_search": false
           }
         ]
       },
@@ -5817,6 +5831,10 @@
         "groups": [
           {
             "group": "BITSO"
+          },
+          {
+            "group": "bitso_spreads",
+            "skip_in_search": false
           }
         ]
       },
@@ -5871,6 +5889,10 @@
         "groups": [
           {
             "group": "HITBTC"
+          },
+          {
+            "group": "hitbtc_spreads",
+            "skip_in_search": false
           }
         ]
       },
@@ -5907,6 +5929,10 @@
         "groups": [
           {
             "group": "GOCIO"
+          },
+          {
+            "group": "gocio_spreads",
+            "skip_in_search": false
           }
         ]
       },
