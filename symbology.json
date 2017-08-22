@@ -5022,8 +5022,7 @@
           {
             "group": "asx_indices",
             "prefix_alias": [
-              "INDEX",
-              "ASX_DLY"
+              "INDEX"
             ]
           },
           {
@@ -5031,28 +5030,6 @@
           },
           {
             "group": "asx_continuous"
-          }
-        ]
-      },
-      {
-        "prefix": "ASX_DLY",
-        "perm": "sf_dly",
-        "groups": [
-          {
-            "group": "asx_indices_delayed",
-            "priority": 57
-          },
-          {
-            "group": "asx_stocks_delayed",
-            "priority": 60
-          },
-          {
-            "group": "asx_futures_delayed",
-            "priority": 60
-          },
-          {
-            "group": "asx_continuous_delayed",
-            "priority": 60
           }
         ]
       },
@@ -5073,6 +5050,25 @@
         "groups": [
           {
             "group": "fukuoka_stocks_delayed"
+          }
+        ]
+      },
+      {
+        "priority": 60,
+        "prefix": "ASX_DLY",
+        "perm": "sf_dly",
+        "groups": [
+          {
+            "group": "asx_stocks_delayed"
+          },
+          {
+            "group": "asx_indices_delayed"
+          },
+          {
+            "group": "asx_futures_delayed"
+          },
+          {
+            "group": "asx_continuous_delayed"
           }
         ]
       },
