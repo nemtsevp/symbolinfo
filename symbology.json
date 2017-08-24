@@ -4579,6 +4579,15 @@
       },
       {
         "priority": 50,
+        "prefix": "TVCTEST",
+        "groups": [
+          {
+            "group": "government_bonds_test"
+          }
+        ]
+      },
+      {
+        "priority": 50,
         "prefix": "BVL",
         "prefix_no_perm": [
           "BVL_DLY"
