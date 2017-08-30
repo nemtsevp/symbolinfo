@@ -175,6 +175,9 @@
         "groups": [
           {
             "group": "poloniex"
+          },
+          {
+            "group": "poloniex_spreads"
           }
         ]
       },
@@ -185,6 +188,9 @@
         "groups": [
           {
             "group": "bitflyer"
+          },
+          {
+            "group": "bitflyer_spreads"
           }
         ]
       },
@@ -215,6 +221,9 @@
         "groups": [
           {
             "group": "bittrex"
+          },
+          {
+            "group": "bittrex_spreads"
           }
         ]
       },
@@ -2348,10 +2357,14 @@
       },
       {
         "priority": 112,
-        "prefix": "COINFLOOR",
+        "prefix": "BITSO",
         "groups": [
           {
-            "group": "COINFLOOR"
+            "group": "bitso_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "BITSO"
           }
         ]
       },
@@ -2360,7 +2373,46 @@
         "prefix": "CEXIO",
         "groups": [
           {
+            "group": "cexio_spreads",
+            "skip_in_search": false
+          },
+          {
             "group": "CEXIO"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "HITBTC",
+        "groups": [
+          {
+            "group": "hitbtc_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "HITBTC"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "THEROCKTRADING",
+        "groups": [
+          {
+            "group": "therocktrading_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "THEROCKTRADING"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "COINFLOOR",
+        "groups": [
+          {
+            "group": "COINFLOOR"
           }
         ]
       },
@@ -2375,28 +2427,10 @@
       },
       {
         "priority": 112,
-        "prefix": "THEROCKTRADING",
-        "groups": [
-          {
-            "group": "THEROCKTRADING"
-          }
-        ]
-      },
-      {
-        "priority": 112,
         "prefix": "BITMEX",
         "groups": [
           {
             "group": "BITMEX"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "BITSO",
-        "groups": [
-          {
-            "group": "BITSO"
           }
         ]
       },
@@ -2447,15 +2481,6 @@
       },
       {
         "priority": 112,
-        "prefix": "HITBTC",
-        "groups": [
-          {
-            "group": "HITBTC"
-          }
-        ]
-      },
-      {
-        "priority": 112,
         "prefix": "BTCYOU",
         "groups": [
           {
@@ -2485,6 +2510,10 @@
         "priority": 120,
         "prefix": "GOCIO",
         "groups": [
+          {
+            "group": "gocio_spreads",
+            "skip_in_search": false
+          },
           {
             "group": "GOCIO"
           }
@@ -2816,6 +2845,9 @@
         "groups": [
           {
             "group": "poloniex"
+          },
+          {
+            "group": "poloniex_spreads"
           }
         ]
       },
@@ -2826,6 +2858,9 @@
         "groups": [
           {
             "group": "bitflyer"
+          },
+          {
+            "group": "bitflyer_spreads"
           }
         ]
       },
@@ -2856,6 +2891,9 @@
         "groups": [
           {
             "group": "bittrex"
+          },
+          {
+            "group": "bittrex_spreads"
           }
         ]
       },
@@ -5139,10 +5177,14 @@
       },
       {
         "priority": 112,
-        "prefix": "COINFLOOR",
+        "prefix": "BITSO",
         "groups": [
           {
-            "group": "COINFLOOR"
+            "group": "bitso_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "BITSO"
           }
         ]
       },
@@ -5151,7 +5193,46 @@
         "prefix": "CEXIO",
         "groups": [
           {
+            "group": "cexio_spreads",
+            "skip_in_search": false
+          },
+          {
             "group": "CEXIO"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "HITBTC",
+        "groups": [
+          {
+            "group": "hitbtc_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "HITBTC"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "THEROCKTRADING",
+        "groups": [
+          {
+            "group": "therocktrading_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "THEROCKTRADING"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "COINFLOOR",
+        "groups": [
+          {
+            "group": "COINFLOOR"
           }
         ]
       },
@@ -5166,28 +5247,10 @@
       },
       {
         "priority": 112,
-        "prefix": "THEROCKTRADING",
-        "groups": [
-          {
-            "group": "THEROCKTRADING"
-          }
-        ]
-      },
-      {
-        "priority": 112,
         "prefix": "BITMEX",
         "groups": [
           {
             "group": "BITMEX"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "BITSO",
-        "groups": [
-          {
-            "group": "BITSO"
           }
         ]
       },
@@ -5238,15 +5301,6 @@
       },
       {
         "priority": 112,
-        "prefix": "HITBTC",
-        "groups": [
-          {
-            "group": "HITBTC"
-          }
-        ]
-      },
-      {
-        "priority": 112,
         "prefix": "BTCYOU",
         "groups": [
           {
@@ -5276,6 +5330,10 @@
         "priority": 120,
         "prefix": "GOCIO",
         "groups": [
+          {
+            "group": "gocio_spreads",
+            "skip_in_search": false
+          },
           {
             "group": "GOCIO"
           }
