@@ -175,9 +175,6 @@
         "groups": [
           {
             "group": "poloniex"
-          },
-          {
-            "group": "poloniex_spreads"
           }
         ]
       },
@@ -188,9 +185,6 @@
         "groups": [
           {
             "group": "bitflyer"
-          },
-          {
-            "group": "bitflyer_spreads"
           }
         ]
       },
@@ -221,9 +215,6 @@
         "groups": [
           {
             "group": "bittrex"
-          },
-          {
-            "group": "bittrex_spreads"
           }
         ]
       },
@@ -506,18 +497,11 @@
             "group": "cbot_migration_by_mini_continuous"
           },
           {
-            "group": "cme_europe_migration_to_cbot_continuous"
-          },
-          {
             "group": "cbot_migration",
             "priority": 50
           },
           {
             "group": "cbot_migration_by_mini",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cbot",
             "priority": 50
           }
         ]
@@ -533,18 +517,11 @@
             "group": "cbot_migration_by_mini_continuous_delayed"
           },
           {
-            "group": "cme_europe_migration_to_cbot_continuous_delayed"
-          },
-          {
             "group": "cbot_migration_delayed",
             "priority": 50
           },
           {
             "group": "cbot_migration_by_mini_delayed",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cbot_delayed",
             "priority": 50
           }
         ]
@@ -697,18 +674,11 @@
             "group": "cme_migration_by_mini_continuous"
           },
           {
-            "group": "cme_europe_migration_to_cme_continuous"
-          },
-          {
             "group": "cme_migration",
             "priority": 50
           },
           {
             "group": "cme_migration_by_mini",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cme",
             "priority": 50
           }
         ]
@@ -724,18 +694,11 @@
             "group": "cme_migration_by_mini_continuous_delayed"
           },
           {
-            "group": "cme_europe_migration_to_cme_continuous_delayed"
-          },
-          {
             "group": "cme_migration_delayed",
             "priority": 50
           },
           {
             "group": "cme_migration_by_mini_delayed",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cme_delayed",
             "priority": 50
           }
         ]
@@ -2357,14 +2320,10 @@
       },
       {
         "priority": 112,
-        "prefix": "BITSO",
+        "prefix": "COINFLOOR",
         "groups": [
           {
-            "group": "bitso_spreads",
-            "skip_in_search": false
-          },
-          {
-            "group": "BITSO"
+            "group": "COINFLOOR"
           }
         ]
       },
@@ -2373,46 +2332,7 @@
         "prefix": "CEXIO",
         "groups": [
           {
-            "group": "cexio_spreads",
-            "skip_in_search": false
-          },
-          {
             "group": "CEXIO"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "HITBTC",
-        "groups": [
-          {
-            "group": "hitbtc_spreads",
-            "skip_in_search": false
-          },
-          {
-            "group": "HITBTC"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "THEROCKTRADING",
-        "groups": [
-          {
-            "group": "therocktrading_spreads",
-            "skip_in_search": false
-          },
-          {
-            "group": "THEROCKTRADING"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "COINFLOOR",
-        "groups": [
-          {
-            "group": "COINFLOOR"
           }
         ]
       },
@@ -2427,10 +2347,28 @@
       },
       {
         "priority": 112,
+        "prefix": "THEROCKTRADING",
+        "groups": [
+          {
+            "group": "THEROCKTRADING"
+          }
+        ]
+      },
+      {
+        "priority": 112,
         "prefix": "BITMEX",
         "groups": [
           {
             "group": "BITMEX"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "BITSO",
+        "groups": [
+          {
+            "group": "BITSO"
           }
         ]
       },
@@ -2481,6 +2419,15 @@
       },
       {
         "priority": 112,
+        "prefix": "HITBTC",
+        "groups": [
+          {
+            "group": "HITBTC"
+          }
+        ]
+      },
+      {
+        "priority": 112,
         "prefix": "BTCYOU",
         "groups": [
           {
@@ -2510,10 +2457,6 @@
         "priority": 120,
         "prefix": "GOCIO",
         "groups": [
-          {
-            "group": "gocio_spreads",
-            "skip_in_search": false
-          },
           {
             "group": "GOCIO"
           }
@@ -2717,6 +2660,7 @@
       {
         "priority": 10,
         "prefix": "DJ",
+        "perm": "djindices_dly",
         "exchange_for_display": "Dow Jones",
         "skip_in_search": false,
         "prefix_alias": [
@@ -2845,9 +2789,6 @@
         "groups": [
           {
             "group": "poloniex"
-          },
-          {
-            "group": "poloniex_spreads"
           }
         ]
       },
@@ -2858,9 +2799,6 @@
         "groups": [
           {
             "group": "bitflyer"
-          },
-          {
-            "group": "bitflyer_spreads"
           }
         ]
       },
@@ -2891,9 +2829,6 @@
         "groups": [
           {
             "group": "bittrex"
-          },
-          {
-            "group": "bittrex_spreads"
           }
         ]
       },
@@ -2967,7 +2902,7 @@
           {
             "group": "euronext_primary_indices",
             "priority": 38,
-            "perm": "sf_rt"
+            "perm": "euronext_primary_indices"
           },
           {
             "group": "euronext_indices",
@@ -3186,18 +3121,11 @@
             "group": "cbot_migration_by_mini_continuous"
           },
           {
-            "group": "cme_europe_migration_to_cbot_continuous"
-          },
-          {
             "group": "cbot_migration",
             "priority": 50
           },
           {
             "group": "cbot_migration_by_mini",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cbot",
             "priority": 50
           }
         ]
@@ -3213,18 +3141,11 @@
             "group": "cbot_migration_by_mini_continuous_delayed"
           },
           {
-            "group": "cme_europe_migration_to_cbot_continuous_delayed"
-          },
-          {
             "group": "cbot_migration_delayed",
             "priority": 50
           },
           {
             "group": "cbot_migration_by_mini_delayed",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cbot_delayed",
             "priority": 50
           }
         ]
@@ -3377,18 +3298,11 @@
             "group": "cme_migration_by_mini_continuous"
           },
           {
-            "group": "cme_europe_migration_to_cme_continuous"
-          },
-          {
             "group": "cme_migration",
             "priority": 50
           },
           {
             "group": "cme_migration_by_mini",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cme",
             "priority": 50
           }
         ]
@@ -3404,18 +3318,11 @@
             "group": "cme_migration_by_mini_continuous_delayed"
           },
           {
-            "group": "cme_europe_migration_to_cme_continuous_delayed"
-          },
-          {
             "group": "cme_migration_delayed",
             "priority": 50
           },
           {
             "group": "cme_migration_by_mini_delayed",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cme_delayed",
             "priority": 50
           }
         ]
@@ -5177,14 +5084,10 @@
       },
       {
         "priority": 112,
-        "prefix": "BITSO",
+        "prefix": "COINFLOOR",
         "groups": [
           {
-            "group": "bitso_spreads",
-            "skip_in_search": false
-          },
-          {
-            "group": "BITSO"
+            "group": "COINFLOOR"
           }
         ]
       },
@@ -5193,46 +5096,7 @@
         "prefix": "CEXIO",
         "groups": [
           {
-            "group": "cexio_spreads",
-            "skip_in_search": false
-          },
-          {
             "group": "CEXIO"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "HITBTC",
-        "groups": [
-          {
-            "group": "hitbtc_spreads",
-            "skip_in_search": false
-          },
-          {
-            "group": "HITBTC"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "THEROCKTRADING",
-        "groups": [
-          {
-            "group": "therocktrading_spreads",
-            "skip_in_search": false
-          },
-          {
-            "group": "THEROCKTRADING"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "COINFLOOR",
-        "groups": [
-          {
-            "group": "COINFLOOR"
           }
         ]
       },
@@ -5247,10 +5111,28 @@
       },
       {
         "priority": 112,
+        "prefix": "THEROCKTRADING",
+        "groups": [
+          {
+            "group": "THEROCKTRADING"
+          }
+        ]
+      },
+      {
+        "priority": 112,
         "prefix": "BITMEX",
         "groups": [
           {
             "group": "BITMEX"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "BITSO",
+        "groups": [
+          {
+            "group": "BITSO"
           }
         ]
       },
@@ -5301,6 +5183,15 @@
       },
       {
         "priority": 112,
+        "prefix": "HITBTC",
+        "groups": [
+          {
+            "group": "HITBTC"
+          }
+        ]
+      },
+      {
+        "priority": 112,
         "prefix": "BTCYOU",
         "groups": [
           {
@@ -5330,10 +5221,6 @@
         "priority": 120,
         "prefix": "GOCIO",
         "groups": [
-          {
-            "group": "gocio_spreads",
-            "skip_in_search": false
-          },
           {
             "group": "GOCIO"
           }
@@ -5570,19 +5457,6 @@
         "groups": [
           {
             "group": "nymex_mini_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 52,
-        "prefix": "CME_EUR",
-        "skip_in_search": false,
-        "prefix_alias": [
-          "CMEEUR"
-        ],
-        "groups": [
-          {
-            "group": "cme_europe_delayed"
           }
         ]
       }
