@@ -2868,11 +2868,16 @@
         ]
       },
       {
-        "priority": 12,
         "prefix": "KRAKEN",
         "groups": [
           {
-            "group": "kraken"
+            "group": "kraken",
+            "priority": 12
+          },
+          {
+            "group": "kraken_spreads",
+            "priority": 112,
+            "skip_in_search": false
           }
         ]
       },
