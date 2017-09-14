@@ -5824,7 +5824,7 @@
             "group": "HITBTC"
           },
           {
-            "group": "hitbtc_spreads_test",
+            "group": "hitbtc_spreads",
             "skip_in_search": false
           }
         ]
