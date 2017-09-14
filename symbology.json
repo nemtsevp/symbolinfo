@@ -160,11 +160,16 @@
         ]
       },
       {
-        "priority": 12,
         "prefix": "KRAKEN",
         "groups": [
           {
-            "group": "kraken"
+            "group": "kraken",
+            "priority": 12
+          },
+          {
+            "group": "kraken_spreads",
+            "priority": 112,
+            "skip_in_search": false
           }
         ]
       },
@@ -506,18 +511,11 @@
             "group": "cbot_migration_by_mini_continuous"
           },
           {
-            "group": "cme_europe_migration_to_cbot_continuous"
-          },
-          {
             "group": "cbot_migration",
             "priority": 50
           },
           {
             "group": "cbot_migration_by_mini",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cbot",
             "priority": 50
           }
         ]
@@ -533,18 +531,11 @@
             "group": "cbot_migration_by_mini_continuous_delayed"
           },
           {
-            "group": "cme_europe_migration_to_cbot_continuous_delayed"
-          },
-          {
             "group": "cbot_migration_delayed",
             "priority": 50
           },
           {
             "group": "cbot_migration_by_mini_delayed",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cbot_delayed",
             "priority": 50
           }
         ]
@@ -697,18 +688,11 @@
             "group": "cme_migration_by_mini_continuous"
           },
           {
-            "group": "cme_europe_migration_to_cme_continuous"
-          },
-          {
             "group": "cme_migration",
             "priority": 50
           },
           {
             "group": "cme_migration_by_mini",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cme",
             "priority": 50
           }
         ]
@@ -724,18 +708,11 @@
             "group": "cme_migration_by_mini_continuous_delayed"
           },
           {
-            "group": "cme_europe_migration_to_cme_continuous_delayed"
-          },
-          {
             "group": "cme_migration_delayed",
             "priority": 50
           },
           {
             "group": "cme_migration_by_mini_delayed",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cme_delayed",
             "priority": 50
           }
         ]
@@ -2767,11 +2744,16 @@
         ]
       },
       {
-        "priority": 12,
         "prefix": "KRAKEN",
         "groups": [
           {
-            "group": "kraken"
+            "group": "kraken",
+            "priority": 12
+          },
+          {
+            "group": "kraken_spreads",
+            "priority": 112,
+            "skip_in_search": false
           }
         ]
       },
@@ -3113,18 +3095,11 @@
             "group": "cbot_migration_by_mini_continuous"
           },
           {
-            "group": "cme_europe_migration_to_cbot_continuous"
-          },
-          {
             "group": "cbot_migration",
             "priority": 50
           },
           {
             "group": "cbot_migration_by_mini",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cbot",
             "priority": 50
           }
         ]
@@ -3140,18 +3115,11 @@
             "group": "cbot_migration_by_mini_continuous_delayed"
           },
           {
-            "group": "cme_europe_migration_to_cbot_continuous_delayed"
-          },
-          {
             "group": "cbot_migration_delayed",
             "priority": 50
           },
           {
             "group": "cbot_migration_by_mini_delayed",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cbot_delayed",
             "priority": 50
           }
         ]
@@ -3304,18 +3272,11 @@
             "group": "cme_migration_by_mini_continuous"
           },
           {
-            "group": "cme_europe_migration_to_cme_continuous"
-          },
-          {
             "group": "cme_migration",
             "priority": 50
           },
           {
             "group": "cme_migration_by_mini",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cme",
             "priority": 50
           }
         ]
@@ -3331,18 +3292,11 @@
             "group": "cme_migration_by_mini_continuous_delayed"
           },
           {
-            "group": "cme_europe_migration_to_cme_continuous_delayed"
-          },
-          {
             "group": "cme_migration_delayed",
             "priority": 50
           },
           {
             "group": "cme_migration_by_mini_delayed",
-            "priority": 50
-          },
-          {
-            "group": "cme_europe_migration_to_cme_delayed",
             "priority": 50
           }
         ]
@@ -5357,19 +5311,6 @@
         "groups": [
           {
             "group": "nymex_mini_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 52,
-        "prefix": "CME_EUR",
-        "skip_in_search": false,
-        "prefix_alias": [
-          "CMEEUR"
-        ],
-        "groups": [
-          {
-            "group": "cme_europe_delayed"
           }
         ]
       }
