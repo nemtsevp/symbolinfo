@@ -2863,7 +2863,7 @@
         "prefix": "BITMEX",
         "groups": [
           {
-            "group": "bitmex",
+            "group": "bitmex2",
             "priority": 12,
             "skip_in_search": false
           },
