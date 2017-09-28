@@ -79,6 +79,61 @@
         ]
       },
       {
+        "priority": 10,
+        "prefix": "SP",
+        "perm": "spindices",
+        "exchange_for_display": "S&P",
+        "prefix_alias": [
+          "SP_DLY"
+        ],
+        "groups": [
+          {
+            "group": "sp_indices"
+          }
+        ]
+      },
+      {
+        "priority": 10,
+        "prefix": "DJ",
+        "perm": "djindices_dly",
+        "exchange_for_display": "Dow Jones",
+        "skip_in_search": false,
+        "prefix_alias": [
+          "DJ_DLY"
+        ],
+        "groups": [
+          {
+            "group": "dj_indices_delayed"
+          }
+        ]
+      },
+      {
+        "prefix": "CBOE",
+        "groups": [
+          {
+            "group": "cboe_indices_delayed",
+            "priority": 10,
+            "perm": "cboe_dly",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CBOE_DLY"
+            ]
+          },
+          {
+            "group": "cfe",
+            "priority": 130
+          },
+          {
+            "group": "cfe_continuous_2",
+            "priority": 131
+          },
+          {
+            "group": "cfe_continuous",
+            "priority": 131
+          }
+        ]
+      },
+      {
         "prefix": "FX",
         "exchange_for_display": "FXCM",
         "groups": [
@@ -1912,6 +1967,14 @@
           },
           {
             "group": "nzx_indices"
+          },
+          {
+            "group": "nzx_futures",
+            "perm": "nzx_futures"
+          },
+          {
+            "group": "nzx_continuous",
+            "perm": "nzx_futures"
           }
         ]
       },
@@ -1977,6 +2040,39 @@
           {
             "group": "nzx_indices_delayed",
             "perm": "nzx_dly"
+          },
+          {
+            "group": "nzx_futures_delayed",
+            "perm": "sf_dly"
+          },
+          {
+            "group": "nzx_continuous_delayed",
+            "perm": "sf_dly"
+          }
+        ]
+      },
+      {
+        "prefix": "TASE",
+        "perm": "tase",
+        "prefix_no_perm": [
+          "TASE_DLY"
+        ],
+        "groups": [
+          {
+            "group": "telaviv_indices",
+            "priority": 70
+          },
+          {
+            "group": "telaviv_stocks",
+            "priority": 72
+          },
+          {
+            "group": "telaviv_futures",
+            "priority": 75
+          },
+          {
+            "group": "telaviv_continuous",
+            "priority": 75
           }
         ]
       },
@@ -1998,6 +2094,28 @@
           },
           {
             "group": "warsaw_continuous_delayed",
+            "priority": 76
+          }
+        ]
+      },
+      {
+        "prefix": "TASE_DLY",
+        "perm": "sf_dly",
+        "groups": [
+          {
+            "group": "telaviv_indices_delayed",
+            "priority": 71
+          },
+          {
+            "group": "telaviv_stocks_delayed",
+            "priority": 74
+          },
+          {
+            "group": "telaviv_futures_delayed",
+            "priority": 76
+          },
+          {
+            "group": "telaviv_continuous_delayed",
             "priority": 76
           }
         ]
@@ -2106,30 +2224,18 @@
         ]
       },
       {
-        "prefix": "CBOE",
+        "priority": 100,
+        "prefix": "CBOE_EOD",
+        "skip_in_search": true,
         "groups": [
           {
-            "group": "cboe_indices_eod",
-            "priority": 100,
-            "skip_in_search": true
-          },
-          {
-            "group": "cfe",
-            "priority": 130
-          },
-          {
-            "group": "cfe_continuous_2",
-            "priority": 131
-          },
-          {
-            "group": "cfe_continuous",
-            "priority": 131
+            "group": "cboe_indices_eod"
           }
         ]
       },
       {
         "priority": 100,
-        "prefix": "DJ",
+        "prefix": "DJ_EOD",
         "skip_in_search": true,
         "groups": [
           {
@@ -2149,7 +2255,7 @@
       },
       {
         "priority": 100,
-        "prefix": "SP",
+        "prefix": "SP_EOD",
         "skip_in_search": true,
         "groups": [
           {
@@ -2663,6 +2769,61 @@
         ]
       },
       {
+        "priority": 10,
+        "prefix": "SP",
+        "perm": "spindices",
+        "exchange_for_display": "S&P",
+        "prefix_alias": [
+          "SP_DLY"
+        ],
+        "groups": [
+          {
+            "group": "sp_indices"
+          }
+        ]
+      },
+      {
+        "priority": 10,
+        "prefix": "DJ",
+        "perm": "djindices_dly",
+        "exchange_for_display": "Dow Jones",
+        "skip_in_search": false,
+        "prefix_alias": [
+          "DJ_DLY"
+        ],
+        "groups": [
+          {
+            "group": "dj_indices_delayed"
+          }
+        ]
+      },
+      {
+        "prefix": "CBOE",
+        "groups": [
+          {
+            "group": "cboe_indices_delayed",
+            "priority": 10,
+            "perm": "cboe_dly",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CBOE_DLY"
+            ]
+          },
+          {
+            "group": "cfe",
+            "priority": 130
+          },
+          {
+            "group": "cfe_continuous_2",
+            "priority": 131
+          },
+          {
+            "group": "cfe_continuous",
+            "priority": 131
+          }
+        ]
+      },
+      {
         "prefix": "FX",
         "exchange_for_display": "FXCM",
         "groups": [
@@ -4496,6 +4657,14 @@
           },
           {
             "group": "nzx_indices"
+          },
+          {
+            "group": "nzx_futures",
+            "perm": "nzx_futures"
+          },
+          {
+            "group": "nzx_continuous",
+            "perm": "nzx_futures"
           }
         ]
       },
@@ -4561,6 +4730,39 @@
           {
             "group": "nzx_indices_delayed",
             "perm": "nzx_dly"
+          },
+          {
+            "group": "nzx_futures_delayed",
+            "perm": "sf_dly"
+          },
+          {
+            "group": "nzx_continuous_delayed",
+            "perm": "sf_dly"
+          }
+        ]
+      },
+      {
+        "prefix": "TASE",
+        "perm": "tase",
+        "prefix_no_perm": [
+          "TASE_DLY"
+        ],
+        "groups": [
+          {
+            "group": "telaviv_indices",
+            "priority": 70
+          },
+          {
+            "group": "telaviv_stocks",
+            "priority": 72
+          },
+          {
+            "group": "telaviv_futures",
+            "priority": 75
+          },
+          {
+            "group": "telaviv_continuous",
+            "priority": 75
           }
         ]
       },
@@ -4582,6 +4784,28 @@
           },
           {
             "group": "warsaw_continuous_delayed",
+            "priority": 76
+          }
+        ]
+      },
+      {
+        "prefix": "TASE_DLY",
+        "perm": "sf_dly",
+        "groups": [
+          {
+            "group": "telaviv_indices_delayed",
+            "priority": 71
+          },
+          {
+            "group": "telaviv_stocks_delayed",
+            "priority": 74
+          },
+          {
+            "group": "telaviv_futures_delayed",
+            "priority": 76
+          },
+          {
+            "group": "telaviv_continuous_delayed",
             "priority": 76
           }
         ]
@@ -4690,30 +4914,18 @@
         ]
       },
       {
-        "prefix": "CBOE",
+        "priority": 100,
+        "prefix": "CBOE_EOD",
+        "skip_in_search": true,
         "groups": [
           {
-            "group": "cboe_indices_eod",
-            "priority": 100,
-            "skip_in_search": true
-          },
-          {
-            "group": "cfe",
-            "priority": 130
-          },
-          {
-            "group": "cfe_continuous_2",
-            "priority": 131
-          },
-          {
-            "group": "cfe_continuous",
-            "priority": 131
+            "group": "cboe_indices_eod"
           }
         ]
       },
       {
         "priority": 100,
-        "prefix": "DJ",
+        "prefix": "DJ_EOD",
         "skip_in_search": true,
         "groups": [
           {
@@ -4733,7 +4945,7 @@
       },
       {
         "priority": 100,
-        "prefix": "SP",
+        "prefix": "SP_EOD",
         "skip_in_search": true,
         "groups": [
           {
