@@ -31,6 +31,49 @@
         }
       },
       {
+        "id": "sp_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "SP",
+            "priority": 10,
+            "exchange_for_display": "S&P",
+            "prefix_alias": [
+              "SP_DLY"
+            ],
+            "perm": "spindices"
+          }
+        }
+      },
+      {
+        "id": "dj_indices_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "DJ",
+            "priority": 10,
+            "exchange_for_display": "Dow Jones",
+            "prefix_alias": [
+              "DJ_DLY"
+            ],
+            "skip_in_search": false,
+            "perm": "djindices_dly"
+          }
+        }
+      },
+      {
+        "id": "cboe_indices_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "CBOE",
+            "priority": 10,
+            "prefix_alias": [
+              "CBOE_DLY"
+            ],
+            "skip_in_search": false,
+            "perm": "cboe_dly"
+          }
+        }
+      },
+      {
         "id": "dxy_idc2",
         "kinds": {
           "rt": {
@@ -235,6 +278,26 @@
         }
       },
       {
+        "id": "poloniex_spreads",
+        "kinds": {
+          "rt": {
+            "prefix": "POLONIEX",
+            "priority": 12,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "bitflyer_spreads",
+        "kinds": {
+          "rt": {
+            "prefix": "BITFLYER",
+            "priority": 12,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
         "id": "frbny",
         "kinds": {
           "rt": {
@@ -256,6 +319,16 @@
       },
       {
         "id": "bittrex",
+        "kinds": {
+          "rt": {
+            "prefix": "BITTREX",
+            "priority": 14,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "bittrex_spreads",
         "kinds": {
           "rt": {
             "prefix": "BITTREX",
@@ -3064,6 +3137,32 @@
         }
       },
       {
+        "id": "nzx_futures",
+        "kinds": {
+          "rt": {
+            "prefix": "NZX",
+            "priority": 65,
+            "perm": "nzx_futures",
+            "prefix_no_perm": [
+              "NZX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nzx_continuous",
+        "kinds": {
+          "rt": {
+            "prefix": "NZX",
+            "priority": 65,
+            "perm": "nzx_futures",
+            "prefix_no_perm": [
+              "NZX_DLY"
+            ]
+          }
+        }
+      },
+      {
         "id": "stuttgart_stocks_delayed",
         "kinds": {
           "rt": {
@@ -3137,11 +3236,54 @@
         }
       },
       {
+        "id": "nzx_futures_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "NZX_DLY",
+            "priority": 70,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "telaviv_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "TASE",
+            "priority": 70,
+            "perm": "tase",
+            "prefix_no_perm": [
+              "TASE_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nzx_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "NZX_DLY",
+            "priority": 70,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
         "id": "warsaw_indices_delayed",
         "kinds": {
           "rt": {
             "priority": 71,
             "prefix": "GPW_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "telaviv_indices_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TASE_DLY",
+            "priority": 71,
             "perm": "sf_dly"
           }
         }
@@ -3156,6 +3298,29 @@
               "CHXJPY_DLY"
             ],
             "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "telaviv_stocks",
+        "kinds": {
+          "rt": {
+            "prefix": "TASE",
+            "priority": 72,
+            "perm": "tase",
+            "prefix_no_perm": [
+              "TASE_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "telaviv_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TASE_DLY",
+            "priority": 74,
+            "perm": "sf_dly"
           }
         }
       },
@@ -3186,6 +3351,19 @@
         }
       },
       {
+        "id": "telaviv_futures",
+        "kinds": {
+          "rt": {
+            "prefix": "TASE",
+            "priority": 75,
+            "perm": "tase",
+            "prefix_no_perm": [
+              "TASE_DLY"
+            ]
+          }
+        }
+      },
+      {
         "id": "warsaw_continuous",
         "kinds": {
           "rt": {
@@ -3194,6 +3372,19 @@
             "perm": "gpw",
             "prefix_no_perm": [
               "GPW_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "telaviv_continuous",
+        "kinds": {
+          "rt": {
+            "prefix": "TASE",
+            "priority": 75,
+            "perm": "tase",
+            "prefix_no_perm": [
+              "TASE_DLY"
             ]
           }
         }
@@ -3219,11 +3410,31 @@
         }
       },
       {
+        "id": "telaviv_futures_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TASE_DLY",
+            "priority": 76,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
         "id": "warsaw_continuous_delayed",
         "kinds": {
           "rt": {
             "priority": 76,
             "prefix": "GPW_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "telaviv_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TASE_DLY",
+            "priority": 76,
             "perm": "sf_dly"
           }
         }
@@ -3356,7 +3567,7 @@
         "id": "cboe_indices_eod",
         "kinds": {
           "rt": {
-            "prefix": "CBOE",
+            "prefix": "CBOE_EOD",
             "priority": 100,
             "skip_in_search": true
           }
@@ -3366,7 +3577,7 @@
         "id": "dj_indices_eod",
         "kinds": {
           "rt": {
-            "prefix": "DJ",
+            "prefix": "DJ_EOD",
             "priority": 100,
             "skip_in_search": true
           }
@@ -3416,7 +3627,7 @@
         "id": "sp_indices_eod",
         "kinds": {
           "rt": {
-            "prefix": "SP",
+            "prefix": "SP_EOD",
             "priority": 100,
             "skip_in_search": true
           }
@@ -3712,6 +3923,56 @@
         }
       },
       {
+        "id": "bitso_spreads",
+        "kinds": {
+          "rt": {
+            "prefix": "BITSO",
+            "priority": 112,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "cexio_spreads",
+        "kinds": {
+          "rt": {
+            "prefix": "CEXIO",
+            "priority": 112,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "hitbtc_spreads",
+        "kinds": {
+          "rt": {
+            "prefix": "HITBTC",
+            "priority": 112,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "therocktrading_spreads",
+        "kinds": {
+          "rt": {
+            "prefix": "THEROCKTRADING",
+            "priority": 112,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "kraken_spreads",
+        "kinds": {
+          "rt": {
+            "prefix": "KRAKEN",
+            "priority": 112,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
         "id": "COINFLOOR",
         "kinds": {
           "rt": {
@@ -3843,6 +4104,16 @@
           "rt": {
             "prefix": "MTGOX",
             "priority": 113
+          }
+        }
+      },
+      {
+        "id": "gocio_spreads",
+        "kinds": {
+          "rt": {
+            "prefix": "GOCIO",
+            "priority": 120,
+            "skip_in_search": false
           }
         }
       },
