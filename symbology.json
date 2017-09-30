@@ -79,6 +79,61 @@
         ]
       },
       {
+        "priority": 10,
+        "prefix": "SP",
+        "perm": "spindices",
+        "exchange_for_display": "S&P",
+        "prefix_alias": [
+          "SP_DLY"
+        ],
+        "groups": [
+          {
+            "group": "sp_indices"
+          }
+        ]
+      },
+      {
+        "priority": 10,
+        "prefix": "DJ",
+        "perm": "djindices_dly",
+        "exchange_for_display": "Dow Jones",
+        "skip_in_search": false,
+        "prefix_alias": [
+          "DJ_DLY"
+        ],
+        "groups": [
+          {
+            "group": "dj_indices_delayed"
+          }
+        ]
+      },
+      {
+        "prefix": "CBOE",
+        "groups": [
+          {
+            "group": "cboe_indices_delayed",
+            "priority": 10,
+            "perm": "cboe_dly",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CBOE_DLY"
+            ]
+          },
+          {
+            "group": "cfe",
+            "priority": 130
+          },
+          {
+            "group": "cfe_continuous_2",
+            "priority": 131
+          },
+          {
+            "group": "cfe_continuous",
+            "priority": 131
+          }
+        ]
+      },
+      {
         "prefix": "FX",
         "exchange_for_display": "FXCM",
         "groups": [
@@ -160,11 +215,16 @@
         ]
       },
       {
-        "priority": 12,
         "prefix": "KRAKEN",
         "groups": [
           {
-            "group": "kraken"
+            "group": "kraken",
+            "priority": 12
+          },
+          {
+            "group": "kraken_spreads",
+            "priority": 112,
+            "skip_in_search": false
           }
         ]
       },
@@ -175,6 +235,9 @@
         "groups": [
           {
             "group": "poloniex"
+          },
+          {
+            "group": "poloniex_spreads"
           }
         ]
       },
@@ -185,6 +248,9 @@
         "groups": [
           {
             "group": "bitflyer"
+          },
+          {
+            "group": "bitflyer_spreads"
           }
         ]
       },
@@ -215,6 +281,9 @@
         "groups": [
           {
             "group": "bittrex"
+          },
+          {
+            "group": "bittrex_spreads"
           }
         ]
       },
@@ -1898,6 +1967,14 @@
           },
           {
             "group": "nzx_indices"
+          },
+          {
+            "group": "nzx_futures",
+            "perm": "nzx_futures"
+          },
+          {
+            "group": "nzx_continuous",
+            "perm": "nzx_futures"
           }
         ]
       },
@@ -1963,6 +2040,39 @@
           {
             "group": "nzx_indices_delayed",
             "perm": "nzx_dly"
+          },
+          {
+            "group": "nzx_futures_delayed",
+            "perm": "sf_dly"
+          },
+          {
+            "group": "nzx_continuous_delayed",
+            "perm": "sf_dly"
+          }
+        ]
+      },
+      {
+        "prefix": "TASE",
+        "perm": "tase",
+        "prefix_no_perm": [
+          "TASE_DLY"
+        ],
+        "groups": [
+          {
+            "group": "telaviv_indices",
+            "priority": 70
+          },
+          {
+            "group": "telaviv_stocks",
+            "priority": 72
+          },
+          {
+            "group": "telaviv_futures",
+            "priority": 75
+          },
+          {
+            "group": "telaviv_continuous",
+            "priority": 75
           }
         ]
       },
@@ -1984,6 +2094,28 @@
           },
           {
             "group": "warsaw_continuous_delayed",
+            "priority": 76
+          }
+        ]
+      },
+      {
+        "prefix": "TASE_DLY",
+        "perm": "sf_dly",
+        "groups": [
+          {
+            "group": "telaviv_indices_delayed",
+            "priority": 71
+          },
+          {
+            "group": "telaviv_stocks_delayed",
+            "priority": 74
+          },
+          {
+            "group": "telaviv_futures_delayed",
+            "priority": 76
+          },
+          {
+            "group": "telaviv_continuous_delayed",
             "priority": 76
           }
         ]
@@ -2092,30 +2224,18 @@
         ]
       },
       {
-        "prefix": "CBOE",
+        "priority": 100,
+        "prefix": "CBOE_EOD",
+        "skip_in_search": true,
         "groups": [
           {
-            "group": "cboe_indices_eod",
-            "priority": 100,
-            "skip_in_search": true
-          },
-          {
-            "group": "cfe",
-            "priority": 130
-          },
-          {
-            "group": "cfe_continuous_2",
-            "priority": 131
-          },
-          {
-            "group": "cfe_continuous",
-            "priority": 131
+            "group": "cboe_indices_eod"
           }
         ]
       },
       {
         "priority": 100,
-        "prefix": "DJ",
+        "prefix": "DJ_EOD",
         "skip_in_search": true,
         "groups": [
           {
@@ -2135,7 +2255,7 @@
       },
       {
         "priority": 100,
-        "prefix": "SP",
+        "prefix": "SP_EOD",
         "skip_in_search": true,
         "groups": [
           {
@@ -2320,10 +2440,14 @@
       },
       {
         "priority": 112,
-        "prefix": "COINFLOOR",
+        "prefix": "BITSO",
         "groups": [
           {
-            "group": "COINFLOOR"
+            "group": "bitso_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "BITSO"
           }
         ]
       },
@@ -2332,7 +2456,46 @@
         "prefix": "CEXIO",
         "groups": [
           {
+            "group": "cexio_spreads",
+            "skip_in_search": false
+          },
+          {
             "group": "CEXIO"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "HITBTC",
+        "groups": [
+          {
+            "group": "hitbtc_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "HITBTC"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "THEROCKTRADING",
+        "groups": [
+          {
+            "group": "therocktrading_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "THEROCKTRADING"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "COINFLOOR",
+        "groups": [
+          {
+            "group": "COINFLOOR"
           }
         ]
       },
@@ -2347,28 +2510,10 @@
       },
       {
         "priority": 112,
-        "prefix": "THEROCKTRADING",
-        "groups": [
-          {
-            "group": "THEROCKTRADING"
-          }
-        ]
-      },
-      {
-        "priority": 112,
         "prefix": "BITMEX",
         "groups": [
           {
             "group": "BITMEX"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "BITSO",
-        "groups": [
-          {
-            "group": "BITSO"
           }
         ]
       },
@@ -2419,15 +2564,6 @@
       },
       {
         "priority": 112,
-        "prefix": "HITBTC",
-        "groups": [
-          {
-            "group": "HITBTC"
-          }
-        ]
-      },
-      {
-        "priority": 112,
         "prefix": "BTCYOU",
         "groups": [
           {
@@ -2457,6 +2593,10 @@
         "priority": 120,
         "prefix": "GOCIO",
         "groups": [
+          {
+            "group": "gocio_spreads",
+            "skip_in_search": false
+          },
           {
             "group": "GOCIO"
           }
@@ -2650,31 +2790,18 @@
         ]
       },
       {
-        "prefix": "FX",
-        "exchange_for_display": "FXCM",
-        "groups": [
-          {
-            "group": "fxcm",
-            "priority": 10
-          },
-          {
-            "group": "fxcm_cfd",
-            "priority": 11,
-            "perm": "fxcm_cfd"
-          }
-        ]
-      },
-      {
         "prefix": "SP",
         "groups": [
           {
             "group": "sp_indices",
             "priority": 10,
+            "perm": "spindices",
             "prefix_no_perm": [
               "SP_DLY"
             ],
             "exchange_for_display": "S&P",
             "prefix_alias": [
+              "SP_DLY",
               "INDEX"
             ]
           },
@@ -2691,6 +2818,7 @@
           {
             "group": "dj_indices_delayed",
             "priority": 10,
+            "perm": "djindices_dly",
             "exchange_for_display": "DowJones",
             "skip_in_search": false,
             "prefix_alias": [
@@ -2711,6 +2839,7 @@
           {
             "group": "cboe_indices_delayed",
             "priority": 10,
+            "perm": "cboe_dly",
             "skip_in_search": false,
             "prefix_alias": [
               "CBOE_DLY"
@@ -2732,6 +2861,21 @@
           {
             "group": "cfe_continuous",
             "priority": 131
+          }
+        ]
+      },
+      {
+        "prefix": "FX",
+        "exchange_for_display": "FXCM",
+        "groups": [
+          {
+            "group": "fxcm",
+            "priority": 10
+          },
+          {
+            "group": "fxcm_cfd",
+            "priority": 11,
+            "perm": "fxcm_cfd"
           }
         ]
       },
@@ -5253,10 +5397,12 @@
             "group": "nzx_indices"
           },
           {
-            "group": "nzx_futures"
+            "group": "nzx_futures",
+            "perm": "nzx_futures"
           },
           {
-            "group": "nzx_continuous"
+            "group": "nzx_continuous",
+            "perm": "nzx_futures"
           }
         ]
       },
@@ -5312,15 +5458,18 @@
             "perm": "nzx_dly"
           },
           {
-            "group": "nzx_futures_delayed"
+            "group": "nzx_futures_delayed",
+            "perm": "sf_dly"
           },
           {
-            "group": "nzx_continuous_delayed"
+            "group": "nzx_continuous_delayed",
+            "perm": "sf_dly"
           }
         ]
       },
       {
         "prefix": "TASE",
+        "perm": "tase",
         "prefix_no_perm": [
           "TASE_DLY"
         ],
@@ -5338,11 +5487,11 @@
             "priority": 75
           },
           {
-            "group": "telaviv_forwards",
+            "group": "telaviv_continuous",
             "priority": 75
           },
           {
-            "group": "telaviv_continuous",
+            "group": "telaviv_forwards",
             "priority": 75
           }
         ]
@@ -5375,6 +5524,7 @@
       },
       {
         "prefix": "TASE_DLY",
+        "perm": "sf_dly",
         "groups": [
           {
             "group": "telaviv_indices_delayed",
@@ -5389,11 +5539,11 @@
             "priority": 76
           },
           {
-            "group": "telaviv_forwards_delayed",
+            "group": "telaviv_continuous_delayed",
             "priority": 76
           },
           {
-            "group": "telaviv_continuous_delayed",
+            "group": "telaviv_forwards_delayed",
             "priority": 76
           }
         ]
@@ -5716,6 +5866,58 @@
       },
       {
         "priority": 112,
+        "prefix": "BITSO",
+        "groups": [
+          {
+            "group": "bitso_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "BITSO"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "CEXIO",
+        "groups": [
+          {
+            "group": "cexio_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "CEXIO"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "HITBTC",
+        "groups": [
+          {
+            "group": "hitbtc_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "HITBTC"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "THEROCKTRADING",
+        "groups": [
+          {
+            "group": "therocktrading_spreads",
+            "skip_in_search": false
+          },
+          {
+            "group": "THEROCKTRADING"
+          }
+        ]
+      },
+      {
+        "priority": 112,
         "prefix": "COINFLOOR",
         "groups": [
           {
@@ -5725,49 +5927,10 @@
       },
       {
         "priority": 112,
-        "prefix": "CEXIO",
-        "groups": [
-          {
-            "group": "CEXIO"
-          },
-          {
-            "group": "cexio_spreads",
-            "skip_in_search": false
-          }
-        ]
-      },
-      {
-        "priority": 112,
         "prefix": "KORBIT",
         "groups": [
           {
             "group": "KORBIT"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "THEROCKTRADING",
-        "groups": [
-          {
-            "group": "THEROCKTRADING"
-          },
-          {
-            "group": "therocktrading_spreads",
-            "skip_in_search": false
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "BITSO",
-        "groups": [
-          {
-            "group": "BITSO"
-          },
-          {
-            "group": "bitso_spreads",
-            "skip_in_search": false
           }
         ]
       },
@@ -5818,19 +5981,6 @@
       },
       {
         "priority": 112,
-        "prefix": "HITBTC",
-        "groups": [
-          {
-            "group": "HITBTC"
-          },
-          {
-            "group": "hitbtc_spreads",
-            "skip_in_search": false
-          }
-        ]
-      },
-      {
-        "priority": 112,
         "prefix": "BTCYOU",
         "groups": [
           {
@@ -5861,11 +6011,11 @@
         "prefix": "GOCIO",
         "groups": [
           {
-            "group": "GOCIO"
-          },
-          {
             "group": "gocio_spreads",
             "skip_in_search": false
+          },
+          {
+            "group": "GOCIO"
           }
         ]
       },
