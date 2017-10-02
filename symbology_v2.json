@@ -569,15 +569,6 @@
         }
       },
       {
-        "id": "comex_migration_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "COMEX_DL"
-          }
-        }
-      },
-      {
         "id": "comex_migration_mini_continuous",
         "kinds": {
           "rt": {
@@ -587,15 +578,6 @@
             "prefix_no_perm": [
               "COMEX_MINI_DL"
             ]
-          }
-        }
-      },
-      {
-        "id": "comex_migration_mini_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "COMEX_MINI_DL"
           }
         }
       },
@@ -613,15 +595,6 @@
         }
       },
       {
-        "id": "cbot_migration_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "CBOT_DL"
-          }
-        }
-      },
-      {
         "id": "cbot_migration_by_mini_continuous",
         "kinds": {
           "rt": {
@@ -631,15 +604,6 @@
             "prefix_no_perm": [
               "CBOT_DL"
             ]
-          }
-        }
-      },
-      {
-        "id": "cbot_migration_by_mini_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "CBOT_DL"
           }
         }
       },
@@ -657,15 +621,6 @@
         }
       },
       {
-        "id": "cbot_migration_mini_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "CBOT_MINI_DL"
-          }
-        }
-      },
-      {
         "id": "nymex_migration_continuous",
         "kinds": {
           "rt": {
@@ -675,15 +630,6 @@
             "prefix_no_perm": [
               "NYMEX_DL"
             ]
-          }
-        }
-      },
-      {
-        "id": "nymex_migration_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "NYMEX_DL"
           }
         }
       },
@@ -701,15 +647,6 @@
         }
       },
       {
-        "id": "nymex_migration_mini_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "NYMEX_MINI_DL"
-          }
-        }
-      },
-      {
         "id": "nymex_migration_mini_by_migration_continuous",
         "kinds": {
           "rt": {
@@ -719,15 +656,6 @@
             "prefix_no_perm": [
               "NYMEX_MINI_DL"
             ]
-          }
-        }
-      },
-      {
-        "id": "nymex_migration_mini_by_migration_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "NYMEX_MINI_DL"
           }
         }
       },
@@ -745,15 +673,6 @@
         }
       },
       {
-        "id": "nymex_migration_by_mini_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "NYMEX_DL"
-          }
-        }
-      },
-      {
         "id": "cme_migration_to_nymex_continuous",
         "kinds": {
           "rt": {
@@ -763,15 +682,6 @@
             "prefix_no_perm": [
               "NYMEX_DL"
             ]
-          }
-        }
-      },
-      {
-        "id": "cme_migration_to_nymex_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "NYMEX_DL"
           }
         }
       },
@@ -789,15 +699,6 @@
         }
       },
       {
-        "id": "cme_migration_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "CME_DL"
-          }
-        }
-      },
-      {
         "id": "cme_migration_mini_continuous",
         "kinds": {
           "rt": {
@@ -807,15 +708,6 @@
             "prefix_no_perm": [
               "CME_MINI_DL"
             ]
-          }
-        }
-      },
-      {
-        "id": "cme_migration_mini_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "CME_MINI_DL"
           }
         }
       },
@@ -833,15 +725,6 @@
         }
       },
       {
-        "id": "cme_migration_mini_by_migration_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "CME_MINI_DL"
-          }
-        }
-      },
-      {
         "id": "cme_migration_by_mini_continuous",
         "kinds": {
           "rt": {
@@ -851,15 +734,6 @@
             "prefix_no_perm": [
               "CME_DL"
             ]
-          }
-        }
-      },
-      {
-        "id": "cme_migration_by_mini_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 40,
-            "prefix": "CME_DL"
           }
         }
       },
@@ -985,6 +859,16 @@
             "prefix": "TSE_DLY",
             "priority": 46,
             "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "bats_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 46,
+            "prefix": "BATS_DLY",
+            "skip_in_search": true
           }
         }
       },
@@ -2695,16 +2579,6 @@
         }
       },
       {
-        "id": "hongkong_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 56,
-            "prefix": "HKEX_DLY",
-            "perm": "sf_dly"
-          }
-        }
-      },
-      {
         "id": "toronto_venture_stocks",
         "kinds": {
           "rt": {
@@ -2925,16 +2799,6 @@
         }
       },
       {
-        "id": "euronext_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "priority": 60,
-            "prefix": "EURONEXT_DLY",
-            "perm": "sf_dly"
-          }
-        }
-      },
-      {
         "id": "lse_uk_eod",
         "kinds": {
           "rt": {
@@ -2996,36 +2860,6 @@
       },
       {
         "id": "tocom_grain_futures_delayed",
-        "kinds": {
-          "rt": {
-            "prefix": "TOCOM_DLY",
-            "priority": 61,
-            "perm": "sf_dly"
-          }
-        }
-      },
-      {
-        "id": "tfin_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "prefix": "TFX_DLY",
-            "priority": 61,
-            "perm": "sf_dly"
-          }
-        }
-      },
-      {
-        "id": "tocom_continuous_delayed",
-        "kinds": {
-          "rt": {
-            "prefix": "TOCOM_DLY",
-            "priority": 61,
-            "perm": "sf_dly"
-          }
-        }
-      },
-      {
-        "id": "tocom_grain_continuous_delayed",
         "kinds": {
           "rt": {
             "prefix": "TOCOM_DLY",
