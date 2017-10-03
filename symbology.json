@@ -484,6 +484,10 @@
           {
             "group": "euronext_futures_delayed",
             "priority": 60
+          },
+          {
+            "group": "euronext_continuous_delayed",
+            "priority": 60
           }
         ]
       },
@@ -580,6 +584,15 @@
             "group": "cme_migration_to_nymex_continuous"
           },
           {
+            "group": "nymex_migration_continuous_delayed"
+          },
+          {
+            "group": "nymex_migration_by_mini_continuous_delayed"
+          },
+          {
+            "group": "cme_migration_to_nymex_continuous_delayed"
+          },
+          {
             "group": "nymex_migration",
             "priority": 50
           },
@@ -674,6 +687,125 @@
           },
           {
             "group": "cme_migration_mini_by_migration",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "prefix": "COMEX_DLY",
+        "groups": [
+          {
+            "group": "comex_migration_continuous_delayed",
+            "priority": 40
+          },
+          {
+            "group": "comex_migration_delayed",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "prefix": "COMEX_MINI_DLY",
+        "groups": [
+          {
+            "group": "comex_migration_mini_continuous_delayed",
+            "priority": 40
+          },
+          {
+            "group": "comex_migration_mini_delayed",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "priority": 40,
+        "prefix": "CBOT_DLY",
+        "groups": [
+          {
+            "group": "cbot_migration_continuous_delayed"
+          },
+          {
+            "group": "cbot_migration_by_mini_continuous_delayed"
+          },
+          {
+            "group": "cbot_migration_delayed",
+            "priority": 50
+          },
+          {
+            "group": "cbot_migration_by_mini_delayed",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "prefix": "CBOT_MINI_DLY",
+        "groups": [
+          {
+            "group": "cbot_migration_mini_continuous_delayed",
+            "priority": 40
+          },
+          {
+            "group": "cbot_migration_mini_delayed",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "priority": 40,
+        "prefix": "NYMEX_MINI_DLY",
+        "groups": [
+          {
+            "group": "nymex_migration_mini_continuous_delayed"
+          },
+          {
+            "group": "nymex_migration_mini_by_migration_continuous_delayed"
+          },
+          {
+            "group": "nymex_migration_mini_delayed",
+            "priority": 50
+          },
+          {
+            "group": "nymex_migration_mini_by_migration_delayed",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "priority": 40,
+        "prefix": "CME_DLY",
+        "groups": [
+          {
+            "group": "cme_migration_continuous_delayed"
+          },
+          {
+            "group": "cme_migration_by_mini_continuous_delayed"
+          },
+          {
+            "group": "cme_migration_delayed",
+            "priority": 50
+          },
+          {
+            "group": "cme_migration_by_mini_delayed",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "priority": 40,
+        "prefix": "CME_MINI_DLY",
+        "groups": [
+          {
+            "group": "cme_migration_mini_continuous_delayed"
+          },
+          {
+            "group": "cme_migration_mini_by_migration_continuous_delayed"
+          },
+          {
+            "group": "cme_migration_mini_delayed",
+            "priority": 50
+          },
+          {
+            "group": "cme_migration_mini_by_migration_delayed",
             "priority": 50
           }
         ]
@@ -1195,81 +1327,6 @@
       },
       {
         "priority": 50,
-        "prefix": "COMEX_DLY",
-        "groups": [
-          {
-            "group": "comex_migration_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "COMEX_MINI_DLY",
-        "groups": [
-          {
-            "group": "comex_migration_mini_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "CBOT_DLY",
-        "groups": [
-          {
-            "group": "cbot_migration_delayed"
-          },
-          {
-            "group": "cbot_migration_by_mini_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "CBOT_MINI_DLY",
-        "groups": [
-          {
-            "group": "cbot_migration_mini_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "NYMEX_MINI_DLY",
-        "groups": [
-          {
-            "group": "nymex_migration_mini_delayed"
-          },
-          {
-            "group": "nymex_migration_mini_by_migration_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "CME_DLY",
-        "groups": [
-          {
-            "group": "cme_migration_delayed"
-          },
-          {
-            "group": "cme_migration_by_mini_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "CME_MINI_DLY",
-        "groups": [
-          {
-            "group": "cme_migration_mini_delayed"
-          },
-          {
-            "group": "cme_migration_mini_by_migration_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
         "prefix": "OMX",
         "perm": "permission_denied",
         "prefix_no_perm": [
@@ -1403,6 +1460,10 @@
           {
             "group": "hongkong_futures_delayed",
             "priority": 56
+          },
+          {
+            "group": "hongkong_continuous_delayed",
+            "priority": 56
           }
         ]
       },
@@ -1449,6 +1510,32 @@
             "group": "moex_currency",
             "priority": 52,
             "perm": "moex_currency"
+          }
+        ]
+      },
+      {
+        "prefix": "MOEX_DLY",
+        "perm": "moex",
+        "groups": [
+          {
+            "group": "moex_continuous_delayed",
+            "priority": 51
+          },
+          {
+            "group": "moex_delayed",
+            "priority": 52
+          },
+          {
+            "group": "moex_indices_delayed",
+            "priority": 52
+          },
+          {
+            "group": "moex_futures_delayed",
+            "priority": 52
+          },
+          {
+            "group": "moex_currency_delayed",
+            "priority": 52
           }
         ]
       },
@@ -1534,25 +1621,6 @@
       },
       {
         "priority": 52,
-        "prefix": "MOEX_DLY",
-        "perm": "moex",
-        "groups": [
-          {
-            "group": "moex_delayed"
-          },
-          {
-            "group": "moex_indices_delayed"
-          },
-          {
-            "group": "moex_futures_delayed"
-          },
-          {
-            "group": "moex_currency_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 52,
         "prefix": "BMFBOVESPA_DLY",
         "perm": "bovespa",
         "groups": [
@@ -1567,6 +1635,9 @@
           },
           {
             "group": "bovespa_futures_delayed"
+          },
+          {
+            "group": "bovespa_continuous_delayed"
           }
         ]
       },
@@ -1637,6 +1708,9 @@
           },
           {
             "group": "bse_futures_delayed"
+          },
+          {
+            "group": "bse_continuous_delayed"
           }
         ]
       },
@@ -1894,6 +1968,9 @@
         "groups": [
           {
             "group": "tfin_futures_delayed"
+          },
+          {
+            "group": "tfin_continuous_delayed"
           }
         ]
       },
@@ -1907,6 +1984,12 @@
           },
           {
             "group": "tocom_grain_futures_delayed"
+          },
+          {
+            "group": "tocom_continuous_delayed"
+          },
+          {
+            "group": "tocom_grain_continuous_delayed"
           }
         ]
       },
@@ -1990,6 +2073,9 @@
           },
           {
             "group": "singapore_futures_delayed"
+          },
+          {
+            "group": "singapore_continuous_delayed"
           }
         ]
       },
@@ -2090,6 +2176,10 @@
           {
             "group": "nzx_futures_delayed",
             "perm": "sf_dly"
+          },
+          {
+            "group": "nzx_continuous_delayed",
+            "perm": "sf_dly"
           }
         ]
       },
@@ -2134,6 +2224,10 @@
           {
             "group": "warsaw_futures_delayed",
             "priority": 76
+          },
+          {
+            "group": "warsaw_continuous_delayed",
+            "priority": 76
           }
         ]
       },
@@ -2151,6 +2245,10 @@
           },
           {
             "group": "telaviv_futures_delayed",
+            "priority": 76
+          },
+          {
+            "group": "telaviv_continuous_delayed",
             "priority": 76
           }
         ]
@@ -3383,6 +3481,10 @@
           {
             "group": "euronext_futures_delayed",
             "priority": 60
+          },
+          {
+            "group": "euronext_continuous_delayed",
+            "priority": 60
           }
         ]
       },
@@ -3479,6 +3581,15 @@
             "group": "cme_migration_to_nymex_continuous"
           },
           {
+            "group": "nymex_migration_continuous_delayed"
+          },
+          {
+            "group": "nymex_migration_by_mini_continuous_delayed"
+          },
+          {
+            "group": "cme_migration_to_nymex_continuous_delayed"
+          },
+          {
             "group": "nymex_migration",
             "priority": 50
           },
@@ -3573,6 +3684,125 @@
           },
           {
             "group": "cme_migration_mini_by_migration",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "prefix": "COMEX_DLY",
+        "groups": [
+          {
+            "group": "comex_migration_continuous_delayed",
+            "priority": 40
+          },
+          {
+            "group": "comex_migration_delayed",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "prefix": "COMEX_MINI_DLY",
+        "groups": [
+          {
+            "group": "comex_migration_mini_continuous_delayed",
+            "priority": 40
+          },
+          {
+            "group": "comex_migration_mini_delayed",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "priority": 40,
+        "prefix": "CBOT_DLY",
+        "groups": [
+          {
+            "group": "cbot_migration_continuous_delayed"
+          },
+          {
+            "group": "cbot_migration_by_mini_continuous_delayed"
+          },
+          {
+            "group": "cbot_migration_delayed",
+            "priority": 50
+          },
+          {
+            "group": "cbot_migration_by_mini_delayed",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "prefix": "CBOT_MINI_DLY",
+        "groups": [
+          {
+            "group": "cbot_migration_mini_continuous_delayed",
+            "priority": 40
+          },
+          {
+            "group": "cbot_migration_mini_delayed",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "priority": 40,
+        "prefix": "NYMEX_MINI_DLY",
+        "groups": [
+          {
+            "group": "nymex_migration_mini_continuous_delayed"
+          },
+          {
+            "group": "nymex_migration_mini_by_migration_continuous_delayed"
+          },
+          {
+            "group": "nymex_migration_mini_delayed",
+            "priority": 50
+          },
+          {
+            "group": "nymex_migration_mini_by_migration_delayed",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "priority": 40,
+        "prefix": "CME_DLY",
+        "groups": [
+          {
+            "group": "cme_migration_continuous_delayed"
+          },
+          {
+            "group": "cme_migration_by_mini_continuous_delayed"
+          },
+          {
+            "group": "cme_migration_delayed",
+            "priority": 50
+          },
+          {
+            "group": "cme_migration_by_mini_delayed",
+            "priority": 50
+          }
+        ]
+      },
+      {
+        "priority": 40,
+        "prefix": "CME_MINI_DLY",
+        "groups": [
+          {
+            "group": "cme_migration_mini_continuous_delayed"
+          },
+          {
+            "group": "cme_migration_mini_by_migration_continuous_delayed"
+          },
+          {
+            "group": "cme_migration_mini_delayed",
+            "priority": 50
+          },
+          {
+            "group": "cme_migration_mini_by_migration_delayed",
             "priority": 50
           }
         ]
@@ -4094,81 +4324,6 @@
       },
       {
         "priority": 50,
-        "prefix": "COMEX_DLY",
-        "groups": [
-          {
-            "group": "comex_migration_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "COMEX_MINI_DLY",
-        "groups": [
-          {
-            "group": "comex_migration_mini_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "CBOT_DLY",
-        "groups": [
-          {
-            "group": "cbot_migration_delayed"
-          },
-          {
-            "group": "cbot_migration_by_mini_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "CBOT_MINI_DLY",
-        "groups": [
-          {
-            "group": "cbot_migration_mini_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "NYMEX_MINI_DLY",
-        "groups": [
-          {
-            "group": "nymex_migration_mini_delayed"
-          },
-          {
-            "group": "nymex_migration_mini_by_migration_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "CME_DLY",
-        "groups": [
-          {
-            "group": "cme_migration_delayed"
-          },
-          {
-            "group": "cme_migration_by_mini_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
-        "prefix": "CME_MINI_DLY",
-        "groups": [
-          {
-            "group": "cme_migration_mini_delayed"
-          },
-          {
-            "group": "cme_migration_mini_by_migration_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 50,
         "prefix": "OMX",
         "perm": "permission_denied",
         "prefix_no_perm": [
@@ -4302,6 +4457,10 @@
           {
             "group": "hongkong_futures_delayed",
             "priority": 56
+          },
+          {
+            "group": "hongkong_continuous_delayed",
+            "priority": 56
           }
         ]
       },
@@ -4348,6 +4507,32 @@
             "group": "moex_currency",
             "priority": 52,
             "perm": "moex_currency"
+          }
+        ]
+      },
+      {
+        "prefix": "MOEX_DLY",
+        "perm": "moex",
+        "groups": [
+          {
+            "group": "moex_continuous_delayed",
+            "priority": 51
+          },
+          {
+            "group": "moex_delayed",
+            "priority": 52
+          },
+          {
+            "group": "moex_indices_delayed",
+            "priority": 52
+          },
+          {
+            "group": "moex_futures_delayed",
+            "priority": 52
+          },
+          {
+            "group": "moex_currency_delayed",
+            "priority": 52
           }
         ]
       },
@@ -4433,25 +4618,6 @@
       },
       {
         "priority": 52,
-        "prefix": "MOEX_DLY",
-        "perm": "moex",
-        "groups": [
-          {
-            "group": "moex_delayed"
-          },
-          {
-            "group": "moex_indices_delayed"
-          },
-          {
-            "group": "moex_futures_delayed"
-          },
-          {
-            "group": "moex_currency_delayed"
-          }
-        ]
-      },
-      {
-        "priority": 52,
         "prefix": "BMFBOVESPA_DLY",
         "perm": "bovespa",
         "groups": [
@@ -4466,6 +4632,9 @@
           },
           {
             "group": "bovespa_futures_delayed"
+          },
+          {
+            "group": "bovespa_continuous_delayed"
           }
         ]
       },
@@ -4536,6 +4705,9 @@
           },
           {
             "group": "bse_futures_delayed"
+          },
+          {
+            "group": "bse_continuous_delayed"
           }
         ]
       },
@@ -4793,6 +4965,9 @@
         "groups": [
           {
             "group": "tfin_futures_delayed"
+          },
+          {
+            "group": "tfin_continuous_delayed"
           }
         ]
       },
@@ -4806,6 +4981,12 @@
           },
           {
             "group": "tocom_grain_futures_delayed"
+          },
+          {
+            "group": "tocom_continuous_delayed"
+          },
+          {
+            "group": "tocom_grain_continuous_delayed"
           }
         ]
       },
@@ -4889,6 +5070,9 @@
           },
           {
             "group": "singapore_futures_delayed"
+          },
+          {
+            "group": "singapore_continuous_delayed"
           }
         ]
       },
@@ -4989,6 +5173,10 @@
           {
             "group": "nzx_futures_delayed",
             "perm": "sf_dly"
+          },
+          {
+            "group": "nzx_continuous_delayed",
+            "perm": "sf_dly"
           }
         ]
       },
@@ -5033,6 +5221,10 @@
           {
             "group": "warsaw_futures_delayed",
             "priority": 76
+          },
+          {
+            "group": "warsaw_continuous_delayed",
+            "priority": 76
           }
         ]
       },
@@ -5050,6 +5242,10 @@
           },
           {
             "group": "telaviv_futures_delayed",
+            "priority": 76
+          },
+          {
+            "group": "telaviv_continuous_delayed",
             "priority": 76
           }
         ]
