@@ -288,6 +288,20 @@
         ]
       },
       {
+        "prefix": "BITMEX",
+        "groups": [
+          {
+            "group": "bitmex2",
+            "priority": 14,
+            "skip_in_search": false
+          },
+          {
+            "group": "BITMEX",
+            "priority": 112
+          }
+        ]
+      },
+      {
         "priority": 15,
         "prefix": "USI",
         "groups": [
@@ -2600,15 +2614,6 @@
         "groups": [
           {
             "group": "KORBIT"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "BITMEX",
-        "groups": [
-          {
-            "group": "BITMEX"
           }
         ]
       },
@@ -3073,6 +3078,20 @@
         ]
       },
       {
+        "prefix": "BITMEX",
+        "groups": [
+          {
+            "group": "bitmex2",
+            "priority": 14,
+            "skip_in_search": false
+          },
+          {
+            "group": "BITMEX",
+            "priority": 112
+          }
+        ]
+      },
+      {
         "priority": 15,
         "prefix": "USI",
         "groups": [
@@ -5385,15 +5404,6 @@
         "groups": [
           {
             "group": "KORBIT"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "BITMEX",
-        "groups": [
-          {
-            "group": "BITMEX"
           }
         ]
       },
