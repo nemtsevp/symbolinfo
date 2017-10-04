@@ -1075,25 +1075,7 @@
         }
       },
       {
-        "id": "dowi2",
-        "kinds": {
-          "rt": {
-            "prefix": "INDEX",
-            "priority": 47
-          }
-        }
-      },
-      {
         "id": "spec",
-        "kinds": {
-          "rt": {
-            "prefix": "INDEX",
-            "priority": 47
-          }
-        }
-      },
-      {
-        "id": "snpi",
         "kinds": {
           "rt": {
             "prefix": "INDEX",
