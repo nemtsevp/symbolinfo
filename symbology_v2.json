@@ -328,20 +328,20 @@
         }
       },
       {
-        "id": "bitmex2",
+        "id": "bittrex_spreads",
         "kinds": {
           "rt": {
-            "prefix": "BITMEX",
+            "prefix": "BITTREX",
             "priority": 14,
             "skip_in_search": false
           }
         }
       },
       {
-        "id": "bittrex_spreads",
+        "id": "bitmex2",
         "kinds": {
           "rt": {
-            "prefix": "BITTREX",
+            "prefix": "BITMEX",
             "priority": 14,
             "skip_in_search": false
           }
