@@ -21,6 +21,18 @@
         ]
       },
       {
+        "prefix": "REUTERS_FUND",
+        "prefix_alias": [
+          "FUND"
+        ],
+        "resolve_mask": "REUTERS_FUND:*",
+        "groups": [
+          {
+            "group": "reuters_fund"
+          }
+        ]
+      },
+      {
         "priority": 10,
         "search_boost": 2.0,
         "prefix": "TVC",
@@ -298,6 +310,15 @@
           {
             "group": "BITMEX",
             "priority": 112
+          }
+        ]
+      },
+      {
+        "priority": 14,
+        "prefix": "IG",
+        "groups": [
+          {
+            "group": "ig"
           }
         ]
       },
@@ -3023,6 +3044,18 @@
         ]
       },
       {
+        "prefix": "REUTERS_FUND",
+        "prefix_alias": [
+          "FUND"
+        ],
+        "resolve_mask": "REUTERS_FUND:*",
+        "groups": [
+          {
+            "group": "reuters_fund"
+          }
+        ]
+      },
+      {
         "priority": 10,
         "search_boost": 2.0,
         "prefix": "TVC",
@@ -3300,6 +3333,15 @@
           {
             "group": "BITMEX",
             "priority": 112
+          }
+        ]
+      },
+      {
+        "priority": 14,
+        "prefix": "IG",
+        "groups": [
+          {
+            "group": "ig"
           }
         ]
       },
