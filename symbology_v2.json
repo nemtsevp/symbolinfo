@@ -3119,7 +3119,7 @@
         }
       },
       {
-        "id": "lima_stocks",
+        "id": "lima_indices",
         "kinds": {
           "rt": {
             "priority": 60,
@@ -3210,6 +3210,18 @@
         }
       },
       {
+        "id": "lima_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 61,
+            "prefix": "BVL",
+            "prefix_no_perm": [
+              "BVL_DLY"
+            ]
+          }
+        }
+      },
+      {
         "id": "santiago_stocks_delayed",
         "kinds": {
           "rt": {
@@ -3222,7 +3234,7 @@
         "id": "lima_stocks_delayed",
         "kinds": {
           "rt": {
-            "priority": 61,
+            "priority": 62,
             "prefix": "BVL_DLY"
           }
         }
@@ -3234,6 +3246,15 @@
             "priority": 63,
             "prefix": "MIL_EOD",
             "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "lima_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 63,
+            "prefix": "BVL_DLY"
           }
         }
       },
