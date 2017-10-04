@@ -338,16 +338,6 @@
         }
       },
       {
-        "id": "bitmex2",
-        "kinds": {
-          "rt": {
-            "prefix": "BITMEX",
-            "priority": 14,
-            "skip_in_search": false
-          }
-        }
-      },
-      {
         "id": "usi",
         "kinds": {
           "rt": {
