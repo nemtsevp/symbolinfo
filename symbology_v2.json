@@ -563,7 +563,7 @@
             "prefix": "COMEX",
             "perm": "comex",
             "prefix_no_perm": [
-              "COMEX_DLY"
+              "COMEX_DL"
             ]
           }
         }
@@ -576,7 +576,7 @@
             "prefix": "COMEX_MINI",
             "perm": "comex_mini",
             "prefix_no_perm": [
-              "COMEX_MINI_DLY"
+              "COMEX_MINI_DL"
             ]
           }
         }
@@ -589,7 +589,7 @@
             "prefix": "CBOT",
             "perm": "cbot",
             "prefix_no_perm": [
-              "CBOT_DLY"
+              "CBOT_DL"
             ]
           }
         }
@@ -602,7 +602,7 @@
             "prefix": "CBOT",
             "perm": "cbot",
             "prefix_no_perm": [
-              "CBOT_DLY"
+              "CBOT_DL"
             ]
           }
         }
@@ -615,7 +615,7 @@
             "prefix": "CBOT_MINI",
             "perm": "cbot_mini",
             "prefix_no_perm": [
-              "CBOT_MINI_DLY"
+              "CBOT_MINI_DL"
             ]
           }
         }
@@ -625,10 +625,10 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "NYMEX_DLY",
+            "prefix": "NYMEX",
             "perm": "nymex",
             "prefix_no_perm": [
-              "NYMEX_DLY"
+              "NYMEX_DL"
             ]
           }
         }
@@ -641,7 +641,7 @@
             "prefix": "NYMEX_MINI",
             "perm": "nymex_mini",
             "prefix_no_perm": [
-              "NYMEX_MINI_DLY"
+              "NYMEX_MINI_DL"
             ]
           }
         }
@@ -654,7 +654,7 @@
             "prefix": "NYMEX_MINI",
             "perm": "nymex_mini",
             "prefix_no_perm": [
-              "NYMEX_MINI_DLY"
+              "NYMEX_MINI_DL"
             ]
           }
         }
@@ -664,10 +664,10 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "NYMEX_DLY",
+            "prefix": "NYMEX",
             "perm": "nymex",
             "prefix_no_perm": [
-              "NYMEX_DLY"
+              "NYMEX_DL"
             ]
           }
         }
@@ -677,10 +677,10 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "NYMEX_DLY",
+            "prefix": "NYMEX",
             "perm": "nymex",
             "prefix_no_perm": [
-              "NYMEX_DLY"
+              "NYMEX_DL"
             ]
           }
         }
@@ -693,7 +693,7 @@
             "prefix": "CME",
             "perm": "cme",
             "prefix_no_perm": [
-              "CME_DLY"
+              "CME_DL"
             ]
           }
         }
@@ -706,7 +706,7 @@
             "prefix": "CME_MINI",
             "perm": "cme_mini",
             "prefix_no_perm": [
-              "CME_MINI_DLY"
+              "CME_MINI_DL"
             ]
           }
         }
@@ -719,7 +719,7 @@
             "prefix": "CME_MINI",
             "perm": "cme_mini",
             "prefix_no_perm": [
-              "CME_MINI_DLY"
+              "CME_MINI_DL"
             ]
           }
         }
@@ -732,7 +732,7 @@
             "prefix": "CME",
             "perm": "cme",
             "prefix_no_perm": [
-              "CME_DLY"
+              "CME_DL"
             ]
           }
         }
@@ -742,7 +742,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "COMEX_DLY"
+            "prefix": "COMEX_DL"
           }
         }
       },
@@ -751,7 +751,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "COMEX_MINI_DLY"
+            "prefix": "COMEX_MINI_DL"
           }
         }
       },
@@ -760,7 +760,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "CBOT_DLY"
+            "prefix": "CBOT_DL"
           }
         }
       },
@@ -769,7 +769,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "CBOT_DLY"
+            "prefix": "CBOT_DL"
           }
         }
       },
@@ -778,7 +778,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "CBOT_MINI_DLY"
+            "prefix": "CBOT_MINI_DL"
           }
         }
       },
@@ -787,7 +787,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "NYMEX_DLY"
+            "prefix": "NYMEX_DL"
           }
         }
       },
@@ -796,7 +796,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "NYMEX_MINI_DLY"
+            "prefix": "NYMEX_MINI_DL"
           }
         }
       },
@@ -805,7 +805,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "NYMEX_MINI_DLY"
+            "prefix": "NYMEX_MINI_DL"
           }
         }
       },
@@ -814,7 +814,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "NYMEX_DLY"
+            "prefix": "NYMEX_DL"
           }
         }
       },
@@ -823,7 +823,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "NYMEX_DLY"
+            "prefix": "NYMEX_DL"
           }
         }
       },
@@ -832,7 +832,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "CME_DLY"
+            "prefix": "CME_DL"
           }
         }
       },
@@ -841,7 +841,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "CME_MINI_DLY"
+            "prefix": "CME_MINI_DL"
           }
         }
       },
@@ -850,7 +850,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "CME_MINI_DLY"
+            "prefix": "CME_MINI_DL"
           }
         }
       },
@@ -859,7 +859,7 @@
         "kinds": {
           "rt": {
             "priority": 40,
-            "prefix": "CME_DLY"
+            "prefix": "CME_DL"
           }
         }
       },
@@ -1461,7 +1461,7 @@
             "prefix": "COMEX",
             "perm": "comex",
             "prefix_no_perm": [
-              "COMEX_DLY"
+              "COMEX_DL"
             ]
           }
         }
@@ -1474,7 +1474,7 @@
             "prefix": "COMEX_MINI",
             "perm": "comex_mini",
             "prefix_no_perm": [
-              "COMEX_MINI_DLY"
+              "COMEX_MINI_DL"
             ]
           }
         }
@@ -1487,7 +1487,7 @@
             "prefix": "CBOT",
             "perm": "cbot",
             "prefix_no_perm": [
-              "CBOT_DLY"
+              "CBOT_DL"
             ]
           }
         }
@@ -1500,7 +1500,7 @@
             "prefix": "CBOT",
             "perm": "cbot",
             "prefix_no_perm": [
-              "CBOT_DLY"
+              "CBOT_DL"
             ]
           }
         }
@@ -1513,7 +1513,7 @@
             "prefix": "CBOT_MINI",
             "perm": "cbot_mini",
             "prefix_no_perm": [
-              "CBOT_MINI_DLY"
+              "CBOT_MINI_DL"
             ]
           }
         }
@@ -1523,10 +1523,10 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "NYMEX_DLY",
+            "prefix": "NYMEX",
             "perm": "nymex",
             "prefix_no_perm": [
-              "NYMEX_DLY"
+              "NYMEX_DL"
             ]
           }
         }
@@ -1539,7 +1539,7 @@
             "prefix": "NYMEX_MINI",
             "perm": "nymex_mini",
             "prefix_no_perm": [
-              "NYMEX_MINI_DLY"
+              "NYMEX_MINI_DL"
             ]
           }
         }
@@ -1552,7 +1552,7 @@
             "prefix": "NYMEX_MINI",
             "perm": "nymex",
             "prefix_no_perm": [
-              "NYMEX_MINI_DLY"
+              "NYMEX_MINI_DL"
             ]
           }
         }
@@ -1562,10 +1562,10 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "NYMEX_DLY",
+            "prefix": "NYMEX",
             "perm": "nymex",
             "prefix_no_perm": [
-              "NYMEX_DLY"
+              "NYMEX_DL"
             ]
           }
         }
@@ -1575,10 +1575,10 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "NYMEX_DLY",
+            "prefix": "NYMEX",
             "perm": "nymex",
             "prefix_no_perm": [
-              "NYMEX_DLY"
+              "NYMEX_DL"
             ]
           }
         }
@@ -1591,7 +1591,7 @@
             "prefix": "CME",
             "perm": "cme",
             "prefix_no_perm": [
-              "CME_DLY"
+              "CME_DL"
             ]
           }
         }
@@ -1604,7 +1604,7 @@
             "prefix": "CME_MINI",
             "perm": "cme_mini",
             "prefix_no_perm": [
-              "CME_MINI_DLY"
+              "CME_MINI_DL"
             ]
           }
         }
@@ -1617,7 +1617,7 @@
             "prefix": "CME_MINI",
             "perm": "cme_mini",
             "prefix_no_perm": [
-              "CME_MINI_DLY"
+              "CME_MINI_DL"
             ]
           }
         }
@@ -1630,7 +1630,7 @@
             "prefix": "CME",
             "perm": "cme",
             "prefix_no_perm": [
-              "CME_DLY"
+              "CME_DL"
             ]
           }
         }
@@ -1747,7 +1747,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "COMEX_DLY"
+            "prefix": "COMEX_DL"
           }
         }
       },
@@ -1756,7 +1756,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "COMEX_MINI_DLY"
+            "prefix": "COMEX_MINI_DL"
           }
         }
       },
@@ -1765,7 +1765,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "CBOT_DLY"
+            "prefix": "CBOT_DL"
           }
         }
       },
@@ -1774,7 +1774,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "CBOT_DLY"
+            "prefix": "CBOT_DL"
           }
         }
       },
@@ -1783,7 +1783,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "CBOT_MINI_DLY"
+            "prefix": "CBOT_MINI_DL"
           }
         }
       },
@@ -1792,7 +1792,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "NYMEX_DLY"
+            "prefix": "NYMEX_DL"
           }
         }
       },
@@ -1801,7 +1801,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "NYMEX_MINI_DLY"
+            "prefix": "NYMEX_MINI_DL"
           }
         }
       },
@@ -1810,7 +1810,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "NYMEX_MINI_DLY"
+            "prefix": "NYMEX_MINI_DL"
           }
         }
       },
@@ -1819,7 +1819,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "NYMEX_DLY"
+            "prefix": "NYMEX_DL"
           }
         }
       },
@@ -1828,7 +1828,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "NYMEX_DLY"
+            "prefix": "NYMEX_DL"
           }
         }
       },
@@ -1837,7 +1837,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "CME_DLY"
+            "prefix": "CME_DL"
           }
         }
       },
@@ -1846,7 +1846,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "CME_MINI_DLY"
+            "prefix": "CME_MINI_DL"
           }
         }
       },
@@ -1855,7 +1855,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "CME_MINI_DLY"
+            "prefix": "CME_MINI_DL"
           }
         }
       },
@@ -1864,7 +1864,7 @@
         "kinds": {
           "rt": {
             "priority": 50,
-            "prefix": "CME_DLY"
+            "prefix": "CME_DL"
           }
         }
       },
