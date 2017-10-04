@@ -21,6 +21,18 @@
         }
       },
       {
+        "id": "reuters_fund",
+        "kinds": {
+          "rt": {
+            "prefix": "REUTERS_FUND",
+            "resolve_mask": "REUTERS_FUND:*",
+            "prefix_alias": [
+              "FUND"
+            ]
+          }
+        }
+      },
+      {
         "id": "forex_tvc",
         "kinds": {
           "rt": {
@@ -328,6 +340,16 @@
         }
       },
       {
+        "id": "bittrex_spreads",
+        "kinds": {
+          "rt": {
+            "prefix": "BITTREX",
+            "priority": 14,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
         "id": "bitmex2",
         "kinds": {
           "rt": {
@@ -338,12 +360,11 @@
         }
       },
       {
-        "id": "bittrex_spreads",
+        "id": "ig",
         "kinds": {
           "rt": {
-            "prefix": "BITTREX",
-            "priority": 14,
-            "skip_in_search": false
+            "prefix": "IG",
+            "priority": 14
           }
         }
       },
