@@ -261,15 +261,6 @@
         }
       },
       {
-        "id": "kraken",
-        "kinds": {
-          "rt": {
-            "prefix": "KRAKEN",
-            "priority": 12
-          }
-        }
-      },
-      {
         "id": "poloniex",
         "kinds": {
           "rt": {
@@ -350,16 +341,6 @@
         }
       },
       {
-        "id": "bitmex2",
-        "kinds": {
-          "rt": {
-            "prefix": "BITMEX",
-            "priority": 14,
-            "skip_in_search": false
-          }
-        }
-      },
-      {
         "id": "ig",
         "kinds": {
           "rt": {
@@ -374,6 +355,25 @@
           "rt": {
             "prefix": "USI",
             "priority": 15
+          }
+        }
+      },
+      {
+        "id": "bitmex2",
+        "kinds": {
+          "rt": {
+            "prefix": "BITMEX",
+            "priority": 15,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "kraken",
+        "kinds": {
+          "rt": {
+            "prefix": "KRAKEN",
+            "priority": 19
           }
         }
       },
