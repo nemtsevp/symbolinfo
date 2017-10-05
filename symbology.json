@@ -286,15 +286,6 @@
         ]
       },
       {
-        "priority": 14,
-        "prefix": "IG",
-        "groups": [
-          {
-            "group": "ig"
-          }
-        ]
-      },
-      {
         "priority": 15,
         "prefix": "USI",
         "groups": [
@@ -3313,15 +3304,6 @@
           },
           {
             "group": "bittrex_spreads"
-          }
-        ]
-      },
-      {
-        "priority": 14,
-        "prefix": "IG",
-        "groups": [
-          {
-            "group": "ig"
           }
         ]
       },
