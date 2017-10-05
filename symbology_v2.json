@@ -341,15 +341,6 @@
         }
       },
       {
-        "id": "ig",
-        "kinds": {
-          "rt": {
-            "prefix": "IG",
-            "priority": 14
-          }
-        }
-      },
-      {
         "id": "usi",
         "kinds": {
           "rt": {
