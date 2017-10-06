@@ -50,7 +50,8 @@
             "priority": 10,
             "exchange_for_display": "S&P",
             "prefix_alias": [
-              "SP_DLY"
+              "SP_DLY",
+              "INDEX"
             ],
             "perm": "spindices"
           }
@@ -64,7 +65,8 @@
             "priority": 10,
             "exchange_for_display": "Dow Jones",
             "prefix_alias": [
-              "DJ_DLY"
+              "DJ_DLY",
+              "INDEX"
             ],
             "skip_in_search": false,
             "perm": "djindices_dly"
@@ -78,7 +80,8 @@
             "prefix": "CBOE",
             "priority": 10,
             "prefix_alias": [
-              "CBOE_DLY"
+              "CBOE_DLY",
+              "INDEX"
             ],
             "skip_in_search": false,
             "perm": "cboe_dly"
@@ -1075,15 +1078,6 @@
             "prefix": "INDEX",
             "priority": 47,
             "search_boost": 2.0
-          }
-        }
-      },
-      {
-        "id": "cfei",
-        "kinds": {
-          "rt": {
-            "prefix": "INDEX",
-            "priority": 47
           }
         }
       },
