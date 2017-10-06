@@ -96,7 +96,8 @@
         "perm": "spindices",
         "exchange_for_display": "S&P",
         "prefix_alias": [
-          "SP_DLY"
+          "SP_DLY",
+          "INDEX"
         ],
         "groups": [
           {
@@ -111,7 +112,8 @@
         "exchange_for_display": "Dow Jones",
         "skip_in_search": false,
         "prefix_alias": [
-          "DJ_DLY"
+          "DJ_DLY",
+          "INDEX"
         ],
         "groups": [
           {
@@ -128,7 +130,8 @@
             "perm": "cboe_dly",
             "skip_in_search": false,
             "prefix_alias": [
-              "CBOE_DLY"
+              "CBOE_DLY",
+              "INDEX"
             ]
           },
           {
@@ -991,9 +994,6 @@
           {
             "group": "dxy",
             "search_boost": 2.0
-          },
-          {
-            "group": "cfei"
           },
           {
             "group": "ind"
@@ -3118,7 +3118,8 @@
         "perm": "spindices",
         "exchange_for_display": "S&P",
         "prefix_alias": [
-          "SP_DLY"
+          "SP_DLY",
+          "INDEX"
         ],
         "groups": [
           {
@@ -3133,7 +3134,8 @@
         "exchange_for_display": "Dow Jones",
         "skip_in_search": false,
         "prefix_alias": [
-          "DJ_DLY"
+          "DJ_DLY",
+          "INDEX"
         ],
         "groups": [
           {
@@ -3150,7 +3152,8 @@
             "perm": "cboe_dly",
             "skip_in_search": false,
             "prefix_alias": [
-              "CBOE_DLY"
+              "CBOE_DLY",
+              "INDEX"
             ]
           },
           {
@@ -4013,9 +4016,6 @@
           {
             "group": "dxy",
             "search_boost": 2.0
-          },
-          {
-            "group": "cfei"
           },
           {
             "group": "ind"
