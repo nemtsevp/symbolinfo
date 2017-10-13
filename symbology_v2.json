@@ -53,7 +53,10 @@
               "SP_DLY",
               "INDEX"
             ],
-            "perm": "spindices"
+            "perm": "spindices",
+            "prefix_no_perm": [
+              "SP_EOD"
+            ]
           }
         }
       },
@@ -69,7 +72,10 @@
               "INDEX"
             ],
             "skip_in_search": false,
-            "perm": "djindices_dly"
+            "perm": "djindices_dly",
+            "prefix_no_perm": [
+              "DJ_EOD"
+            ]
           }
         }
       },
@@ -84,7 +90,10 @@
               "INDEX"
             ],
             "skip_in_search": false,
-            "perm": "cboe_dly"
+            "perm": "cboe_dly",
+            "prefix_no_perm": [
+              "CBOE_EOD"
+            ]
           }
         }
       },
