@@ -82,6 +82,9 @@
         "priority": 10,
         "prefix": "SP",
         "perm": "spindices",
+        "prefix_no_perm": [
+          "SP_EOD"
+        ],
         "exchange_for_display": "S&P",
         "prefix_alias": [
           "SP_DLY",
@@ -97,6 +100,9 @@
         "priority": 10,
         "prefix": "DJ",
         "perm": "djindices_dly",
+        "prefix_no_perm": [
+          "DJ_EOD"
+        ],
         "exchange_for_display": "Dow Jones",
         "skip_in_search": false,
         "prefix_alias": [
@@ -116,6 +122,9 @@
             "group": "cboe_indices_delayed",
             "priority": 10,
             "perm": "cboe_dly",
+            "prefix_no_perm": [
+              "CBOE_EOD"
+            ],
             "skip_in_search": false,
             "prefix_alias": [
               "CBOE_DLY",
@@ -2867,6 +2876,9 @@
         "priority": 10,
         "prefix": "SP",
         "perm": "spindices",
+        "prefix_no_perm": [
+          "SP_EOD"
+        ],
         "exchange_for_display": "S&P",
         "prefix_alias": [
           "SP_DLY",
@@ -2882,6 +2894,9 @@
         "priority": 10,
         "prefix": "DJ",
         "perm": "djindices_dly",
+        "prefix_no_perm": [
+          "DJ_EOD"
+        ],
         "exchange_for_display": "Dow Jones",
         "skip_in_search": false,
         "prefix_alias": [
@@ -2901,6 +2916,9 @@
             "group": "cboe_indices_delayed",
             "priority": 10,
             "perm": "cboe_dly",
+            "prefix_no_perm": [
+              "CBOE_EOD"
+            ],
             "skip_in_search": false,
             "prefix_alias": [
               "CBOE_DLY",
