@@ -227,20 +227,6 @@
         ]
       },
       {
-        "prefix": "KRAKEN",
-        "groups": [
-          {
-            "group": "kraken",
-            "priority": 12
-          },
-          {
-            "group": "kraken_spreads",
-            "priority": 112,
-            "skip_in_search": false
-          }
-        ]
-      },
-      {
         "priority": 12,
         "prefix": "POLONIEX",
         "skip_in_search": false,
@@ -305,6 +291,29 @@
         "groups": [
           {
             "group": "usi"
+          }
+        ]
+      },
+      {
+        "priority": 15,
+        "prefix": "BITMEX",
+        "groups": [
+          {
+            "group": "BITMEX"
+          }
+        ]
+      },
+      {
+        "prefix": "KRAKEN",
+        "groups": [
+          {
+            "group": "kraken",
+            "priority": 19
+          },
+          {
+            "group": "kraken_spreads",
+            "priority": 112,
+            "skip_in_search": false
           }
         ]
       },
@@ -2609,15 +2618,6 @@
         "groups": [
           {
             "group": "KORBIT"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "BITMEX",
-        "groups": [
-          {
-            "group": "BITMEX"
           }
         ]
       },
@@ -3021,20 +3021,6 @@
         ]
       },
       {
-        "prefix": "KRAKEN",
-        "groups": [
-          {
-            "group": "kraken",
-            "priority": 12
-          },
-          {
-            "group": "kraken_spreads",
-            "priority": 112,
-            "skip_in_search": false
-          }
-        ]
-      },
-      {
         "priority": 12,
         "prefix": "POLONIEX",
         "skip_in_search": false,
@@ -3099,6 +3085,29 @@
         "groups": [
           {
             "group": "usi"
+          }
+        ]
+      },
+      {
+        "priority": 15,
+        "prefix": "BITMEX",
+        "groups": [
+          {
+            "group": "BITMEX"
+          }
+        ]
+      },
+      {
+        "prefix": "KRAKEN",
+        "groups": [
+          {
+            "group": "kraken",
+            "priority": 19
+          },
+          {
+            "group": "kraken_spreads",
+            "priority": 112,
+            "skip_in_search": false
           }
         ]
       },
@@ -5403,15 +5412,6 @@
         "groups": [
           {
             "group": "KORBIT"
-          }
-        ]
-      },
-      {
-        "priority": 112,
-        "prefix": "BITMEX",
-        "groups": [
-          {
-            "group": "BITMEX"
           }
         ]
       },
