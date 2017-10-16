@@ -2364,6 +2364,22 @@
         ]
       },
       {
+        "prefix": "NSENG",
+        "prefix_no_perm": [
+          "NSENG_DLY"
+        ],
+        "groups": [
+          {
+            "group": "nigerian_indices",
+            "priority": 79
+          },
+          {
+            "group": "nigerian_stocks",
+            "priority": 80
+          }
+        ]
+      },
+      {
         "prefix": "QSE",
         "prefix_no_perm": [
           "QSE_DLY"
@@ -2436,6 +2452,19 @@
           },
           {
             "group": "egyptian_stocks_delayed",
+            "priority": 81
+          }
+        ]
+      },
+      {
+        "prefix": "NSENG_DLY",
+        "groups": [
+          {
+            "group": "nigerian_indices_delayed",
+            "priority": 80
+          },
+          {
+            "group": "nigerian_stocks_delayed",
             "priority": 81
           }
         ]
@@ -5433,6 +5462,22 @@
         ]
       },
       {
+        "prefix": "NSENG",
+        "prefix_no_perm": [
+          "NSENG_DLY"
+        ],
+        "groups": [
+          {
+            "group": "nigerian_indices",
+            "priority": 79
+          },
+          {
+            "group": "nigerian_stocks",
+            "priority": 80
+          }
+        ]
+      },
+      {
         "prefix": "QSE",
         "prefix_no_perm": [
           "QSE_DLY"
@@ -5505,6 +5550,19 @@
           },
           {
             "group": "egyptian_stocks_delayed",
+            "priority": 81
+          }
+        ]
+      },
+      {
+        "prefix": "NSENG_DLY",
+        "groups": [
+          {
+            "group": "nigerian_indices_delayed",
+            "priority": 80
+          },
+          {
+            "group": "nigerian_stocks_delayed",
             "priority": 81
           }
         ]
