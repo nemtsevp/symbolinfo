@@ -472,7 +472,10 @@
           "rt": {
             "prefix": "EURONEXT",
             "priority": 38,
-            "perm": "euronext_dly"
+            "perm": "euronext_dly",
+            "prefix_alias": [
+              "EURONEXT_DLY"
+            ]
           }
         }
       },
@@ -485,6 +488,9 @@
             "prefix": "BME",
             "perm": "bme_dly",
             "prefix_no_perm": [
+              "BME_DLY"
+            ],
+            "prefix_alias": [
               "BME_DLY"
             ]
           }
@@ -3702,6 +3708,18 @@
         }
       },
       {
+        "id": "nigerian_indices",
+        "kinds": {
+          "rt": {
+            "priority": 79,
+            "prefix": "NSENG",
+            "prefix_no_perm": [
+              "NSENG_DLY"
+            ]
+          }
+        }
+      },
+      {
         "id": "qatar_indices",
         "kinds": {
           "rt": {
@@ -3762,11 +3780,32 @@
         }
       },
       {
+        "id": "nigerian_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 80,
+            "prefix": "NSENG",
+            "prefix_no_perm": [
+              "NSENG_DLY"
+            ]
+          }
+        }
+      },
+      {
         "id": "egyptian_indices_delayed",
         "kinds": {
           "rt": {
             "priority": 80,
             "prefix": "EGX_DLY"
+          }
+        }
+      },
+      {
+        "id": "nigerian_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 80,
+            "prefix": "NSENG_DLY"
           }
         }
       },
@@ -3812,6 +3851,15 @@
           "rt": {
             "priority": 81,
             "prefix": "EGX_DLY"
+          }
+        }
+      },
+      {
+        "id": "nigerian_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 81,
+            "prefix": "NSENG_DLY"
           }
         }
       },
