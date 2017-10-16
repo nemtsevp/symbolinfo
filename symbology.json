@@ -407,7 +407,10 @@
           {
             "group": "euronext_primary_indices",
             "priority": 38,
-            "perm": "euronext_dly"
+            "perm": "euronext_dly",
+            "prefix_alias": [
+              "EURONEXT_DLY"
+            ]
           },
           {
             "group": "euronext_indices",
@@ -453,7 +456,10 @@
           {
             "group": "bme_indices",
             "priority": 39,
-            "perm": "bme_dly"
+            "perm": "bme_dly",
+            "prefix_alias": [
+              "BME_DLY"
+            ]
           },
           {
             "group": "bme_stocks",
@@ -3470,7 +3476,10 @@
           {
             "group": "euronext_primary_indices",
             "priority": 38,
-            "perm": "euronext_dly"
+            "perm": "euronext_dly",
+            "prefix_alias": [
+              "EURONEXT_DLY"
+            ]
           },
           {
             "group": "euronext_indices",
@@ -3516,7 +3525,10 @@
           {
             "group": "bme_indices",
             "priority": 39,
-            "perm": "bme_dly"
+            "perm": "bme_dly",
+            "prefix_alias": [
+              "BME_DLY"
+            ]
           },
           {
             "group": "bme_stocks",
