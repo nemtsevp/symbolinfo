@@ -467,13 +467,23 @@
         }
       },
       {
+        "id": "euronext_primary_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "EURONEXT",
+            "priority": 38,
+            "perm": "euronext_dly"
+          }
+        }
+      },
+      {
         "id": "bme_indices",
         "kinds": {
           "rt": {
             "priority": 39,
             "search_boost": 0.6,
             "prefix": "BME",
-            "perm": "bme",
+            "perm": "bme_dly",
             "prefix_no_perm": [
               "BME_DLY"
             ]
@@ -594,7 +604,7 @@
           "rt": {
             "priority": 40,
             "prefix": "EURONEXT_DLY",
-            "perm": "euronext_dly"
+            "perm": "sf_dly"
           }
         }
       },
@@ -903,6 +913,16 @@
           "rt": {
             "priority": 40,
             "prefix": "CME_DL"
+          }
+        }
+      },
+      {
+        "id": "euronext_non_primary_indices",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "EURONEXT_DLY",
+            "perm": "euronext_dly"
           }
         }
       },
@@ -1435,7 +1455,7 @@
           "rt": {
             "priority": 49,
             "prefix": "BME_DLY",
-            "perm": "bme_dly"
+            "perm": "sf_dly"
           }
         }
       },
