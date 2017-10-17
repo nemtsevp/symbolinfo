@@ -4649,6 +4649,15 @@
         }
       },
       {
+        "id": "wex",
+        "kinds": {
+          "rt": {
+            "prefix": "WEX",
+            "priority": 112
+          }
+        }
+      },
+      {
         "id": "MTGOX",
         "kinds": {
           "rt": {
