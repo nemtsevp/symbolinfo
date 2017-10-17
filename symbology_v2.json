@@ -488,6 +488,19 @@
         }
       },
       {
+        "id": "euronext_non_primary_indices",
+        "kinds": {
+          "rt": {
+            "priority": 39,
+            "prefix": "EURONEXT",
+            "perm": "euronext_indices",
+            "prefix_no_perm": [
+              "EURONEXT_DLY"
+            ]
+          }
+        }
+      },
+      {
         "id": "lse_uk",
         "kinds": {
           "rt": {
@@ -901,7 +914,7 @@
         }
       },
       {
-        "id": "euronext_non_primary_indices",
+        "id": "euronext_non_primary_indices_delayed",
         "kinds": {
           "rt": {
             "priority": 40,
