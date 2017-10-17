@@ -395,6 +395,14 @@
             ]
           },
           {
+            "group": "euronext_non_primary_indices",
+            "priority": 39,
+            "perm": "euronext_indices",
+            "prefix_no_perm": [
+              "EURONEXT_DLY"
+            ]
+          },
+          {
             "group": "euronext_stocks",
             "priority": 55,
             "perm": "euronext_stocks",
@@ -520,7 +528,7 @@
             "perm": "sf_dly"
           },
           {
-            "group": "euronext_non_primary_indices",
+            "group": "euronext_non_primary_indices_delayed",
             "perm": "euronext_dly"
           },
           {
@@ -3218,6 +3226,14 @@
             ]
           },
           {
+            "group": "euronext_non_primary_indices",
+            "priority": 39,
+            "perm": "euronext_indices",
+            "prefix_no_perm": [
+              "EURONEXT_DLY"
+            ]
+          },
+          {
             "group": "euronext_stocks",
             "priority": 55,
             "perm": "euronext_stocks",
@@ -3343,7 +3359,7 @@
             "perm": "sf_dly"
           },
           {
-            "group": "euronext_non_primary_indices",
+            "group": "euronext_non_primary_indices_delayed",
             "perm": "euronext_dly"
           },
           {
