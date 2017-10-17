@@ -2989,6 +2989,15 @@
         ]
       },
       {
+        "priority": 112,
+        "prefix": "WEX",
+        "groups": [
+          {
+            "group": "wex"
+          }
+        ]
+      },
+      {
         "priority": 113,
         "prefix": "MTGOX",
         "groups": [
@@ -6083,6 +6092,15 @@
         "groups": [
           {
             "group": "BXTH"
+          }
+        ]
+      },
+      {
+        "priority": 112,
+        "prefix": "WEX",
+        "groups": [
+          {
+            "group": "wex"
           }
         ]
       },
