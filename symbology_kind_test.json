@@ -1,0 +1,4316 @@
+[
+  {
+    "id": "tv",
+    "groups": [
+      {
+        "id": "quandl",
+        "kinds": {
+          "rt": {
+            "prefix": "QUANDL",
+            "resolve_mask": "QUANDL:*"
+          }
+        }
+      },
+      {
+        "id": "edgar_fundamentals",
+        "kinds": {
+          "rt": {
+            "prefix": "EDGR",
+            "resolve_mask": "EDGR:*"
+          }
+        }
+      },
+      {
+        "id": "forex_tvc",
+        "kinds": {
+          "rt": {
+            "prefix": "TVC",
+            "priority": 10,
+            "search_boost": 2.0
+          }
+        }
+      },
+      {
+        "id": "dxy_idc2",
+        "kinds": {
+          "rt": {
+            "prefix": "TVC",
+            "priority": 10,
+            "search_boost": 2.0,
+            "perm": "tvc_cfd"
+          }
+        }
+      },
+      {
+        "id": "us_chicago_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "TVC",
+            "priority": 10,
+            "search_boost": 2.0,
+            "perm": "tvc_cfd"
+          }
+        }
+      },
+      {
+        "id": "us_ny_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "TVC",
+            "priority": 10,
+            "search_boost": 2.0,
+            "perm": "tvc_cfd"
+          }
+        }
+      },
+      {
+        "id": "japan_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "TVC",
+            "priority": 10,
+            "search_boost": 2.0,
+            "perm": "tvc_cfd"
+          }
+        }
+      },
+      {
+        "id": "china_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "TVC",
+            "priority": 10,
+            "search_boost": 2.0,
+            "perm": "tvc_cfd"
+          }
+        }
+      },
+      {
+        "id": "european_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "TVC",
+            "priority": 10,
+            "search_boost": 2.0,
+            "perm": "tvc_cfd"
+          }
+        }
+      },
+      {
+        "id": "british_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "TVC",
+            "priority": 10,
+            "search_boost": 2.0,
+            "perm": "tvc_cfd"
+          }
+        }
+      },
+      {
+        "id": "spanish_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "TVC",
+            "priority": 10,
+            "search_boost": 2.0,
+            "perm": "tvc_cfd"
+          }
+        }
+      },
+      {
+        "id": "fxcm",
+        "kinds": {
+          "rt": {
+            "prefix": "FX",
+            "priority": 10,
+            "exchange_for_display": "FXCM"
+          }
+        }
+      },
+      {
+        "id": "bitstamp",
+        "kinds": {
+          "rt": {
+            "prefix": "BITSTAMP",
+            "priority": 11
+          }
+        }
+      },
+      {
+        "id": "btcchina",
+        "kinds": {
+          "rt": {
+            "prefix": "BTCCHINA",
+            "priority": 11,
+            "prefix_alias": [
+              "BTCC"
+            ]
+          }
+        }
+      },
+      {
+        "id": "fxcm_cfd",
+        "kinds": {
+          "rt": {
+            "prefix": "FX",
+            "priority": 11,
+            "exchange_for_display": "FXCM",
+            "perm": "fxcm_cfd"
+          }
+        }
+      },
+      {
+        "id": "coinbase",
+        "kinds": {
+          "rt": {
+            "prefix": "COINBASE",
+            "priority": 12
+          }
+        }
+      },
+      {
+        "id": "oanda",
+        "kinds": {
+          "rt": {
+            "prefix": "OANDA",
+            "priority": 12
+          }
+        }
+      },
+      {
+        "id": "huobi",
+        "kinds": {
+          "rt": {
+            "prefix": "HUOBI",
+            "priority": 12
+          }
+        }
+      },
+      {
+        "id": "bitfinex",
+        "kinds": {
+          "rt": {
+            "prefix": "BITFINEX",
+            "priority": 12
+          }
+        }
+      },
+      {
+        "id": "mercado",
+        "kinds": {
+          "rt": {
+            "prefix": "MERCADO",
+            "priority": 12
+          }
+        }
+      },
+      {
+        "id": "kraken",
+        "kinds": {
+          "rt": {
+            "prefix": "KRAKEN",
+            "priority": 12
+          }
+        }
+      },
+      {
+        "id": "poloniex",
+        "kinds": {
+          "rt": {
+            "prefix": "POLONIEX",
+            "priority": 12,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "bitflyer",
+        "kinds": {
+          "rt": {
+            "prefix": "BITFLYER",
+            "priority": 12,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "frbny",
+        "kinds": {
+          "rt": {
+            "prefix": "FRBNY",
+            "priority": 12
+          }
+        }
+      },
+      {
+        "id": "gain",
+        "kinds": {
+          "rt": {
+            "prefix": "FOREXCOM",
+            "priority": 13,
+            "exchange_for_display": "FOREX.com",
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "bittrex",
+        "kinds": {
+          "rt": {
+            "prefix": "BITTREX",
+            "priority": 14,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "usi",
+        "kinds": {
+          "rt": {
+            "prefix": "USI",
+            "priority": 15
+          }
+        }
+      },
+      {
+        "id": "nasdaq_idc",
+        "kinds": {
+          "rt": {
+            "prefix": "NASDAQ",
+            "priority": 20,
+            "search_boost": 1.8,
+            "perm": "nasdaq",
+            "prefix_no_perm": [
+              "BATS"
+            ]
+          }
+        }
+      },
+      {
+        "id": "government_bonds",
+        "kinds": {
+          "rt": {
+            "prefix": "TVC",
+            "priority": 20,
+            "search_boost": 2.0,
+            "perm": "tvc_cfd"
+          }
+        }
+      },
+      {
+        "id": "euro_bonds",
+        "kinds": {
+          "rt": {
+            "prefix": "TVC",
+            "priority": 20,
+            "search_boost": 2.0,
+            "perm": "tvc_cfd"
+          }
+        }
+      },
+      {
+        "id": "euro_bonds_futures",
+        "kinds": {
+          "rt": {
+            "prefix": "TVC",
+            "priority": 20,
+            "search_boost": 2.0,
+            "perm": "tvc_cfd",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "amex_idc",
+        "kinds": {
+          "rt": {
+            "prefix": "AMEX",
+            "priority": 21,
+            "search_boost": 1.8,
+            "exchange_for_display": "NYSE ARCA & MKT",
+            "perm": "amex",
+            "prefix_no_perm": [
+              "BATS"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nyse_idc",
+        "kinds": {
+          "rt": {
+            "prefix": "NYSE",
+            "priority": 22,
+            "search_boost": 1.8,
+            "perm": "nyse",
+            "prefix_no_perm": [
+              "BATS"
+            ]
+          }
+        }
+      },
+      {
+        "id": "bme_indices",
+        "kinds": {
+          "rt": {
+            "priority": 39,
+            "search_boost": 0.6,
+            "prefix": "BME",
+            "perm": "bme",
+            "prefix_no_perm": [
+              "BME_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "euronext_indices",
+        "kinds": {
+          "rt": {
+            "priority": 39,
+            "prefix": "EURONEXT",
+            "perm": "euronext_indices",
+            "prefix_no_perm": [
+              "EURONEXT_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "lse_uk",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "LSE",
+            "perm": "lse",
+            "prefix_no_perm": [
+              "LSE_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "lse_uk_aim",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "LSE",
+            "perm": "lse",
+            "prefix_no_perm": [
+              "LSE_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "lse_in",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "LSIN",
+            "perm": "lsin",
+            "prefix_no_perm": [
+              "LSIN_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "lse_in_eur",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "LSIN",
+            "perm": "lsin",
+            "prefix_no_perm": [
+              "LSIN_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "milan_indices",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "MIL",
+            "perm": "mil",
+            "prefix_no_perm": [
+              "MIL_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "bme_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "search_boost": 0.6,
+            "prefix": "BME",
+            "perm": "bme",
+            "prefix_no_perm": [
+              "BME_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "euronext_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "EURONEXT_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "swiss_indices",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "SIX",
+            "prefix_alias": [
+              "SWX"
+            ],
+            "perm": "six",
+            "prefix_no_perm": [
+              "SIX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "comex_migration_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "COMEX",
+            "perm": "comex",
+            "prefix_no_perm": [
+              "COMEX_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "comex_migration_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "COMEX_DL"
+          }
+        }
+      },
+      {
+        "id": "comex_migration_mini_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "COMEX_MINI",
+            "perm": "comex_mini",
+            "prefix_no_perm": [
+              "COMEX_MINI_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "comex_migration_mini_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "COMEX_MINI_DL"
+          }
+        }
+      },
+      {
+        "id": "cbot_migration_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CBOT",
+            "perm": "cbot",
+            "prefix_no_perm": [
+              "CBOT_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cbot_migration_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CBOT_DL"
+          }
+        }
+      },
+      {
+        "id": "cbot_migration_by_mini_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CBOT",
+            "perm": "cbot",
+            "prefix_no_perm": [
+              "CBOT_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cbot_migration_by_mini_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CBOT_DL"
+          }
+        }
+      },
+      {
+        "id": "cbot_migration_mini_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CBOT_MINI",
+            "perm": "cbot_mini",
+            "prefix_no_perm": [
+              "CBOT_MINI_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cbot_migration_mini_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CBOT_MINI_DL"
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "NYMEX",
+            "perm": "nymex",
+            "prefix_no_perm": [
+              "NYMEX_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "NYMEX_DL"
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_mini_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "NYMEX_MINI",
+            "perm": "nymex_mini",
+            "prefix_no_perm": [
+              "NYMEX_MINI_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_mini_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "NYMEX_MINI_DL"
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_mini_by_migration_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "NYMEX_MINI",
+            "perm": "nymex_mini",
+            "prefix_no_perm": [
+              "NYMEX_MINI_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_mini_by_migration_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "NYMEX_MINI_DL"
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_by_mini_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "NYMEX",
+            "perm": "nymex",
+            "prefix_no_perm": [
+              "NYMEX_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_by_mini_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "NYMEX_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_migration_to_nymex_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "NYMEX",
+            "perm": "nymex",
+            "prefix_no_perm": [
+              "NYMEX_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_migration_to_nymex_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "NYMEX_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_migration_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CME",
+            "perm": "cme",
+            "prefix_no_perm": [
+              "CME_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_migration_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CME_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_migration_mini_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CME_MINI",
+            "perm": "cme_mini",
+            "prefix_no_perm": [
+              "CME_MINI_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_migration_mini_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CME_MINI_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_migration_mini_by_migration_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CME_MINI",
+            "perm": "cme_mini",
+            "prefix_no_perm": [
+              "CME_MINI_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_migration_mini_by_migration_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CME_MINI_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_migration_by_mini_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CME",
+            "perm": "cme",
+            "prefix_no_perm": [
+              "CME_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_migration_by_mini_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CME_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_europe_migration_to_cbot_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CBOT",
+            "perm": "cbot",
+            "prefix_no_perm": [
+              "CBOT_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_europe_migration_to_cbot_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CBOT_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_europe_migration_to_cme_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CME",
+            "perm": "cme",
+            "prefix_no_perm": [
+              "CME_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_europe_migration_to_cme_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 40,
+            "prefix": "CME_DL"
+          }
+        }
+      },
+      {
+        "id": "swiss_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 41,
+            "prefix": "SIX_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "milan_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 42,
+            "prefix": "MIL",
+            "perm": "mil",
+            "prefix_no_perm": [
+              "MIL_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "toronto_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "TSX",
+            "priority": 45,
+            "perm": "tsx",
+            "prefix_no_perm": [
+              "TSX_DLY"
+            ],
+            "prefix_alias": [
+              "INDEX"
+            ]
+          }
+        }
+      },
+      {
+        "id": "xetra_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "XETR",
+            "priority": 45,
+            "perm": "dbg",
+            "prefix_no_perm": [
+              "XETR_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "tokyo_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "TSE",
+            "priority": 45,
+            "perm": "tse",
+            "prefix_no_perm": [
+              "TSE_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "topix_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "TSE",
+            "priority": 45,
+            "perm": "tse",
+            "prefix_no_perm": [
+              "TSE_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "bats_idc",
+        "kinds": {
+          "rt": {
+            "priority": 45,
+            "prefix": "BATS",
+            "perm": "bats",
+            "prefix_no_perm": [
+              "BATS_DLY"
+            ],
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "toronto_indices_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TSX_DLY",
+            "priority": 46,
+            "perm": "nse_free",
+            "prefix_no_perm": [
+              "TSX_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "tokyo_indices_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TSE_DLY",
+            "priority": 46,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "topix_indices_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TSE_DLY",
+            "priority": 46,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "bats_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 46,
+            "prefix": "BATS_DLY",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "toronto_stocks",
+        "kinds": {
+          "rt": {
+            "prefix": "TSX",
+            "priority": 47,
+            "perm": "tsx",
+            "prefix_no_perm": [
+              "TSX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "xetra_stocks",
+        "kinds": {
+          "rt": {
+            "prefix": "XETR",
+            "priority": 47,
+            "perm": "dbg",
+            "prefix_no_perm": [
+              "XETR_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "xetra_indices_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "XETR_DLY",
+            "priority": 47
+          }
+        }
+      },
+      {
+        "id": "tokyo_stocks",
+        "kinds": {
+          "rt": {
+            "prefix": "TSE",
+            "priority": 47,
+            "perm": "tse",
+            "prefix_no_perm": [
+              "TSE_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "dxy",
+        "kinds": {
+          "rt": {
+            "prefix": "INDEX",
+            "priority": 47,
+            "search_boost": 2.0
+          }
+        }
+      },
+      {
+        "id": "cfei",
+        "kinds": {
+          "rt": {
+            "prefix": "INDEX",
+            "priority": 47
+          }
+        }
+      },
+      {
+        "id": "ind",
+        "kinds": {
+          "rt": {
+            "prefix": "INDEX",
+            "priority": 47
+          }
+        }
+      },
+      {
+        "id": "dowi2",
+        "kinds": {
+          "rt": {
+            "prefix": "INDEX",
+            "priority": 47
+          }
+        }
+      },
+      {
+        "id": "spec",
+        "kinds": {
+          "rt": {
+            "prefix": "INDEX",
+            "priority": 47
+          }
+        }
+      },
+      {
+        "id": "snpi",
+        "kinds": {
+          "rt": {
+            "prefix": "INDEX",
+            "priority": 47
+          }
+        }
+      },
+      {
+        "id": "russli",
+        "kinds": {
+          "rt": {
+            "prefix": "INDEX",
+            "priority": 47
+          }
+        }
+      },
+      {
+        "id": "nasdi",
+        "kinds": {
+          "rt": {
+            "prefix": "INDEX",
+            "priority": 47
+          }
+        }
+      },
+      {
+        "id": "nysei",
+        "kinds": {
+          "rt": {
+            "prefix": "INDEX",
+            "priority": 47
+          }
+        }
+      },
+      {
+        "id": "crains_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "CRAINS",
+            "priority": 47
+          }
+        }
+      },
+      {
+        "id": "crains_indices_internal",
+        "kinds": {
+          "rt": {
+            "prefix": "CRAINS_INTERNAL",
+            "priority": 47,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "toronto_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TSX_DLY",
+            "priority": 48,
+            "perm": "nse_free",
+            "prefix_no_perm": [
+              "TSX_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "chix_europe_dublin",
+        "kinds": {
+          "rt": {
+            "priority": 48,
+            "prefix": "CHXEUR",
+            "exchange_for_display": "CHXEUR_DUB",
+            "exchange_aliases": [
+              "DUB"
+            ],
+            "skip_in_search": false,
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "prefix_alias": [
+              "CHXEUR_DUB"
+            ],
+            "group_alias": [
+              "dublin"
+            ],
+            "perm": "chxeur"
+          }
+        }
+      },
+      {
+        "id": "chix_europe_omx",
+        "kinds": {
+          "rt": {
+            "priority": 48,
+            "prefix": "CHXEUR",
+            "exchange_for_display": "CHXEUR_OMX",
+            "exchange_aliases": [
+              "OMX"
+            ],
+            "skip_in_search": false,
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "prefix_alias": [
+              "CHXEUR_OMX"
+            ],
+            "group_alias": [
+              "omx"
+            ],
+            "perm": "chxeur"
+          }
+        }
+      },
+      {
+        "id": "chix_europe_oslo",
+        "kinds": {
+          "rt": {
+            "priority": 48,
+            "prefix": "CHXEUR",
+            "exchange_for_display": "CHXEUR_OSL",
+            "exchange_aliases": [
+              "OSL"
+            ],
+            "skip_in_search": false,
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "prefix_alias": [
+              "CHXEUR_OSL"
+            ],
+            "group_alias": [
+              "oslo"
+            ],
+            "perm": "chxeur"
+          }
+        }
+      },
+      {
+        "id": "chix_europe_vienna",
+        "kinds": {
+          "rt": {
+            "priority": 48,
+            "prefix": "CHXEUR",
+            "exchange_for_display": "CHXEUR_VIE",
+            "exchange_aliases": [
+              "VIE"
+            ],
+            "skip_in_search": false,
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "prefix_alias": [
+              "CHXEUR_VIE"
+            ],
+            "group_alias": [
+              "vienna"
+            ],
+            "perm": "chxeur"
+          }
+        }
+      },
+      {
+        "id": "chix_europe_lse_in",
+        "kinds": {
+          "rt": {
+            "priority": 48,
+            "prefix": "CHXEUR",
+            "exchange_for_display": "CHXEUR_LSIN",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CHXEUR_LSIN"
+            ],
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "perm": "chxeur"
+          }
+        }
+      },
+      {
+        "id": "chix_europe_lse_uk",
+        "kinds": {
+          "rt": {
+            "priority": 48,
+            "prefix": "CHXEUR",
+            "exchange_for_display": "CHXEUR_LSE",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CHXEUR_LSE"
+            ],
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "perm": "chxeur"
+          }
+        }
+      },
+      {
+        "id": "chix_europe_milan",
+        "kinds": {
+          "rt": {
+            "priority": 48,
+            "prefix": "CHXEUR",
+            "exchange_for_display": "CHXEUR_MIL",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CHXEUR_MIL"
+            ],
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "perm": "chxeur"
+          }
+        }
+      },
+      {
+        "id": "chix_europe_madrid",
+        "kinds": {
+          "rt": {
+            "priority": 48,
+            "prefix": "CHXEUR",
+            "exchange_for_display": "CHXEUR_BME",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CHXEUR_BME"
+            ],
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "perm": "chxeur"
+          }
+        }
+      },
+      {
+        "id": "chix_europe_istanbul",
+        "kinds": {
+          "rt": {
+            "priority": 48,
+            "prefix": "CHXEUR",
+            "exchange_for_display": "CHXEUR_IST",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CHXEUR_IST"
+            ],
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "perm": "chxeur"
+          }
+        }
+      },
+      {
+        "id": "chix_europe_swiss",
+        "kinds": {
+          "rt": {
+            "priority": 48,
+            "prefix": "CHXEUR",
+            "exchange_for_display": "CHXEUR_SWX",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CHXEUR_SWX"
+            ],
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "perm": "chxeur"
+          }
+        }
+      },
+      {
+        "id": "chix_europe_euronext",
+        "kinds": {
+          "rt": {
+            "priority": 48,
+            "prefix": "CHXEUR",
+            "exchange_for_display": "CHXEUR_EURONEXT",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CHXEUR_EURONEXT"
+            ],
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "perm": "chxeur"
+          }
+        }
+      },
+      {
+        "id": "chix_europe_frankfurt",
+        "kinds": {
+          "rt": {
+            "priority": 48,
+            "prefix": "CHXEUR",
+            "exchange_for_display": "CHXEUR_FRA",
+            "skip_in_search": false,
+            "prefix_alias": [
+              "CHXEUR_FRA"
+            ],
+            "prefix_no_perm": [
+              "CHXEUR_EOD"
+            ],
+            "perm": "chxeur"
+          }
+        }
+      },
+      {
+        "id": "bme_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 49,
+            "prefix": "BME_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "xetra_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "XETR_DLY",
+            "priority": 49
+          }
+        }
+      },
+      {
+        "id": "forex",
+        "kinds": {
+          "rt": {
+            "prefix": "FX_IDC",
+            "priority": 50,
+            "search_boost": 2.0,
+            "exchange_for_display": "IDC"
+          }
+        }
+      },
+      {
+        "id": "lse_uk_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "LSE_DLY",
+            "perm": "lse_dly",
+            "prefix_no_perm": [
+              "LSE_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "lse_uk_aim_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "LSE_DLY",
+            "perm": "lse_dly",
+            "prefix_no_perm": [
+              "LSE_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "lse_in_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "LSIN_DLY",
+            "perm": "lsin_dly",
+            "prefix_no_perm": [
+              "LSIN_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "lse_in_eur_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "LSIN_DLY",
+            "perm": "lsin_dly",
+            "prefix_no_perm": [
+              "LSIN_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "comex_migration",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "COMEX",
+            "perm": "comex",
+            "prefix_no_perm": [
+              "COMEX_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "comex_migration_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "COMEX_DL"
+          }
+        }
+      },
+      {
+        "id": "comex_migration_mini",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "COMEX_MINI",
+            "perm": "comex_mini",
+            "prefix_no_perm": [
+              "COMEX_MINI_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "comex_migration_mini_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "COMEX_MINI_DL"
+          }
+        }
+      },
+      {
+        "id": "cbot_migration",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CBOT",
+            "perm": "cbot",
+            "prefix_no_perm": [
+              "CBOT_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cbot_migration_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CBOT_DL"
+          }
+        }
+      },
+      {
+        "id": "cbot_migration_by_mini",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CBOT",
+            "perm": "cbot",
+            "prefix_no_perm": [
+              "CBOT_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cbot_migration_by_mini_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CBOT_DL"
+          }
+        }
+      },
+      {
+        "id": "cbot_migration_mini",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CBOT_MINI",
+            "perm": "cbot_mini",
+            "prefix_no_perm": [
+              "CBOT_MINI_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cbot_migration_mini_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CBOT_MINI_DL"
+          }
+        }
+      },
+      {
+        "id": "nymex_migration",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "NYMEX",
+            "perm": "nymex",
+            "prefix_no_perm": [
+              "NYMEX_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "NYMEX_DL"
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_mini",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "NYMEX_MINI",
+            "perm": "nymex_mini",
+            "prefix_no_perm": [
+              "NYMEX_MINI_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_mini_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "NYMEX_MINI_DL"
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_mini_by_migration",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "NYMEX_MINI",
+            "perm": "nymex",
+            "prefix_no_perm": [
+              "NYMEX_MINI_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_mini_by_migration_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "NYMEX_MINI_DL"
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_by_mini",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "NYMEX",
+            "perm": "nymex",
+            "prefix_no_perm": [
+              "NYMEX_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nymex_migration_by_mini_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "NYMEX_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_migration_to_nymex",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "NYMEX",
+            "perm": "nymex",
+            "prefix_no_perm": [
+              "NYMEX_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_migration_to_nymex_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "NYMEX_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_migration",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CME",
+            "perm": "cme",
+            "prefix_no_perm": [
+              "CME_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_migration_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CME_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_migration_mini",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CME_MINI",
+            "perm": "cme_mini",
+            "prefix_no_perm": [
+              "CME_MINI_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_migration_mini_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CME_MINI_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_migration_mini_by_migration",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CME_MINI",
+            "perm": "cme_mini",
+            "prefix_no_perm": [
+              "CME_MINI_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_migration_mini_by_migration_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CME_MINI_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_migration_by_mini",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CME",
+            "perm": "cme",
+            "prefix_no_perm": [
+              "CME_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_migration_by_mini_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CME_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_europe_migration_to_cbot",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CBOT",
+            "perm": "cbot",
+            "prefix_no_perm": [
+              "CBOT_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_europe_migration_to_cbot_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CBOT_DL"
+          }
+        }
+      },
+      {
+        "id": "cme_europe_migration_to_cme",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CME",
+            "perm": "cme",
+            "prefix_no_perm": [
+              "CME_DL"
+            ]
+          }
+        }
+      },
+      {
+        "id": "cme_europe_migration_to_cme_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "CME_DL"
+          }
+        }
+      },
+      {
+        "id": "bme_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "BME_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "nagoya_stocks",
+        "kinds": {
+          "rt": {
+            "prefix": "NAG",
+            "priority": 50,
+            "perm": "nag",
+            "prefix_no_perm": [
+              "NAG_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "hongkong_indices",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "HKEX",
+            "prefix_no_perm": [
+              "HKEX_DLY"
+            ],
+            "perm": "hkex"
+          }
+        }
+      },
+      {
+        "id": "singapore_indices",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "SGX",
+            "prefix_alias": [
+              "SGX_DLY"
+            ],
+            "perm": "sf_rt"
+          }
+        }
+      },
+      {
+        "id": "istanbul_indices",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "BIST",
+            "prefix_alias": [
+              "IST"
+            ],
+            "prefix_no_perm": [
+              "BIST_DLY"
+            ],
+            "perm": "bist"
+          }
+        }
+      },
+      {
+        "id": "omx",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "OMX",
+            "perm": "permission_denied",
+            "prefix_no_perm": [
+              "CHXEUR"
+            ],
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "dublin",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "DUB",
+            "perm": "permission_denied",
+            "prefix_no_perm": [
+              "CHXEUR"
+            ],
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "oslo",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "OSL",
+            "perm": "permission_denied",
+            "prefix_no_perm": [
+              "CHXEUR"
+            ],
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "vienna",
+        "kinds": {
+          "rt": {
+            "priority": 50,
+            "prefix": "VIE",
+            "perm": "permission_denied",
+            "prefix_no_perm": [
+              "CHXEUR"
+            ],
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "mexico_indices",
+        "kinds": {
+          "rt": {
+            "priority": 51,
+            "prefix": "BMV",
+            "prefix_no_perm": [
+              "BMV_DLY"
+            ],
+            "perm": "bmv"
+          }
+        }
+      },
+      {
+        "id": "milan_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 51,
+            "prefix": "MIL_DLY",
+            "perm": "mil_dly",
+            "prefix_no_perm": [
+              "MIL_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nse_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 51,
+            "search_boost": 0.6,
+            "prefix": "NSE",
+            "prefix_no_perm": [
+              "NSE_DLY"
+            ],
+            "perm": "nse"
+          }
+        }
+      },
+      {
+        "id": "nse_indices",
+        "kinds": {
+          "rt": {
+            "priority": 51,
+            "search_boost": 0.6,
+            "prefix": "NSE",
+            "prefix_no_perm": [
+              "NSE_DLY"
+            ],
+            "perm": "nse"
+          }
+        }
+      },
+      {
+        "id": "sapporo_stocks",
+        "kinds": {
+          "rt": {
+            "prefix": "SSE",
+            "priority": 51,
+            "perm": "tse",
+            "prefix_no_perm": [
+              "SSE_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "hongkong_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 51,
+            "prefix": "HKEX_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "istanbul_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 51,
+            "prefix": "BIST_DLY"
+          }
+        }
+      },
+      {
+        "id": "moex_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 51,
+            "prefix": "MOEX",
+            "perm": "moex_futures",
+            "prefix_no_perm": [
+              "MOEX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "moex_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 51,
+            "prefix": "MOEX_DLY",
+            "perm": "moex"
+          }
+        }
+      },
+      {
+        "id": "moex",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "MOEX",
+            "perm": "moex_stocks",
+            "prefix_no_perm": [
+              "MOEX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "moex_indices",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "MOEX",
+            "perm": "moex_stocks",
+            "prefix_no_perm": [
+              "MOEX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "moex_futures",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "MOEX",
+            "perm": "moex_futures",
+            "prefix_no_perm": [
+              "MOEX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "moex_currency",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "MOEX",
+            "perm": "moex_currency",
+            "prefix_no_perm": [
+              "MOEX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "moex_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "MOEX_DLY",
+            "perm": "moex"
+          }
+        }
+      },
+      {
+        "id": "moex_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "MOEX_DLY",
+            "perm": "moex"
+          }
+        }
+      },
+      {
+        "id": "moex_futures_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "MOEX_DLY",
+            "perm": "moex"
+          }
+        }
+      },
+      {
+        "id": "moex_currency_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "MOEX_DLY",
+            "perm": "moex"
+          }
+        }
+      },
+      {
+        "id": "bovespa",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA",
+            "prefix_no_perm": [
+              "BMFBOVESPA_DLY"
+            ],
+            "perm": "bovespa_stocks"
+          }
+        }
+      },
+      {
+        "id": "bovespa_indices",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA",
+            "prefix_no_perm": [
+              "BMFBOVESPA_DLY"
+            ],
+            "perm": "bovespa_stocks"
+          }
+        }
+      },
+      {
+        "id": "bovespa_futures",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA",
+            "prefix_no_perm": [
+              "BMFBOVESPA_DLY"
+            ],
+            "perm": "bovespa_futures"
+          }
+        }
+      },
+      {
+        "id": "bovespa_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA_DLY",
+            "perm": "bovespa"
+          }
+        }
+      },
+      {
+        "id": "bovespa_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA_DLY",
+            "perm": "bovespa"
+          }
+        }
+      },
+      {
+        "id": "bovespa_futures_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA_DLY",
+            "perm": "bovespa"
+          }
+        }
+      },
+      {
+        "id": "mexico_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMV_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "bse_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "search_boost": 0.6,
+            "prefix": "BSE",
+            "prefix_no_perm": [
+              "BSE_DLY"
+            ],
+            "perm": "bse"
+          }
+        }
+      },
+      {
+        "id": "bse_indices",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "search_boost": 0.6,
+            "prefix": "BSE",
+            "prefix_no_perm": [
+              "BSE_DLY"
+            ],
+            "perm": "bse"
+          }
+        }
+      },
+      {
+        "id": "bse_futures",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "search_boost": 0.6,
+            "prefix": "BSE",
+            "prefix_no_perm": [
+              "BSE_DLY"
+            ],
+            "perm": "bse"
+          }
+        }
+      },
+      {
+        "id": "nse_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "NSE_DLY",
+            "prefix_no_perm": [
+              "NSE_EOD"
+            ],
+            "perm": "nse_free"
+          }
+        }
+      },
+      {
+        "id": "nse_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "NSE_DLY",
+            "prefix_no_perm": [
+              "NSE_EOD"
+            ],
+            "perm": "nse_free"
+          }
+        }
+      },
+      {
+        "id": "fukuoka_stocks",
+        "kinds": {
+          "rt": {
+            "prefix": "FSE",
+            "priority": 52,
+            "perm": "tse",
+            "prefix_no_perm": [
+              "FSE_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "taiwan_indices",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "TWSE",
+            "prefix_no_perm": [
+              "TWSE_DLY"
+            ],
+            "perm": "twse"
+          }
+        }
+      },
+      {
+        "id": "bovespa_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA",
+            "prefix_no_perm": [
+              "BMFBOVESPA_DLY"
+            ],
+            "perm": "bovespa_futures"
+          }
+        }
+      },
+      {
+        "id": "bovespa_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA_DLY",
+            "perm": "bovespa"
+          }
+        }
+      },
+      {
+        "id": "bse_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "search_boost": 0.6,
+            "prefix": "BSE",
+            "prefix_no_perm": [
+              "BSE_DLY"
+            ],
+            "perm": "bse"
+          }
+        }
+      },
+      {
+        "id": "buenosaires_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "BCBA",
+            "priority": 53,
+            "prefix_alias": [
+              "BCBA_DLY"
+            ],
+            "perm": "bcba_dly"
+          }
+        }
+      },
+      {
+        "id": "mexico_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 53,
+            "prefix": "BMV",
+            "prefix_no_perm": [
+              "BMV_DLY"
+            ],
+            "perm": "bmv"
+          }
+        }
+      },
+      {
+        "id": "milan_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 53,
+            "prefix": "MIL_DLY",
+            "perm": "mil_dly",
+            "prefix_no_perm": [
+              "MIL_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "bse_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 53,
+            "prefix": "BSE_DLY",
+            "perm": "bse_free",
+            "prefix_no_perm": [
+              "BSE_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "bse_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 53,
+            "prefix": "BSE_DLY",
+            "perm": "bse_free",
+            "prefix_no_perm": [
+              "BSE_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "bse_futures_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 53,
+            "prefix": "BSE_DLY",
+            "perm": "bse_free",
+            "prefix_no_perm": [
+              "BSE_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "taiwan_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 53,
+            "prefix": "TWSE_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "bse_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 53,
+            "prefix": "BSE_DLY",
+            "perm": "bse_free",
+            "prefix_no_perm": [
+              "BSE_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "buenosaires_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 54,
+            "prefix": "BCBA",
+            "prefix_no_perm": [
+              "BCBA_DLY"
+            ],
+            "perm": "bcba"
+          }
+        }
+      },
+      {
+        "id": "mexico_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 54,
+            "prefix": "BMV_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "euronext_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 55,
+            "prefix": "EURONEXT",
+            "perm": "euronext_stocks",
+            "prefix_no_perm": [
+              "EURONEXT_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "frankfurt_stocks",
+        "kinds": {
+          "rt": {
+            "prefix": "FWB",
+            "priority": 55,
+            "prefix_alias": [
+              "FRA"
+            ],
+            "perm": "dbg",
+            "prefix_no_perm": [
+              "FWB_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "frankfurt_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "FWB_DLY",
+            "priority": 55,
+            "prefix_alias": [
+              "FRA_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "asx_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "ASX",
+            "priority": 55,
+            "perm": "asx",
+            "prefix_no_perm": [
+              "ASX_DLY"
+            ],
+            "prefix_alias": [
+              "INDEX"
+            ]
+          }
+        }
+      },
+      {
+        "id": "hongkong_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 55,
+            "prefix": "HKEX",
+            "prefix_no_perm": [
+              "HKEX_DLY"
+            ],
+            "perm": "hkex"
+          }
+        }
+      },
+      {
+        "id": "hongkong_futures",
+        "kinds": {
+          "rt": {
+            "priority": 55,
+            "prefix": "HKEX",
+            "prefix_no_perm": [
+              "HKEX_DLY"
+            ],
+            "perm": "hkex_futures"
+          }
+        }
+      },
+      {
+        "id": "singapore_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 55,
+            "prefix": "SGX",
+            "prefix_no_perm": [
+              "SGX_DLY"
+            ],
+            "perm": "sgx_stocks"
+          }
+        }
+      },
+      {
+        "id": "singapore_futures",
+        "kinds": {
+          "rt": {
+            "priority": 55,
+            "prefix": "SGX",
+            "prefix_no_perm": [
+              "SGX_DLY"
+            ],
+            "perm": "sgx_futures"
+          }
+        }
+      },
+      {
+        "id": "singapore_fx_futures",
+        "kinds": {
+          "rt": {
+            "priority": 55,
+            "prefix": "SGX",
+            "prefix_alias": [
+              "SGX_DLY"
+            ],
+            "perm": "sf_rt"
+          }
+        }
+      },
+      {
+        "id": "istanbul_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 55,
+            "prefix": "BIST",
+            "prefix_alias": [
+              "IST"
+            ],
+            "prefix_no_perm": [
+              "BIST_DLY"
+            ],
+            "perm": "bist"
+          }
+        }
+      },
+      {
+        "id": "hongkong_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 55,
+            "prefix": "HKEX",
+            "prefix_no_perm": [
+              "HKEX_DLY"
+            ],
+            "perm": "hkex_futures"
+          }
+        }
+      },
+      {
+        "id": "singapore_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 55,
+            "prefix": "SGX",
+            "prefix_no_perm": [
+              "SGX_DLY"
+            ],
+            "perm": "sgx_futures"
+          }
+        }
+      },
+      {
+        "id": "singapore_fx_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 55,
+            "prefix": "SGX",
+            "prefix_alias": [
+              "SGX_DLY"
+            ],
+            "perm": "sf_rt"
+          }
+        }
+      },
+      {
+        "id": "buenosaires_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 56,
+            "prefix": "BCBA_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "euronext_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 56,
+            "prefix": "EURONEXT_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "swiss_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 56,
+            "prefix": "SIX",
+            "prefix_alias": [
+              "SWX"
+            ],
+            "perm": "six",
+            "prefix_no_perm": [
+              "SIX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "asx_stocks",
+        "kinds": {
+          "rt": {
+            "prefix": "ASX",
+            "priority": 56,
+            "perm": "asx",
+            "prefix_no_perm": [
+              "ASX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "hongkong_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 56,
+            "prefix": "HKEX_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "hongkong_futures_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 56,
+            "prefix": "HKEX_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "taiwan_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 56,
+            "prefix": "TWSE",
+            "prefix_no_perm": [
+              "TWSE_DLY"
+            ],
+            "perm": "twse"
+          }
+        }
+      },
+      {
+        "id": "istanbul_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 56,
+            "prefix": "BIST_DLY"
+          }
+        }
+      },
+      {
+        "id": "hongkong_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 56,
+            "prefix": "HKEX_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "toronto_venture_stocks",
+        "kinds": {
+          "rt": {
+            "prefix": "TSXV",
+            "priority": 57,
+            "perm": "tsxv",
+            "prefix_no_perm": [
+              "TSXV_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "swiss_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 57,
+            "prefix": "SIX_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "asx_indices_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "ASX_DLY",
+            "priority": 57,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "tokyo_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TSE_DLY",
+            "priority": 57,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "taiwan_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 57,
+            "prefix": "TWSE_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "toronto_venture_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TSXV_DLY",
+            "priority": 58,
+            "perm": "nse_free",
+            "prefix_no_perm": [
+              "TSXV_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "sapporo_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "SSE_DLY",
+            "priority": 58,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "euronext_futures",
+        "kinds": {
+          "rt": {
+            "priority": 59,
+            "prefix": "EURONEXT",
+            "perm": "euronext_futures",
+            "prefix_no_perm": [
+              "EURONEXT_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "fukuoka_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "FSE_DLY",
+            "priority": 59,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "euronext_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 59,
+            "prefix": "EURONEXT",
+            "perm": "euronext_futures",
+            "prefix_no_perm": [
+              "EURONEXT_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "euronext_futures_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 60,
+            "prefix": "EURONEXT_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "asx_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "ASX_DLY",
+            "priority": 60,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "nagoya_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "NAG_DLY",
+            "priority": 60,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "tfin_futures",
+        "kinds": {
+          "rt": {
+            "prefix": "TFX",
+            "priority": 60,
+            "perm": "tfx",
+            "prefix_no_perm": [
+              "TFX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "tocom_futures",
+        "kinds": {
+          "rt": {
+            "prefix": "TOCOM",
+            "priority": 60,
+            "perm": "tocom",
+            "prefix_no_perm": [
+              "TOCOM_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "tocom_grain_futures",
+        "kinds": {
+          "rt": {
+            "prefix": "TOCOM",
+            "priority": 60,
+            "perm": "tocom",
+            "prefix_no_perm": [
+              "TOCOM_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "tfin_continuous",
+        "kinds": {
+          "rt": {
+            "prefix": "TFX",
+            "priority": 60,
+            "perm": "tfx",
+            "prefix_no_perm": [
+              "TFX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "tocom_continuous",
+        "kinds": {
+          "rt": {
+            "prefix": "TOCOM",
+            "priority": 60,
+            "perm": "tocom",
+            "prefix_no_perm": [
+              "TOCOM_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "tocom_grain_continuous",
+        "kinds": {
+          "rt": {
+            "prefix": "TOCOM",
+            "priority": 60,
+            "perm": "tocom",
+            "prefix_no_perm": [
+              "TOCOM_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "euronext_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 60,
+            "prefix": "EURONEXT_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "lse_uk_eod",
+        "kinds": {
+          "rt": {
+            "priority": 60,
+            "prefix": "LSE_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "lse_uk_aim_eod",
+        "kinds": {
+          "rt": {
+            "priority": 60,
+            "prefix": "LSE_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "lse_in_eod",
+        "kinds": {
+          "rt": {
+            "priority": 60,
+            "prefix": "LSIN_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "lse_in_eur_eod",
+        "kinds": {
+          "rt": {
+            "priority": 60,
+            "prefix": "LSIN_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "tfin_futures_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TFX_DLY",
+            "priority": 61,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "tocom_futures_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TOCOM_DLY",
+            "priority": 61,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "tocom_grain_futures_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TOCOM_DLY",
+            "priority": 61,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "tfin_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TFX_DLY",
+            "priority": 61,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "tocom_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TOCOM_DLY",
+            "priority": 61,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "tocom_grain_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "TOCOM_DLY",
+            "priority": 61,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "milan_indices_eod",
+        "kinds": {
+          "rt": {
+            "priority": 61,
+            "prefix": "MIL_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "milan_stocks_eod",
+        "kinds": {
+          "rt": {
+            "priority": 63,
+            "prefix": "MIL_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "stuttgart_stocks",
+        "kinds": {
+          "rt": {
+            "prefix": "SWB",
+            "priority": 65,
+            "perm": "swb",
+            "prefix_no_perm": [
+              "SWB_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nzx_stocks",
+        "kinds": {
+          "rt": {
+            "prefix": "NZX",
+            "priority": 65,
+            "perm": "nzx",
+            "prefix_no_perm": [
+              "NZX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nzx_indices",
+        "kinds": {
+          "rt": {
+            "prefix": "NZX",
+            "priority": 65,
+            "perm": "nzx",
+            "prefix_no_perm": [
+              "NZX_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "stuttgart_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "SWB_DLY",
+            "priority": 66,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "singapore_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 66,
+            "prefix": "SGX_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "singapore_futures_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 66,
+            "prefix": "SGX_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "singapore_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 66,
+            "prefix": "SGX_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "warsaw_indices",
+        "kinds": {
+          "rt": {
+            "priority": 70,
+            "prefix": "GPW",
+            "perm": "gpw",
+            "prefix_no_perm": [
+              "GPW_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nzx_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "NZX_DLY",
+            "priority": 70,
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "nzx_indices_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "NZX_DLY",
+            "priority": 70,
+            "perm": "nzx_dly"
+          }
+        }
+      },
+      {
+        "id": "warsaw_indices_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 71,
+            "prefix": "GPW_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "chix_japan_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 72,
+            "prefix": "CHXJPY",
+            "prefix_alias": [
+              "CHXJPY_DLY"
+            ],
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "warsaw_stocks",
+        "kinds": {
+          "rt": {
+            "priority": 75,
+            "prefix": "GPW",
+            "perm": "gpw",
+            "prefix_no_perm": [
+              "GPW_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "warsaw_futures",
+        "kinds": {
+          "rt": {
+            "priority": 75,
+            "prefix": "GPW",
+            "perm": "gpw",
+            "prefix_no_perm": [
+              "GPW_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "warsaw_continuous",
+        "kinds": {
+          "rt": {
+            "priority": 75,
+            "prefix": "GPW",
+            "perm": "gpw",
+            "prefix_no_perm": [
+              "GPW_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "warsaw_stocks_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 76,
+            "prefix": "GPW_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "warsaw_futures_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 76,
+            "prefix": "GPW_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "warsaw_continuous_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 76,
+            "prefix": "GPW_DLY",
+            "perm": "sf_dly"
+          }
+        }
+      },
+      {
+        "id": "otc_qb",
+        "kinds": {
+          "rt": {
+            "prefix": "OTC",
+            "priority": 82,
+            "perm": "otc",
+            "prefix_no_perm": [
+              "OTC_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "otc_qx",
+        "kinds": {
+          "rt": {
+            "prefix": "OTC",
+            "priority": 82,
+            "perm": "otc",
+            "prefix_no_perm": [
+              "OTC_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "otc_pink",
+        "kinds": {
+          "rt": {
+            "prefix": "OTC",
+            "priority": 82,
+            "perm": "otc",
+            "prefix_no_perm": [
+              "OTC_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "otc_qb_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "OTC_DLY",
+            "priority": 84,
+            "prefix_alias": [
+              "OTC_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "otc_qx_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "OTC_DLY",
+            "priority": 84,
+            "prefix_alias": [
+              "OTC_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "otc_pink_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "OTC_DLY",
+            "priority": 84,
+            "prefix_alias": [
+              "OTC_EOD"
+            ]
+          }
+        }
+      },
+      {
+        "id": "nasdaq_unadjusted",
+        "kinds": {
+          "rt": {
+            "prefix": "NASDAQ_UNADJ",
+            "priority": 90,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "amex_unadjusted",
+        "kinds": {
+          "rt": {
+            "prefix": "AMEX_UNADJ",
+            "priority": 90,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "nyse_unadjusted",
+        "kinds": {
+          "rt": {
+            "prefix": "NYSE_UNADJ",
+            "priority": 90,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "otc_unadjusted",
+        "kinds": {
+          "rt": {
+            "prefix": "OTC_UNADJ",
+            "priority": 90,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "toronto_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "TSX_EOD",
+            "priority": 100
+          }
+        }
+      },
+      {
+        "id": "cboe_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "CBOE",
+            "priority": 100,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "dj_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "DJ",
+            "priority": 100,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "nasdaq_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "NASDAQ",
+            "priority": 100,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "nyse_gif_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "NYSE",
+            "priority": 100,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "nyse_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "NYSE",
+            "priority": 100,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "russel_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "RUSSEL",
+            "priority": 100,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "sp_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "SP",
+            "priority": 100,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "chix_europe_dublin_eod",
+        "kinds": {
+          "rt": {
+            "priority": 100,
+            "prefix": "CHXEUR_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "chix_europe_omx_eod",
+        "kinds": {
+          "rt": {
+            "priority": 100,
+            "prefix": "CHXEUR_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "chix_europe_oslo_eod",
+        "kinds": {
+          "rt": {
+            "priority": 100,
+            "prefix": "CHXEUR_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "chix_europe_vienna_eod",
+        "kinds": {
+          "rt": {
+            "priority": 100,
+            "prefix": "CHXEUR_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "chix_europe_lse_in_eod",
+        "kinds": {
+          "rt": {
+            "priority": 100,
+            "prefix": "CHXEUR_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "chix_europe_lse_uk_eod",
+        "kinds": {
+          "rt": {
+            "priority": 100,
+            "prefix": "CHXEUR_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "chix_europe_milan_eod",
+        "kinds": {
+          "rt": {
+            "priority": 100,
+            "prefix": "CHXEUR_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "chix_europe_madrid_eod",
+        "kinds": {
+          "rt": {
+            "priority": 100,
+            "prefix": "CHXEUR_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "chix_europe_istanbul_eod",
+        "kinds": {
+          "rt": {
+            "priority": 100,
+            "prefix": "CHXEUR_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "chix_europe_swiss_eod",
+        "kinds": {
+          "rt": {
+            "priority": 100,
+            "prefix": "CHXEUR_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "chix_europe_euronext_eod",
+        "kinds": {
+          "rt": {
+            "priority": 100,
+            "prefix": "CHXEUR_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "chix_europe_frankfurt_eod",
+        "kinds": {
+          "rt": {
+            "priority": 100,
+            "prefix": "CHXEUR_EOD",
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "okcoin2",
+        "kinds": {
+          "rt": {
+            "prefix": "OKCOIN",
+            "priority": 100,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "bnc",
+        "kinds": {
+          "rt": {
+            "prefix": "BNC",
+            "priority": 100
+          }
+        }
+      },
+      {
+        "id": "fred",
+        "kinds": {
+          "rt": {
+            "prefix": "FRED",
+            "priority": 100
+          }
+        }
+      },
+      {
+        "id": "ism",
+        "kinds": {
+          "rt": {
+            "prefix": "ISM",
+            "priority": 100
+          }
+        }
+      },
+      {
+        "id": "adp",
+        "kinds": {
+          "rt": {
+            "prefix": "ADP",
+            "priority": 100
+          }
+        }
+      },
+      {
+        "id": "worldbank",
+        "kinds": {
+          "rt": {
+            "prefix": "WORLDBANK",
+            "priority": 100
+          }
+        }
+      },
+      {
+        "id": "sandp",
+        "kinds": {
+          "rt": {
+            "prefix": "SANDP",
+            "priority": 100
+          }
+        }
+      },
+      {
+        "id": "frbp",
+        "kinds": {
+          "rt": {
+            "prefix": "FRBP",
+            "priority": 100
+          }
+        }
+      },
+      {
+        "id": "frkc",
+        "kinds": {
+          "rt": {
+            "prefix": "FRKC",
+            "priority": 100
+          }
+        }
+      },
+      {
+        "id": "ecri",
+        "kinds": {
+          "rt": {
+            "prefix": "ECRI",
+            "priority": 100
+          }
+        }
+      },
+      {
+        "id": "nse_stocks_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "NSE_EOD",
+            "priority": 101,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "nse_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "NSE_EOD",
+            "priority": 101,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "bse_stocks_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "BSE_EOD",
+            "priority": 102,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "bse_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "BSE_EOD",
+            "priority": 102,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "bse_futures_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "BSE_EOD",
+            "priority": 102,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "bse_continuous_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "BSE_EOD",
+            "priority": 102,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "toronto_stocks_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "TSX_EOD",
+            "priority": 105
+          }
+        }
+      },
+      {
+        "id": "toronto_venture_stocks_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "TSXV_EOD",
+            "priority": 107
+          }
+        }
+      },
+      {
+        "id": "btce",
+        "kinds": {
+          "rt": {
+            "prefix": "BTCE",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "COINFLOOR",
+        "kinds": {
+          "rt": {
+            "prefix": "COINFLOOR",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "CEXIO",
+        "kinds": {
+          "rt": {
+            "prefix": "CEXIO",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "KORBIT",
+        "kinds": {
+          "rt": {
+            "prefix": "KORBIT",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "THEROCKTRADING",
+        "kinds": {
+          "rt": {
+            "prefix": "THEROCKTRADING",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "BITMEX",
+        "kinds": {
+          "rt": {
+            "prefix": "BITMEX",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "BITSO",
+        "kinds": {
+          "rt": {
+            "prefix": "BITSO",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "G796",
+        "kinds": {
+          "rt": {
+            "prefix": "796",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "ITBIT",
+        "kinds": {
+          "rt": {
+            "prefix": "ITBIT",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "FOXBIT",
+        "kinds": {
+          "rt": {
+            "prefix": "FOXBIT",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "XCOIN",
+        "kinds": {
+          "rt": {
+            "prefix": "XCOIN",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "BITVC",
+        "kinds": {
+          "rt": {
+            "prefix": "BITVC",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "HITBTC",
+        "kinds": {
+          "rt": {
+            "prefix": "HITBTC",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "BTCYOU",
+        "kinds": {
+          "rt": {
+            "prefix": "BTCYOU",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "BXTH",
+        "kinds": {
+          "rt": {
+            "prefix": "BXTH",
+            "priority": 112
+          }
+        }
+      },
+      {
+        "id": "MTGOX",
+        "kinds": {
+          "rt": {
+            "prefix": "MTGOX",
+            "priority": 113
+          }
+        }
+      },
+      {
+        "id": "GOCIO",
+        "kinds": {
+          "rt": {
+            "prefix": "GOCIO",
+            "priority": 120
+          }
+        }
+      },
+      {
+        "id": "cfe",
+        "kinds": {
+          "rt": {
+            "prefix": "CBOE",
+            "priority": 130
+          }
+        }
+      },
+      {
+        "id": "cfe_continuous_2",
+        "kinds": {
+          "rt": {
+            "prefix": "CBOE",
+            "priority": 131
+          }
+        }
+      },
+      {
+        "id": "cfe_continuous",
+        "kinds": {
+          "rt": {
+            "prefix": "CBOE",
+            "priority": 131
+          }
+        }
+      },
+      {
+        "id": "kcbt",
+        "kinds": {
+          "rt": {
+            "prefix": "KCBT",
+            "priority": 180
+          }
+        }
+      },
+      {
+        "id": "kcbt_continuous_2",
+        "kinds": {
+          "rt": {
+            "prefix": "KCBT",
+            "priority": 181
+          }
+        }
+      },
+      {
+        "id": "kcbt_continuous",
+        "kinds": {
+          "rt": {
+            "prefix": "KCBT",
+            "priority": 181
+          }
+        }
+      },
+      {
+        "id": "iceus",
+        "kinds": {
+          "rt": {
+            "prefix": "ICEUSA",
+            "priority": 200
+          }
+        }
+      },
+      {
+        "id": "iceus_continuous_2",
+        "kinds": {
+          "rt": {
+            "prefix": "ICEUSA",
+            "priority": 201
+          }
+        }
+      },
+      {
+        "id": "iceus_continuous",
+        "kinds": {
+          "rt": {
+            "prefix": "ICEUSA",
+            "priority": 201
+          }
+        }
+      },
+      {
+        "id": "ice",
+        "kinds": {
+          "rt": {
+            "prefix": "ICEEUR",
+            "priority": 210
+          }
+        }
+      },
+      {
+        "id": "ice_continuous_2",
+        "kinds": {
+          "rt": {
+            "prefix": "ICEEUR",
+            "priority": 211
+          }
+        }
+      },
+      {
+        "id": "ice_continuous",
+        "kinds": {
+          "rt": {
+            "prefix": "ICEEUR",
+            "priority": 211
+          }
+        }
+      },
+      {
+        "id": "mgex",
+        "kinds": {
+          "rt": {
+            "prefix": "MGEX",
+            "priority": 220
+          }
+        }
+      },
+      {
+        "id": "mgex_continuous_2",
+        "kinds": {
+          "rt": {
+            "prefix": "MGEX",
+            "priority": 221
+          }
+        }
+      },
+      {
+        "id": "mgex_continuous",
+        "kinds": {
+          "rt": {
+            "prefix": "MGEX",
+            "priority": 221
+          }
+        }
+      },
+      {
+        "id": "eurex",
+        "kinds": {
+          "rt": {
+            "prefix": "EUREX",
+            "priority": 240
+          }
+        }
+      },
+      {
+        "id": "eurex_continuous_2",
+        "kinds": {
+          "rt": {
+            "prefix": "EUREX",
+            "priority": 241
+          }
+        }
+      },
+      {
+        "id": "eurex_continuous",
+        "kinds": {
+          "rt": {
+            "prefix": "EUREX",
+            "priority": 241
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "cme",
+    "groups": [
+      {
+        "id": "cme_globex_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "CME_GBX",
+            "priority": 50,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "cme_pit_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "CME_PIT",
+            "priority": 51,
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "cbot_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "CBOT",
+            "priority": 52,
+            "prefix_alias": [
+              "CBOT_GBX",
+              "CBOT_PIT"
+            ],
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "cbot_mini_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "CBOT_MINI",
+            "priority": 52,
+            "prefix_alias": [
+              "CBOT_MINI_GBX",
+              "CBOT_MINI_PIT",
+              "CBOT",
+              "CBOT_GBX",
+              "CBOT_PIT"
+            ],
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "cme_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "CME",
+            "priority": 52,
+            "prefix_alias": [
+              "CME_GBX",
+              "CME_PIT"
+            ],
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "cme_mini_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "CME_MINI",
+            "priority": 52,
+            "prefix_alias": [
+              "CME_MINI_GBX",
+              "CME_MINI_PIT",
+              "CME",
+              "CME_GBX",
+              "CME_PIT"
+            ],
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "comex_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "COMEX",
+            "priority": 52,
+            "prefix_alias": [
+              "COMEX_GBX",
+              "COMEX_PIT"
+            ],
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "comex_mini_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "COMEX_MINI",
+            "priority": 52,
+            "prefix_alias": [
+              "COMEX_MINI_GBX",
+              "COMEX_MINI_PIT",
+              "COMEX",
+              "COMEX_GBX",
+              "COMEX_PIT"
+            ],
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "nymex_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "NYMEX",
+            "priority": 52,
+            "prefix_alias": [
+              "NYMEX_GBX",
+              "NYMEX_PIT"
+            ],
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "nymex_mini_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "NYMEX_MINI",
+            "priority": 52,
+            "prefix_alias": [
+              "NYMEX_MINI_GBX",
+              "NYMEX_MINI_PIT",
+              "NYMEX",
+              "NYMEX_GBX",
+              "NYMEX_PIT"
+            ],
+            "skip_in_search": false
+          }
+        }
+      },
+      {
+        "id": "cme_europe_delayed",
+        "kinds": {
+          "rt": {
+            "prefix": "CME_EUR",
+            "priority": 52,
+            "prefix_alias": [
+              "CMEEUR"
+            ],
+            "skip_in_search": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "bovespa",
+    "groups": [
+      {
+        "id": "bovespa",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA",
+            "perm": "permission_denied",
+            "prefix_no_perm": [
+              "BMFBOVESPA_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "bovespa_futures",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA",
+            "perm": "permission_denied",
+            "prefix_no_perm": [
+              "BMFBOVESPA_DLY"
+            ]
+          }
+        }
+      },
+      {
+        "id": "bovespa_indices",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA"
+          }
+        }
+      },
+      {
+        "id": "bovespa_futures_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA_DLY"
+          }
+        }
+      },
+      {
+        "id": "bovespa_delayed",
+        "kinds": {
+          "rt": {
+            "priority": 52,
+            "prefix": "BMFBOVESPA_DLY"
+          }
+        }
+      }
+    ]
+  }
+]
