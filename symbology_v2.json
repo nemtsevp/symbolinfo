@@ -51,7 +51,8 @@
             "exchange_for_display": "S&P",
             "prefix_alias": [
               "SP_DLY",
-              "INDEX"
+              "INDEX",
+              "TVC"
             ],
             "perm": "spindices",
             "prefix_no_perm": [
@@ -1112,6 +1113,36 @@
           "rt": {
             "prefix": "XETR_DLY",
             "priority": 47
+          }
+        }
+      },
+      {
+        "id": "cboe_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "CBOE_EOD",
+            "priority": 47,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "dj_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "DJ_EOD",
+            "priority": 47,
+            "skip_in_search": true
+          }
+        }
+      },
+      {
+        "id": "sp_indices_eod",
+        "kinds": {
+          "rt": {
+            "prefix": "SP_EOD",
+            "priority": 47,
+            "skip_in_search": true
           }
         }
       },
@@ -4114,26 +4145,6 @@
         }
       },
       {
-        "id": "cboe_indices_eod",
-        "kinds": {
-          "rt": {
-            "prefix": "CBOE_EOD",
-            "priority": 100,
-            "skip_in_search": true
-          }
-        }
-      },
-      {
-        "id": "dj_indices_eod",
-        "kinds": {
-          "rt": {
-            "prefix": "DJ_EOD",
-            "priority": 100,
-            "skip_in_search": true
-          }
-        }
-      },
-      {
         "id": "nasdaq_indices_eod",
         "kinds": {
           "rt": {
@@ -4168,16 +4179,6 @@
         "kinds": {
           "rt": {
             "prefix": "RUSSEL",
-            "priority": 100,
-            "skip_in_search": true
-          }
-        }
-      },
-      {
-        "id": "sp_indices_eod",
-        "kinds": {
-          "rt": {
-            "prefix": "SP_EOD",
             "priority": 100,
             "skip_in_search": true
           }
