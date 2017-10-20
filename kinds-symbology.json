@@ -1,0 +1,18 @@
+[
+  {
+    "id": "test_domain",
+    "groups": [
+      {
+        "id": "fxcm",
+        "kinds": {
+          "eod": {
+            "prefix": "FX_EOD"
+          },
+          "rt": {
+            "prefix": "FX"
+          }
+        }
+      }
+    ]
+  }
+]
