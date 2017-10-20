@@ -100,7 +100,8 @@
         "exchange_for_display": "S&P",
         "prefix_alias": [
           "SP_DLY",
-          "INDEX"
+          "INDEX",
+          "TVC"
         ],
         "groups": [
           {
@@ -1030,6 +1031,36 @@
           {
             "group": "xetra_stocks_delayed",
             "priority": 49
+          }
+        ]
+      },
+      {
+        "priority": 47,
+        "prefix": "CBOE_EOD",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "cboe_indices_eod"
+          }
+        ]
+      },
+      {
+        "priority": 47,
+        "prefix": "DJ_EOD",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "dj_indices_eod"
+          }
+        ]
+      },
+      {
+        "priority": 47,
+        "prefix": "SP_EOD",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "sp_indices_eod"
           }
         ]
       },
@@ -2642,41 +2673,11 @@
       },
       {
         "priority": 100,
-        "prefix": "CBOE_EOD",
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "cboe_indices_eod"
-          }
-        ]
-      },
-      {
-        "priority": 100,
-        "prefix": "DJ_EOD",
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "dj_indices_eod"
-          }
-        ]
-      },
-      {
-        "priority": 100,
         "prefix": "RUSSEL",
         "skip_in_search": true,
         "groups": [
           {
             "group": "russel_indices_eod"
-          }
-        ]
-      },
-      {
-        "priority": 100,
-        "prefix": "SP_EOD",
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "sp_indices_eod"
           }
         ]
       },
@@ -3207,7 +3208,8 @@
         "exchange_for_display": "S&P",
         "prefix_alias": [
           "SP_DLY",
-          "INDEX"
+          "INDEX",
+          "TVC"
         ],
         "groups": [
           {
@@ -4137,6 +4139,36 @@
           {
             "group": "xetra_stocks_delayed",
             "priority": 49
+          }
+        ]
+      },
+      {
+        "priority": 47,
+        "prefix": "CBOE_EOD",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "cboe_indices_eod"
+          }
+        ]
+      },
+      {
+        "priority": 47,
+        "prefix": "DJ_EOD",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "dj_indices_eod"
+          }
+        ]
+      },
+      {
+        "priority": 47,
+        "prefix": "SP_EOD",
+        "skip_in_search": true,
+        "groups": [
+          {
+            "group": "sp_indices_eod"
           }
         ]
       },
@@ -5749,41 +5781,11 @@
       },
       {
         "priority": 100,
-        "prefix": "CBOE_EOD",
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "cboe_indices_eod"
-          }
-        ]
-      },
-      {
-        "priority": 100,
-        "prefix": "DJ_EOD",
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "dj_indices_eod"
-          }
-        ]
-      },
-      {
-        "priority": 100,
         "prefix": "RUSSEL",
         "skip_in_search": true,
         "groups": [
           {
             "group": "russel_indices_eod"
-          }
-        ]
-      },
-      {
-        "priority": 100,
-        "prefix": "SP_EOD",
-        "skip_in_search": true,
-        "groups": [
-          {
-            "group": "sp_indices_eod"
           }
         ]
       },
