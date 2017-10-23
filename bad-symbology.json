@@ -1,0 +1,29 @@
+{
+  "id": "test_domain",
+  "groups": [
+    {
+      "id": "foo_group",
+      "kinds": {
+        "test_kind": {
+          "perm": "foo_perm",
+          "prefix": "test_prefix",
+          "prefix_no_perm": [
+            "recursive_prefix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "bar_group",
+      "kinds": {
+        "test_kind": {
+          "perm": "recursive_perm",
+          "prefix": "recursive_prefix",
+          "prefix_no_perm": [
+            "test_prefix"
+          ]
+        }
+      }
+    }
+  ]
+}
